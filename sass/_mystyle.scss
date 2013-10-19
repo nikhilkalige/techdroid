@@ -1,7 +1,7 @@
-/* .view_outline{
+.show_outline{
     border: thin;
     border-style: solid;
-} */
+}
 
 .logo_div{
     width: 100px;
@@ -13,13 +13,17 @@
     height: 100px;
 }
 
+.first{
+    padding-top: emCalc(100px);
+}
+
 .face{
     width: 400px;
     height: 400px;
-     margin: 0 auto;
-    left: 140px;
+    //margin: 0 auto;
+    //left: 140px;
     display: inline-block;
-    position: relative;
+    //position: relative;
 
     /* display: inline-block;
     border-radius: 100px 100px 100px 100px;
@@ -29,8 +33,8 @@
 
 .intro{
     display: inline-block;
-    position: relative;
-    top: -140px;
+    //position: relative;
+    // top: -140px;
     left: 8vw;
     margin: 0px auto;
     text-align: left;
