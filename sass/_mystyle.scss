@@ -3,6 +3,10 @@
     border-style: solid;
 }
 
+.port{
+    height: 600px;
+}
+
 .logo_div{
     width: 100px;
     height: 150px;
@@ -18,8 +22,10 @@
 }
 
 .face{
-    width: 400px;
-    height: 400px;
+    //width: 400px;
+    // height: 400px;
+    width: 40%;
+    height: 100%;
     //margin: 0 auto;
     //left: 140px;
     display: inline-block;
@@ -33,9 +39,9 @@
 
 .intro{
     display: inline-block;
-    //position: relative;
-    // top: -140px;
-    left: 8vw;
+    position: relative;
+    top: 13%;
+    //left: 8vw;
     margin: 0px auto;
     text-align: left;
 }

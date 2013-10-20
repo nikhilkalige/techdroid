@@ -5073,6 +5073,9 @@ a.th {
   border: thin;
   border-style: solid; }
 
+.port {
+  height: 600px; }
+
 .logo_div {
   width: 100px;
   height: 150px; }
@@ -5085,8 +5088,8 @@ a.th {
   padding-top: 6.25em; }
 
 .face {
-  width: 400px;
-  height: 400px;
+  width: 40%;
+  height: 100%;
   display: inline-block;
   /* display: inline-block;
   border-radius: 100px 100px 100px 100px;
@@ -5095,7 +5098,8 @@ a.th {
 
 .intro {
   display: inline-block;
-  left: 8vw;
+  position: relative;
+  top: 13%;
   margin: 0px auto;
   text-align: left; }
 
