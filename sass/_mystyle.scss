@@ -21,20 +21,24 @@
     padding-top: emCalc(100px);
 }
 
+.face_block{
+    position: relative;
+}
+
 .face{
-    //width: 400px;
-    // height: 400px;
-    width: 40%;
+    width: 80%;
     height: 100%;
     //margin: 0 auto;
     //left: 140px;
     display: inline-block;
+    padding-top: 6%;
     //position: relative;
+}
 
-    /* display: inline-block;
-    border-radius: 100px 100px 100px 100px;
-    opacity: 0.7;
-    position: relative; */
+.intro_text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
 }
 
 .intro{
