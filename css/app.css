@@ -5069,9 +5069,13 @@ a.th {
   .f-dropdown.large {
     max-width: 800px; }
 
+/* Background colors */
 .show_outline {
   border: thin;
   border-style: solid; }
+
+.body_class {
+  background-color: #1d1a1a; }
 
 .port {
   height: 600px; }
@@ -5096,11 +5100,30 @@ a.th {
   display: inline-block;
   padding-top: 6%; }
 
-.intro_text {
-  position: absolute;
-  top: 40%;
-  left: 50%; }
+@media only screen and (min-width: 768px) {
+  .face {
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    padding-top: 6%; } }
+.face_small {
+  text-align: center; }
 
+@media only screen and (min-width: 768px) {
+  .face_small {
+    text-align: left; } }
+/* Override absolute postioning for small devices */
+.intro_text {
+  color: white;
+  text-align: center; }
+
+@media only screen and (min-width: 768px) {
+  .intro_text {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: left; } }
 .intro {
   display: inline-block;
   position: relative;
@@ -5111,3 +5134,6 @@ a.th {
 .center {
   margin: 0px auto;
   width: 1120px; }
+
+.my_text {
+  color: white; }

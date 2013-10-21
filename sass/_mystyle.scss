@@ -3,6 +3,10 @@
     border-style: solid;
 }
 
+.body_class{
+    background-color: $grey_dark;
+}
+
 .port{
     height: 600px;
 }
@@ -28,17 +32,46 @@
 .face{
     width: 80%;
     height: 100%;
-    //margin: 0 auto;
-    //left: 140px;
     display: inline-block;
     padding-top: 6%;
-    //position: relative;
 }
 
+@media #{$small} {
+    .face{
+        width: 80%;
+        height: 100%;
+        //margin: 0 auto;
+        //left: 140px;
+        display: inline-block;
+        padding-top: 6%;
+        //position: relative;
+    }
+}
+
+.face_small{
+    text-align: center;
+}
+
+@media #{$small} {
+    .face_small{
+        text-align: left;
+    }
+}
+
+/* Override absolute postioning for small devices */
 .intro_text{
-    position: absolute;
-    top: 40%;
-    left: 50%;
+    color: white;
+    text-align: center;
+}
+
+@media #{$small} {
+    .intro_text{
+        color: white;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        text-align: left;
+    }
 }
 
 .intro{
@@ -53,4 +86,8 @@
 .center{
     margin: 0px auto;
     width: 1120px;
+}
+
+.my_text{
+    color: white;
 }
