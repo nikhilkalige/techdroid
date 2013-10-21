@@ -5072,13 +5072,23 @@ a.th {
 /* Background colors */
 .show_outline {
   border: thin;
-  border-style: solid; }
+  border-style: solid;
+  border-color: white; }
 
 .body_class {
   background-color: #1d1a1a; }
 
+html, body {
+  height: 100%;
+  min-height: 100%; }
+
 .port {
-  height: 600px; }
+  height: 600px;
+  display: block;
+  min-height: 600px;
+  border-bottom: 4px solid #dad7d7;
+  overflow-x: hidden;
+  height: 100%; }
 
 .logo_div {
   width: 100px;
@@ -5096,14 +5106,12 @@ a.th {
 
 .face {
   width: 80%;
-  height: 100%;
   display: inline-block;
   padding-top: 6%; }
 
 @media only screen and (min-width: 768px) {
   .face {
     width: 80%;
-    height: 100%;
     display: inline-block;
     padding-top: 6%; } }
 .face_small {
@@ -5136,4 +5144,7 @@ a.th {
   width: 1120px; }
 
 .my_text {
+  color: white; }
+
+h2 {
   color: white; }
