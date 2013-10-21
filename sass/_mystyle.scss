@@ -107,3 +107,11 @@ html,body{
 h2{
     color: white;
 }
+
+.portfolio_filter{
+    @include inline-list;
+}
+
+.project_pict{
+    height: 380px;
+}

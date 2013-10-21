@@ -5148,3 +5148,21 @@ html, body {
 
 h2 {
   color: white; }
+
+.portfolio_filter {
+  margin: 0 auto 1.0625em auto;
+  margin-left: -1.375em;
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden; }
+  .portfolio_filter > li {
+    list-style: none;
+    float: left;
+    margin-left: 1.375em;
+    display: block; }
+    .portfolio_filter > li > * {
+      display: block; }
+
+.project_pict {
+  height: 380px; }
