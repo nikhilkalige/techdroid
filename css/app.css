@@ -5147,7 +5147,7 @@ html, body {
   color: white; }
 
 h2 {
-  color: white; }
+  color: black; }
 
 .portfolio_filter {
   margin: 0 auto 1.0625em auto;
@@ -5166,3 +5166,6 @@ h2 {
 
 .project_pict {
   height: 380px; }
+
+.accordion_box {
+  height: 85px; }
