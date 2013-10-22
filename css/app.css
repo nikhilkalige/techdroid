@@ -5071,9 +5071,9 @@ a.th {
 
 /* Background colors */
 .show_outline {
-  border: thin;
+  /* border: thin;
   border-style: solid;
-  border-color: white; }
+  border-color: white; */ }
 
 .body_class {
   background-color: #1d1a1a; }
@@ -5166,3 +5166,6 @@ h2 {
 
 .project_pict {
   height: 380px; }
+
+.accordion_box {
+  height: 80px; }
