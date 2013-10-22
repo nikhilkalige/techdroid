@@ -5122,7 +5122,7 @@ html, body {
     text-align: left; } }
 /* Override absolute postioning for small devices */
 .intro_text {
-  color: white;
+  color: black;
   text-align: center; }
 
 @media only screen and (min-width: 768px) {
@@ -5144,7 +5144,7 @@ html, body {
   width: 1120px; }
 
 .my_text {
-  color: white; }
+  color: black; }
 
 h2 {
   color: black; }
