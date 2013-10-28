@@ -128,3 +128,32 @@ h2{
 .accordion_box{
     height: 85px;
 }
+
+.accordion_title {
+    background-color: rgb(240, 70, 66);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    height: 85px;
+    padding: 12px 0px 0px 18px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    transition: all 300ms ease 0s;
+}
+
+.accordion_title {
+    background-color: rgb(240, 70, 66);
+    color: rgb(255, 255, 255);
+}
+
+.accordion_title .day {
+    display: block;
+    font-size: 50px;
+    line-height: 45px;
+}
+
+.accordion_title .month {
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+}
