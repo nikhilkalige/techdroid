@@ -241,6 +241,11 @@ section.active > .accordion_title:hover:after {
     background-image: url(../images/arrow_up.png);
 }
 
+/* Override default display property of foundation */
+.accordion_content {
+    display: block !important;
+}
+
 .accordion_content div{
     background: rgba(255, 255, 255, 0.5);
     margin-top: -1px;
@@ -248,11 +253,7 @@ section.active > .accordion_title:hover:after {
     height: 0px;
     position: relative;
     z-index: 10;
-    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    @include transition(height 0.3s ease-in-out, box-shadow 0.6s linear);
 }
 
 .accordion_content div p{
@@ -265,11 +266,7 @@ section.active > .accordion_title:hover:after {
 }
 
 section.active > .accordion_content > div {
-    -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-    -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-    -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-    -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-    transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    @include transition(height 0.5s ease-in-out, box-shadow 0.1s linear);
     box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 }
 
