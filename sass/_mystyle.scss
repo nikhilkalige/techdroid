@@ -132,7 +132,6 @@ h2{
 .accordion_title {
     background-color: rgb(240, 70, 66);
     color: rgb(255, 255, 255);
-    font-size: 50px;
     height: 85px;
     padding: 12px 0px 0px 18px;
     display: block;
@@ -156,4 +155,32 @@ h2{
     display: block;
     font-size: 14px;
     text-transform: capitalize;
+}
+
+.accordion_title .blog_title {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+//.section-container > section > .title:after
+.accordion_title:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border: inset 6px;
+      border-color: rgba(127, 106, 89, 0.8) transparent transparent transparent;
+      border-left-style: solid;
+      margin-right: 15px;
+      margin-top: -4.5px;
+      position: absolute;
+      top: 26px;
+      right: 0;
+}
+
+.accordion_content {
+  -webkit-transition: 0.2s all ease-in;
+  -moz-transition: 0.2s all ease-in;
+  -o-transition: 0.2s all ease-in;
+  transition: 0.2s all ease-in;
 }
