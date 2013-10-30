@@ -125,6 +125,10 @@ h2{
     height: 380px;
 }
 
+/****************************************************************************************************
+                                Accordion Section
+****************************************************************************************************/
+
 .accordion_box{
     height: 85px;
 }
@@ -307,14 +311,119 @@ section.active > .accordion_content > div{
     //height: 140px;
     max-height: 500px;
 }
-/*
-section.active > .accordion_content > div.ac-small{
-    height: 140px;
+
+/*****************************************************************/
+
+#bodyW {
+    position: relative;
+    z-index: 1;
+    background-image: url("../images/girl_bg.jpg");
+    background-repeat: no-repeat;
+    //background-attachment: fixed;
+    background-position: center top;
 }
-section.active > .accordion_content > div.ac-medium{
-    height: 180px;
+#bodyW {
+    //background-image: url("index.html");
+    //background-repeat: repeat;
+    background-color: rgb(33, 33, 33);
+    //background-attachment: fixed;
 }
-section.active > .accordion_content > div.ac-large{
-    height: 230px;
+#bodyW, .accordionContent {
+    font-family: Tahoma,Geneva,sans-serif;
 }
-*/
+#bodyW {
+    min-height: 100%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    background-position: center top;
+}
+#bodyW {
+    line-height: 1;
+}
+
+#exp {
+    display: block;
+    padding: 0px 30px !important;
+    text-align: left;
+    z-index: 0;
+}
+
+hr {
+    opacity: 0.2;
+    float: left;
+    width: 100%;
+    border-width: medium medium 1px;
+    border-style: none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color rgb(255, 255, 255);
+}
+
+.accordionTitle {
+    position: relative;
+    font-family:"Terminal Dosis",sans-serif !important;
+}
+.accordionTitle {
+    font-size: 68px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 700;
+}
+.accordionTitle {
+    line-height: 68px;
+}
+.accordionTitle {
+    width: 100%;
+    float: left;
+    cursor: pointer;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.accordionTitle:hover {
+    opacity: 1;
+}
+
+
+
+.accordionContent {
+    font-size: 11px;
+    color: rgb(88, 88, 88);
+    font-style: normal;
+    font-weight: 400;
+}
+body, .accordionContent {
+    font-family: Tahoma,Geneva,sans-serif;
+}
+.accordionContent {
+    width: 100%;
+    float: left;
+    display: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(235, 235, 235);
+    margin: 10px 0px 40px -30px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+.accordionContent {
+    background-color: rgb(255, 255, 255);
+    color: rgb(88, 88, 88);
+    margin-bottom: -6px !important;
+    //display: none;
+}
+
+.cufon {
+    display: inline-block !important;
+    position: relative !important;
+    vertical-align: middle !important;
+    font-size: 1px !important;
+    line-height: 1px !important;
+}
+.cufon {
+    text-indent: 0px !important;
+}
+
+.cufon canvas {
+    position: relative !important;
+}
