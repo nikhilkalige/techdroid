@@ -139,12 +139,12 @@ h2{
     position: relative;
     transition: all 300ms ease 0s;
 }
-
+/*
 .accordion_title {
     background-color: rgb(240, 70, 66);
     color: rgb(255, 255, 255);
 }
-
+*/
 .accordion_title .day {
     display: block;
     font-size: 50px;
@@ -198,6 +198,13 @@ section > .accordion_title{
     text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
     line-height: 33px;
     font-size: 19px;
+
+    /* background colors */
+    background-color: rgb(240, 70, 66);
+    background-color: #e4644b;
+
+    @include border-radius(5px);
+    /*
     background: #ffffff;
     background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
@@ -206,6 +213,7 @@ section > .accordion_title{
     background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
     background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+    */
     box-shadow:
         0px 0px 0px 1px rgba(155,155,155,0.3),
         1px 0px 0px 0px rgba(255,255,255,0.9) inset,
@@ -213,13 +221,14 @@ section > .accordion_title{
 }
 
 .accordion_title:hover{
-    background: #fff;
+    //background: #fff;
+    background: #b34f3b;
 }
 
 section.active > .accordion_title,
 section.active > .accordion_title:hover {
-    background: #c6e1ec;
-    color: #3d7489;
+    //background: #c6e1ec;
+    //color: #3d7489;
     text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
     box-shadow:
         0px 0px 0px 1px rgba(155,155,155,0.3),
@@ -247,7 +256,8 @@ section.active > .accordion_title:hover:after {
 }
 
 .accordion_content div{
-    background: rgba(255, 255, 255, 0.5);
+    //background: rgba(255, 255, 255, 0.5);
+    background: #484141;
     margin-top: -1px;
     overflow: hidden;
     height: 0px;

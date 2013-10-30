@@ -7465,12 +7465,12 @@ h2 {
   transition: all 300ms ease 0s;
 }
 
-/* line 143, ../sass/_mystyle.scss */
+/*
 .accordion_title {
-  background-color: #f04642;
-  color: white;
+    background-color: rgb(240, 70, 66);
+    color: rgb(255, 255, 255);
 }
-
+*/
 /* line 148, ../sass/_mystyle.scss */
 .accordion_title .day {
   display: block;
@@ -7526,32 +7526,40 @@ section > .accordion_title {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
   line-height: 33px;
   font-size: 19px;
+  /* background colors */
+  background-color: #f04642;
+  background-color: #e4644b;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  /*
   background: #ffffff;
-  background: -moz-linear-gradient(top, white 1%, #eaeaea 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, white), color-stop(100%, #eaeaea));
-  background: -webkit-linear-gradient(top, white 1%, #eaeaea 100%);
-  background: -o-linear-gradient(top, white 1%, #eaeaea 100%);
-  background: -ms-linear-gradient(top, white 1%, #eaeaea 100%);
-  background: linear-gradient(top, #ffffff 1%, #eaeaea 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+  background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+  background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+  background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+  background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+  background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+  */
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 1px 0px 0px 0px rgba(255, 255, 255, 0.9) inset, 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 215, ../sass/_mystyle.scss */
+/* line 223, ../sass/_mystyle.scss */
 .accordion_title:hover {
-  background: #fff;
+  background: #b34f3b;
 }
 
-/* line 220, ../sass/_mystyle.scss */
+/* line 229, ../sass/_mystyle.scss */
 section.active > .accordion_title,
 section.active > .accordion_title:hover {
-  background: #c6e1ec;
-  color: #3d7489;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 230, ../sass/_mystyle.scss */
+/* line 239, ../sass/_mystyle.scss */
 .accordion_title:hover:after,
 section.active > .accordion_title:hover:after {
   content: '';
@@ -7563,20 +7571,20 @@ section.active > .accordion_title:hover:after {
   background: transparent url(../images/arrow_down.png) no-repeat center center;
 }
 
-/* line 240, ../sass/_mystyle.scss */
+/* line 249, ../sass/_mystyle.scss */
 section.active > .accordion_title:hover:after {
   background-image: url(../images/arrow_up.png);
 }
 
 /* Override default display property of foundation */
-/* line 245, ../sass/_mystyle.scss */
+/* line 254, ../sass/_mystyle.scss */
 .accordion_content {
   display: block !important;
 }
 
-/* line 249, ../sass/_mystyle.scss */
+/* line 258, ../sass/_mystyle.scss */
 .accordion_content div {
-  background: rgba(255, 255, 255, 0.5);
+  background: #484141;
   margin-top: -1px;
   overflow: hidden;
   height: 0px;
@@ -7588,7 +7596,7 @@ section.active > .accordion_title:hover:after {
   transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 }
 
-/* line 259, ../sass/_mystyle.scss */
+/* line 269, ../sass/_mystyle.scss */
 .accordion_content div p {
   font-style: italic;
   color: #777;
@@ -7598,7 +7606,7 @@ section.active > .accordion_title:hover:after {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
-/* line 268, ../sass/_mystyle.scss */
+/* line 278, ../sass/_mystyle.scss */
 section.active > .accordion_content > div {
   -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
   -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
@@ -7607,7 +7615,7 @@ section.active > .accordion_content > div {
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
 }
 
-/* line 273, ../sass/_mystyle.scss */
+/* line 283, ../sass/_mystyle.scss */
 section.active > .accordion_content > div {
   height: 140px;
 }
