@@ -7471,26 +7471,6 @@ h2 {
     color: rgb(255, 255, 255);
 }
 */
-/* line 148, ../sass/_mystyle.scss */
-.accordion_title .day {
-  display: block;
-  font-size: 50px;
-  line-height: 45px;
-}
-
-/* line 154, ../sass/_mystyle.scss */
-.accordion_title .month {
-  display: block;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
-/* line 160, ../sass/_mystyle.scss */
-.accordion_title .blog_title {
-  text-transform: capitalize;
-  text-align: center;
-}
-
 /*
 .accordion_title:after {
       content: "";
@@ -7514,7 +7494,7 @@ h2 {
   transition: 0.2s all ease-in;
 }
 */
-/* line 189, ../sass/_mystyle.scss */
+/* line 172, ../sass/_mystyle.scss */
 section > .accordion_title {
   font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
   padding: 5px 20px;
@@ -7545,21 +7525,43 @@ section > .accordion_title {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
   */
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 1px 0px 0px 0px rgba(255, 255, 255, 0.9) inset, 0px 2px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background: #e4644b;
+  border: 7.5px solid #c2e1f5;
+}
+/* line 46, ../../../../../../../var/lib/gems/1.9.1/gems/compass-css-arrow-0.0.4/stylesheets/compass-css-arrow/_css-arrow.scss */
+section > .accordion_title:after, section > .accordion_title:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 55, ../../../../../../../var/lib/gems/1.9.1/gems/compass-css-arrow-0.0.4/stylesheets/compass-css-arrow/_css-arrow.scss */
+section > .accordion_title:after {
+  border-top-color: #e4644b;
+  border-width: 30px;
+  left: 20%;
+  margin-left: -30px;
+}
+/* line 61, ../../../../../../../var/lib/gems/1.9.1/gems/compass-css-arrow-0.0.4/stylesheets/compass-css-arrow/_css-arrow.scss */
+section > .accordion_title:before {
+  border-top-color: #c2e1f5;
+  border-width: 40.6066px;
+  left: 20%;
+  margin-left: -40.6066px;
 }
 
-/* line 223, ../sass/_mystyle.scss */
-.accordion_title:hover {
-  background: #b34f3b;
-}
-
-/* line 229, ../sass/_mystyle.scss */
+/* line 209, ../sass/_mystyle.scss */
 section.active > .accordion_title,
 section.active > .accordion_title:hover {
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 239, ../sass/_mystyle.scss */
+/* line 219, ../sass/_mystyle.scss */
 .accordion_title:hover:after,
 section.active > .accordion_title:hover:after {
   content: '';
@@ -7571,18 +7573,38 @@ section.active > .accordion_title:hover:after {
   background: transparent url(../images/arrow_down.png) no-repeat center center;
 }
 
-/* line 249, ../sass/_mystyle.scss */
+/* line 229, ../sass/_mystyle.scss */
 section.active > .accordion_title:hover:after {
   background-image: url(../images/arrow_up.png);
 }
 
+/* line 233, ../sass/_mystyle.scss */
+.accordion_title .day {
+  display: block;
+  font-size: 50px;
+  line-height: 45px;
+}
+
+/* line 239, ../sass/_mystyle.scss */
+.accordion_title .month {
+  display: block;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/* line 245, ../sass/_mystyle.scss */
+.accordion_title .blog_title {
+  text-transform: capitalize;
+  text-align: center;
+}
+
 /* Override default display property of foundation */
-/* line 254, ../sass/_mystyle.scss */
+/* line 251, ../sass/_mystyle.scss */
 .accordion_content {
   display: block !important;
 }
 
-/* line 258, ../sass/_mystyle.scss */
+/* line 255, ../sass/_mystyle.scss */
 .accordion_content div {
   background: #484141;
   margin-top: -1px;
@@ -7596,7 +7618,7 @@ section.active > .accordion_title:hover:after {
   transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 }
 
-/* line 269, ../sass/_mystyle.scss */
+/* line 266, ../sass/_mystyle.scss */
 .accordion_content div p {
   font-style: italic;
   color: #777;
@@ -7606,7 +7628,7 @@ section.active > .accordion_title:hover:after {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
-/* line 278, ../sass/_mystyle.scss */
+/* line 275, ../sass/_mystyle.scss */
 section.active > .accordion_content > div {
   -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
   -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
@@ -7615,7 +7637,7 @@ section.active > .accordion_content > div {
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
 }
 
-/* line 283, ../sass/_mystyle.scss */
+/* line 280, ../sass/_mystyle.scss */
 section.active > .accordion_content > div {
   height: 140px;
 }
