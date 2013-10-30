@@ -202,8 +202,33 @@ section > .accordion_title{
         1px 0px 0px 0px rgba(255,255,255,0.9) inset,
         0px 2px 2px rgba(0,0,0,0.1);
 
-    @include css-arrow(bottom, 30px, #E4644B, 0px, #c2e1f5, solid, 20%);
+    //@include css-arrow(bottom, 30px, #E4644B, 0px, #c2e1f5, solid, 20%);
 }
+
+.accordion_title:hover{
+    background: #b34f3b;
+}
+
+/* Arrow related styles */
+section.active > .nik:after {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+}
+
+section.active > .nik:after {
+        border-color: rgba(228, 100, 75, 0);
+        border-top-color: #E4644B;
+        border-width: 30px;
+        left: 20%;
+        margin-left: -30px;
+}
+
+/* End of arrow styles */
 
 section.active > .accordion_title,
 section.active > .accordion_title:hover {

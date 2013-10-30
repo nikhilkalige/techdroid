@@ -7525,12 +7525,16 @@ section > .accordion_title {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
   */
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 1px 0px 0px 0px rgba(255, 255, 255, 0.9) inset, 0px 2px 2px rgba(0, 0, 0, 0.1);
-  position: relative;
-  background: #e4644b;
-  border: 7.5px solid #c2e1f5;
 }
-/* line 46, ../../../../../../../var/lib/gems/1.9.1/gems/compass-css-arrow-0.0.4/stylesheets/compass-css-arrow/_css-arrow.scss */
-section > .accordion_title:after, section > .accordion_title:before {
+
+/* line 208, ../sass/_mystyle.scss */
+.accordion_title:hover {
+  background: #b34f3b;
+}
+
+/* Arrow related styles */
+/* line 213, ../sass/_mystyle.scss */
+section.active > .nik:after {
   top: 100%;
   border: solid transparent;
   content: " ";
@@ -7539,29 +7543,25 @@ section > .accordion_title:after, section > .accordion_title:before {
   position: absolute;
   pointer-events: none;
 }
-/* line 55, ../../../../../../../var/lib/gems/1.9.1/gems/compass-css-arrow-0.0.4/stylesheets/compass-css-arrow/_css-arrow.scss */
-section > .accordion_title:after {
-  border-top-color: #e4644b;
+
+/* line 223, ../sass/_mystyle.scss */
+section.active > .nik:after {
+  border-color: rgba(228, 100, 75, 0);
+  border-top-color: #E4644B;
   border-width: 30px;
   left: 20%;
   margin-left: -30px;
 }
-/* line 61, ../../../../../../../var/lib/gems/1.9.1/gems/compass-css-arrow-0.0.4/stylesheets/compass-css-arrow/_css-arrow.scss */
-section > .accordion_title:before {
-  border-top-color: #c2e1f5;
-  border-width: 40.6066px;
-  left: 20%;
-  margin-left: -40.6066px;
-}
 
-/* line 209, ../sass/_mystyle.scss */
+/* End of arrow styles */
+/* line 234, ../sass/_mystyle.scss */
 section.active > .accordion_title,
 section.active > .accordion_title:hover {
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 219, ../sass/_mystyle.scss */
+/* line 244, ../sass/_mystyle.scss */
 .accordion_title:hover:after,
 section.active > .accordion_title:hover:after {
   content: '';
@@ -7573,38 +7573,38 @@ section.active > .accordion_title:hover:after {
   background: transparent url(../images/arrow_down.png) no-repeat center center;
 }
 
-/* line 229, ../sass/_mystyle.scss */
+/* line 254, ../sass/_mystyle.scss */
 section.active > .accordion_title:hover:after {
   background-image: url(../images/arrow_up.png);
 }
 
-/* line 233, ../sass/_mystyle.scss */
+/* line 258, ../sass/_mystyle.scss */
 .accordion_title .day {
   display: block;
   font-size: 50px;
   line-height: 45px;
 }
 
-/* line 239, ../sass/_mystyle.scss */
+/* line 264, ../sass/_mystyle.scss */
 .accordion_title .month {
   display: block;
   font-size: 14px;
   text-transform: capitalize;
 }
 
-/* line 245, ../sass/_mystyle.scss */
+/* line 270, ../sass/_mystyle.scss */
 .accordion_title .blog_title {
   text-transform: capitalize;
   text-align: center;
 }
 
 /* Override default display property of foundation */
-/* line 251, ../sass/_mystyle.scss */
+/* line 276, ../sass/_mystyle.scss */
 .accordion_content {
   display: block !important;
 }
 
-/* line 255, ../sass/_mystyle.scss */
+/* line 280, ../sass/_mystyle.scss */
 .accordion_content div {
   background: #484141;
   margin-top: -1px;
@@ -7618,7 +7618,7 @@ section.active > .accordion_title:hover:after {
   transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 }
 
-/* line 266, ../sass/_mystyle.scss */
+/* line 291, ../sass/_mystyle.scss */
 .accordion_content div p {
   font-style: italic;
   color: #777;
@@ -7628,7 +7628,7 @@ section.active > .accordion_title:hover:after {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
-/* line 275, ../sass/_mystyle.scss */
+/* line 300, ../sass/_mystyle.scss */
 section.active > .accordion_content > div {
   -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
   -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
@@ -7637,7 +7637,7 @@ section.active > .accordion_content > div {
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
 }
 
-/* line 280, ../sass/_mystyle.scss */
+/* line 305, ../sass/_mystyle.scss */
 section.active > .accordion_content > div {
   height: 140px;
 }
@@ -7653,3 +7653,150 @@ section.active > .accordion_content > div.ac-large{
     height: 230px;
 }
 */
+/* Flexible Slide-to-top Accordion Style*/
+/* line 2, ../sass/_style.scss */
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+/* line 7, ../sass/_style.scss */
+.st-accordion {
+  width: 100%;
+  min-width: 270px;
+  margin: 0 auto;
+}
+
+/* line 12, ../sass/_style.scss */
+.st-accordion ul li {
+  height: 100px;
+  border-bottom: 1px solid #c7deef;
+  border-top: 1px solid #fff;
+  overflow: hidden;
+}
+
+/* line 18, ../sass/_style.scss */
+.st-accordion ul li:first-child {
+  border-top: none;
+}
+
+/* line 21, ../sass/_style.scss */
+.st-accordion ul li > a {
+  font-family: 'Josefin Slab',Georgia, serif;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 46px;
+  display: block;
+  position: relative;
+  line-height: 100px;
+  outline: none;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+/* line 35, ../sass/_style.scss */
+.st-accordion ul li > a span {
+  background: transparent url(../images/down.png) no-repeat center center;
+  text-indent: -9000px;
+  width: 26px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  right: -26px;
+  margin-top: -7px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 51, ../sass/_style.scss */
+.st-accordion ul li > a:hover {
+  color: #1693eb;
+}
+
+/* line 54, ../sass/_style.scss */
+.st-accordion ul li > a:hover span {
+  opacity: 1;
+  right: 10px;
+}
+
+/* line 58, ../sass/_style.scss */
+.st-accordion ul li.st-open > a {
+  color: #1693eb;
+}
+
+/* line 61, ../sass/_style.scss */
+.st-accordion ul li.st-open > a span {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+  right: 10px;
+  opacity: 1;
+}
+
+/* line 68, ../sass/_style.scss */
+.st-content {
+  padding: 5px 0px 30px 0px;
+}
+
+/* line 71, ../sass/_style.scss */
+.st-content p {
+  font-size: 16px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  line-height: 28px;
+  padding: 0px 4px 15px 4px;
+}
+
+/* line 78, ../sass/_style.scss */
+.st-content img {
+  width: 125px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 320px) {
+  /* line 84, ../sass/_style.scss */
+  .st-accordion ul li > a {
+    font-size: 36px;
+  }
+}
+/* Mod to suit me */
+/* line 91, ../sass/_style.scss */
+.accordion_title a span {
+  background: transparent url(../images/down.png) no-repeat center center;
+  text-indent: -9000px;
+  width: 26px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  right: -26px;
+  margin-top: -7px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 108, ../sass/_style.scss */
+.accordion_title :hover span {
+  opacity: 1;
+  right: 10px;
+}
+
+/* line 113, ../sass/_style.scss */
+section.active > .accordion_title a span {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+  right: 10px;
+  opacity: 1;
+}
