@@ -386,35 +386,26 @@ hr {
     opacity: 1;
 }
 
-.accordionTitle  p {
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 68px;
-    //font-size: inherit;
-    margin: inherit;
-    line-height: inherit;
-}
-
 .accordionTitle > div > p {
     font-weight: inherit;
     font-style: inherit;
-    font-size: 68px;
-    //font-size: inherit;
+    font-size: em-calc(68);
     margin: inherit;
+    margin-top: em-calc(13, 68);
     line-height: inherit;
 }
 
 .accordionTitle .day {
     display: block;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: em-calc(50);
+    line-height: em-calc(50, 50);
 }
 
 .accordionTitle .month {
     display: block;
-    font-size: 22px;
     text-transform: capitalize;
-    line-height: 45px;
+    font-size: em-calc(22);
+    line-height: em-calc(45, 22);
 }
 
 .accordionContent {
