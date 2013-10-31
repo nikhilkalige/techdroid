@@ -435,17 +435,33 @@ body, .accordionContent {
     //display: none;
 }
 
-.cufon {
-    display: inline-block !important;
-    position: relative !important;
-    vertical-align: middle !important;
-    font-size: 1px !important;
-    line-height: 1px !important;
-}
-.cufon {
-    text-indent: 0px !important;
+/** Accordion Title arrow animation */
+.st-arrow {
+    background: transparent url(../images/down.png) no-repeat center center;
+    text-indent:-9000px;
+    width: 26px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    right: -90px;
+    margin-top: 0px;
+    opacity:0;
+    -webkit-transition:  all 0.2s ease-in-out;
+    -moz-transition:  all 0.2s ease-in-out;
+    -o-transition:  all 0.2s ease-in-out;
+    -ms-transition:  all 0.2s ease-in-out;
+    transition:  all 0.2s ease-in-out;
 }
 
-.cufon canvas {
-    position: relative !important;
+.accordionTitle :hover .st-arrow {
+    opacity:1;
+    right: 10px;
+}
+
+section.active > .accordionTitle .st-arrow{
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    transform:rotate(180deg);
+    right:10px;
+    opacity:1;
 }
