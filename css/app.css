@@ -7431,7 +7431,7 @@ h2 {
 .portfolio_filter {
   list-style-type: none;
 }
-/* line 5, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+/* line 5, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
 .portfolio_filter, .portfolio_filter li {
   margin: 0px;
   padding: 0px;
@@ -7805,6 +7805,67 @@ section.active > .accordionTitle .st-arrow {
   transform: rotate(180deg);
   right: 10px;
   opacity: 1;
+}
+
+/****************************************************************************************************
+                                Footer Section
+****************************************************************************************************/
+/* line 474, ../sass/_mystyle.scss */
+.social a span {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -500px;
+}
+
+/* line 485, ../sass/_mystyle.scss */
+.social a span i {
+  width: 60px;
+  height: 60px;
+  display: block;
+  overflow: hidden;
+  text-indent: -500px;
+  background: url(../images/social.svg) no-repeat;
+}
+
+/* line 495, ../sass/_mystyle.scss */
+.social .gb span i {
+  background-position: -145px -1px;
+}
+
+/* line 499, ../sass/_mystyle.scss */
+.social .fb span i {
+  background-position: -74px -1px;
+}
+
+/* line 503, ../sass/_mystyle.scss */
+.social .tw span i {
+  background-position: -1px -1px;
+}
+
+/* line 507, ../sass/_mystyle.scss */
+.social .ln span i {
+  background-position: -214px -1px;
+}
+
+/* line 512, ../sass/_mystyle.scss */
+.social span i {
+  box-shadow: 0 0 0 4px white;
+  -webkit-transition: background 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* line 519, ../sass/_mystyle.scss */
+.social span i:hover {
+  background: white;
+  color: #64bb5d;
+}
+
+/* line 524, ../sass/_mystyle.scss */
+.social span i:hover:before {
+  -webkit-animation: spinAround 2s linear infinite;
+  -moz-animation: spinAround 2s linear infinite;
+  animation: spinAround 2s linear infinite;
 }
 
 /* Flexible Slide-to-top Accordion Style*/

@@ -465,3 +465,64 @@ section.active > .accordionTitle .st-arrow{
     right:10px;
     opacity:1;
 }
+
+
+/****************************************************************************************************
+                                Footer Section
+****************************************************************************************************/
+
+.social a span {
+    //width: 60px;
+    //height: 60px;
+   // border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -500px;
+    //border: 10px solid #fff1d4;
+   // background: #fff;
+}
+
+.social a span i {
+    width: 60px;
+    height: 60px;
+    //border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    text-indent: -500px;
+    background: url(../images/social.svg) no-repeat;
+}
+
+.social .gb span i{
+    background-position: -145px -1px;
+}
+
+.social .fb span i {
+    background-position: -74px -1px;
+}
+
+.social .tw span i {
+    background-position: -1px -1px;
+}
+
+.social .ln span i {
+    background-position: -214px -1px;
+}
+
+
+.social span i {
+    box-shadow: 0 0 0 4px rgba(255,255,255,1);
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+.social span i:hover {
+    background: rgba(255,255,255,1);
+    color: #64bb5d;
+}
+
+.social span i:hover:before {
+    -webkit-animation: spinAround 2s linear infinite;
+    -moz-animation: spinAround 2s linear infinite;
+    animation: spinAround 2s linear infinite;
+}
