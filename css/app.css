@@ -7431,7 +7431,7 @@ h2 {
 .portfolio_filter {
   list-style-type: none;
 }
-/* line 5, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+/* line 5, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
 .portfolio_filter, .portfolio_filter li {
   margin: 0px;
   padding: 0px;
@@ -7810,62 +7810,77 @@ section.active > .accordionTitle .st-arrow {
 /****************************************************************************************************
                                 Footer Section
 ****************************************************************************************************/
-/* line 474, ../sass/_mystyle.scss */
-.social a span {
+/* line 473, ../sass/_mystyle.scss */
+.social > a:before {
+  background: url(../images/social.svg) no-repeat;
+  content: "";
   display: inline-block;
-  overflow: hidden;
-  text-indent: -500px;
-}
-
-/* line 485, ../sass/_mystyle.scss */
-.social a span i {
   width: 60px;
   height: 60px;
-  display: block;
-  overflow: hidden;
-  text-indent: -500px;
-  background: url(../images/social.svg) no-repeat;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 495, ../sass/_mystyle.scss */
-.social .gb span i {
-  background-position: -145px -1px;
-}
-
-/* line 499, ../sass/_mystyle.scss */
-.social .fb span i {
-  background-position: -74px -1px;
-}
-
-/* line 503, ../sass/_mystyle.scss */
-.social .tw span i {
-  background-position: -1px -1px;
-}
-
-/* line 507, ../sass/_mystyle.scss */
-.social .ln span i {
-  background-position: -214px -1px;
-}
-
-/* line 512, ../sass/_mystyle.scss */
-.social span i {
-  box-shadow: 0 0 0 4px white;
-  -webkit-transition: background 0.2s, color 0.2s;
-  -moz-transition: background 0.2s, color 0.2s;
-  transition: background 0.2s, color 0.2s;
-}
-
-/* line 519, ../sass/_mystyle.scss */
-.social span i:hover {
-  background: white;
-  color: #64bb5d;
-}
-
-/* line 524, ../sass/_mystyle.scss */
-.social span i:hover:before {
+/* line 482, ../sass/_mystyle.scss */
+.social > a:hover:before {
   -webkit-animation: spinAround 2s linear infinite;
   -moz-animation: spinAround 2s linear infinite;
   animation: spinAround 2s linear infinite;
+}
+
+/* line 488, ../sass/_mystyle.scss */
+.social > .gb:before {
+  background-position: -210px -1px;
+}
+
+/* line 492, ../sass/_mystyle.scss */
+.social > .tw:before {
+  background-position: -1px -1px;
+}
+
+/* line 496, ../sass/_mystyle.scss */
+.social > .fb:before {
+  background-position: -140px -1px;
+}
+
+/* line 500, ../sass/_mystyle.scss */
+.social > .ln:before {
+  background-position: -280px -1px;
+}
+
+@-webkit-keyframes spinAround {
+  /* line 505, ../sass/_mystyle.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 508, ../sass/_mystyle.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spinAround {
+  /* line 513, ../sass/_mystyle.scss */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 516, ../sass/_mystyle.scss */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinAround {
+  /* line 521, ../sass/_mystyle.scss */
+  from {
+    transform: rotate(0deg);
+  }
+
+  /* line 524, ../sass/_mystyle.scss */
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Flexible Slide-to-top Accordion Style*/
