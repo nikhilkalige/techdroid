@@ -20,7 +20,7 @@
 	function init() {
 
 		var menu = document.getElementById( 'borderMenu' ),
-			push = document.getElementById('cbp-spmenu-push'),
+			push = document.getElementById('menuPush'),
 			trigger = menu.querySelector( 'a.borderMenuTrigger' ),
 			// triggerPlay only for demo 6
 			triggerPlay = document.querySelector( 'a.borderMenu-trigger-out' ),
@@ -29,7 +29,7 @@
 			resetMenu = function() {
 				classie.remove( menu, 'borderMenuOpen' );
 				classie.add( menu, 'borderMenuClose' );
-				classie.remove( push, 'cbp-spmenu-push-toright' );
+				classie.remove( push, 'menuPushRight' );
 			},
 			closeClickFn = function( ev ) {
 				resetMenu();
@@ -51,7 +51,7 @@
 				classie.remove( menu, 'borderMenuClose' );
 				classie.add( menu, 'borderMenuOpen' );
 
-				classie.add( push, 'cbp-spmenu-push-toright')
+				classie.add( push, 'menuPushRight')
 				overlay.addEventListener( eventtype, closeClickFn );
 			}
 		});

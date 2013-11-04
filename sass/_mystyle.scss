@@ -616,7 +616,7 @@ body  {
     position: fixed;
     top: 10px;
     left: 20px;
-    z-index: 100;
+    z-index: 1000;
     display: block;
     width: 50px;
     height: 50px;
@@ -806,18 +806,19 @@ body  {
 }
 
 
-.cbp-spmenu-push {
+.menuPush {
     overflow-x: hidden;
     position: relative;
     left: 0;
+    z-index: -10;
 }
 
-.cbp-spmenu-push-toright {
+.menuPushRight {
     left: 240px;
 }
 
 .cbp-spmenu,
-.cbp-spmenu-push {
+.menuPush {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;

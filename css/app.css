@@ -7982,7 +7982,7 @@ body  {
   position: fixed;
   top: 10px;
   left: 20px;
-  z-index: 100;
+  z-index: 1000;
   display: block;
   width: 50px;
   height: 50px;
@@ -8199,20 +8199,21 @@ body  {
 }
 
 /* line 809, ../sass/_mystyle.scss */
-.cbp-spmenu-push {
+.menuPush {
   overflow-x: hidden;
   position: relative;
   left: 0;
+  z-index: -10;
 }
 
-/* line 815, ../sass/_mystyle.scss */
-.cbp-spmenu-push-toright {
+/* line 816, ../sass/_mystyle.scss */
+.menuPushRight {
   left: 240px;
 }
 
-/* line 820, ../sass/_mystyle.scss */
+/* line 821, ../sass/_mystyle.scss */
 .cbp-spmenu,
-.cbp-spmenu-push {
+.menuPush {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
