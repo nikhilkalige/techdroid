@@ -1,3 +1,31 @@
+/* Fonts */
+@font-face {
+    font-family: 'Sketchetik-Light';
+    src: url('webfonts/28E86B_0_0.eot');
+    src: url('../webfonts/28E86B_0_0.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/28E86B_0_0.woff') format('woff'),
+        url('../webfonts/28E86B_0_0.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Agilis';
+    src: url('webfonts/28E86B_1_0.eot');
+    src: url('../webfonts/28E86B_1_0.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/28E86B_1_0.woff') format('woff'),
+        url('../webfonts/28E86B_1_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Track';
+    src: url('../track/Track.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Junction';
+    src: url('../junction/Junction.otf') format('opentype');
+}
+
 .show_outline{
     border: thin;
     border-style: solid;
@@ -558,6 +586,38 @@ section.active > .accordionTitle .st-arrow{
     }
 }
 
+.contact {
+    font-size: 1.4em;
+    //line-height: em-calc(60, (1.4*16));
+    padding-top: em-calc(32, (1.4*16));
+    text-align: center;
+}
+
+.contact:after {
+    background: url(../images/social.svg) no-repeat;
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    -webkit-font-smoothing: antialiased;
+    background-position: -70px -1px;
+    position: relative;
+    top: em-calc(20, (1.4*16));
+}
+
+.colophon {
+    font-size: 1.4em;
+    //line-height: 5em;
+    padding-top: em-calc(32, (1.4*16));
+    text-align: center;
+}
+
+.regards {
+    font-size: 1.4em;
+    //line-height: 5em;
+    padding-top: em-calc(32, (1.4*16));
+    text-align: center;
+}
 
 /****************************************************************************************************
                                 Border Menu Section
