@@ -74,6 +74,10 @@ html,body{
     padding-top: emCalc(100px);
 }
 
+#title_section {
+    background-color: #191919;
+}
+
 .face_block{
     position: relative;
 }
@@ -116,9 +120,9 @@ html,body{
 @media #{$small} {
     .intro_text{
         color: white;
-        position: absolute;
-        top: 40%;
-        left: 50%;
+        position: relative;
+        top: 28%;
+        //left: 50%;
         text-align: left;
     }
 }
@@ -138,7 +142,11 @@ html,body{
 }
 
 .my_text{
-    color: black;
+    color: #fff9f9;
+    font-family: 'Chelsea Market';
+    font-size: 67px;
+    line-height: 75px;
+    text-align: center;
 }
 
 h2{
@@ -586,35 +594,50 @@ section.active > .accordionTitle .st-arrow{
     }
 }
 
+#footer {
+    background-color: #060D15;
+    min-width: 100%;
+    border-top: 8px solid rgba(0, 170, 187, 0.8);
+}
+
 .contact {
+    color: white;
     font-size: 1.4em;
+    display: inline-block;
     //line-height: em-calc(60, (1.4*16));
     padding-top: em-calc(32, (1.4*16));
     text-align: center;
 }
 
-.contact:after {
-    background: url(../images/social.svg) no-repeat;
+.email {
+    display: inline-block;
+}
+
+.email:after {
     content: "";
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    -webkit-font-smoothing: antialiased;
-    background-position: -70px -1px;
+    background: url(../images/email.png) no-repeat;
+    background-size: 80px;
+    width: 128px;
+    height: 80px;
     position: relative;
-    top: em-calc(20, (1.4*16));
+    top: 2.9em;
+    left: 1em;
+    -webkit-font-smoothing: antialiased;
 }
 
 .colophon {
+    color: white;
     font-size: 1.4em;
-    //line-height: 5em;
+    line-height: 1em;
     padding-top: em-calc(32, (1.4*16));
     text-align: center;
 }
 
 .regards {
+    color: white;
     font-size: 1.4em;
-    //line-height: 5em;
+    line-height: 1em;
     padding-top: em-calc(32, (1.4*16));
     text-align: center;
 }
