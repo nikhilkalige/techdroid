@@ -163,6 +163,28 @@ h2{
 }
 
 /****************************************************************************************************
+                                Products Section
+****************************************************************************************************/
+
+#productsSection {
+    padding: 4em 0;
+    background-color: #45BB77;
+    /*
+    colors:
+      #F3D284
+      #663D4E
+      #6AD2BD
+      #6AD2BD
+      #CFDBD0
+    */
+    color: white;
+}
+
+#productsSection h3 {
+    font-size: 2.7em;
+    font-family: "Terminal Dosis",sans-serif !important;
+}
+/****************************************************************************************************
                                 Accordion Section
 ****************************************************************************************************/
 
@@ -352,6 +374,7 @@ section.active > .accordion_content > div{
 /*****************************************************************/
 
 #bodyW {
+    padding: 32px 0px;
     position: relative;
     z-index: 1;
     background-image: url("../images/girl_bg.jpg");
