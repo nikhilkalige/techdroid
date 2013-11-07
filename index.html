@@ -38,19 +38,24 @@
 
     <!-- Title Section
     ================================================== -->
-    <section id="title_section" class="height_full">
-        <div class="row height_full faceRow">
+    <section id="title_section">
+        <div class="row faceRow">
             <div class="large-6 columns faceImg">
                 <img class="face" src="images/bw.svg" alt="You are looking at me">
             </div>
             <div class="large-6 columns faceText">
-                <p></p>
-                <h1 class="my_text">Hello, I'm Nikhil.</h1>
-                <p></p>
-                <p></p>
-                <h3 class="my_text">A Technical <br>Enthusiast.</h3>
+                <div class="faceTextBlock">
+                    <p></p>
+                    <h1 class="my_text">Hello, I'm Nikhil.</h1>
+                    <p></p>
+                    <p></p>
+                    <h3 class="my_text">A Technical <br>Enthusiast.</h3>
+                </div>
             </div>
         </div>
+        <a class="next scrollTo" href="#productsSection">
+
+        </a>
     </section>
 
     <!-- Products Section
@@ -285,6 +290,12 @@
     <script src="js/borderMenu.js"></script>
     <script>
         $(document).foundation();
+    </script>
+    <script>
+        $('.scrollTo').on('click', function(e) {
+            e.preventDefault();
+            Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
+        });
     </script>
 </body>
 </html>
