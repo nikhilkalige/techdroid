@@ -450,7 +450,23 @@ h2{
     text-transform: uppercase;
 }
 
+.blogArticlesContainer > article {
+    border: medium double #DDDDDD;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 20px 20px 30px;
+    transition: all 0.4s ease 0s;
+}
 
+@media #{$small} {
+    .blogArticlesContainer > .large-4 {
+        width: 32%;
+    }
+
+    #c2 {
+        margin: 0 2%;
+    }
+}
 /****************************************************************************************************
                                 Footer Section
 ****************************************************************************************************/
