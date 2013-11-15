@@ -442,7 +442,7 @@ h2{
     font-family: Merriweather;
 }
 
-.blogTitle > .columns > h3 {
+.blogTitle > .columns > h2 {
     font-size: 3em;
     font-family: inherit;
     border-bottom: medium double #DDDDDD;
@@ -456,6 +456,51 @@ h2{
     margin-bottom: 20px;
     padding: 20px 20px 30px;
     transition: all 0.4s ease 0s;
+}
+
+.blogArticle > .articleImage {
+    max-width: 100%;
+}
+
+.blogArticle > h3 {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Merriweather;
+    font-size: 1.4em;
+    color: #333333;
+}
+
+.blogArticle > h3 > a {
+    color: #333333;
+}
+
+.blogArticle > .meta {
+    border-bottom: medium double #DDDDDD;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.blogArticle > .meta > p {
+    font-family: "Merriweather Sans";
+    font-style: italic;
+}
+
+.blogArticle > .meta > p > span {
+    display: block;
+    margin-top: 10px;
+}
+
+.blogArticle > .meta > p > span > i:before {
+    background: url(../images/comment_fill.svg) no-repeat;
+    background-size: 1em;
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    margin-right: 0.5em;
 }
 
 @media #{$small} {
