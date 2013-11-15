@@ -86,7 +86,10 @@ html,body{
 ****************************************************************************************************/
 
 #title_section {
-    border: 10px solid white;
+    //border: 10px solid white;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px 10px 10px 10px;
     background-color: #191919;
     position: relative;
 }
@@ -133,6 +136,7 @@ html,body{
 }
 
 /* Arrow button */
+/*
 a.next:before {
     font-size: 1.6em;
     margin-left: -0.8em;
@@ -154,7 +158,7 @@ a.next {
     bottom: 0;
     color: #FFFFFF;
     display: block;
-    font-size: 1em;
+    font-size: em-calc(26);
     left: 50%;
     position: absolute;
     text-decoration: none;
@@ -163,6 +167,50 @@ a.next {
 
 a.next:hover {
     color: #6FDDBF;
+}
+*/
+#title_section > a.next {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    display: block;
+    border: none;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all linear;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    font-size: 1.6em;
+    line-height: 1.5em;
+}
+
+#title_section > a.next:hover {
+    color: #6fddbf;
+}
+
+#title_section > a.next:before {
+    content: '\e006';
+    -webkit-font-smoothing: antialiased;
+    font-family: "down";
+    display: block;
+    width: 100%;
+    line-height: 1em;
+    height: 1em;
+    font-size: 2.5em;
+    margin-left: -0.75em;
+}
+
+@media screen and (min-width: 754px) {
+    #title_section > a.next:before {
+        font-size: 1.6em;
+        margin-left: -0.8em;
+    }
+}
+
+#title_section > a.next span {
+    display: none;
 }
 
 @media #{$small} {
