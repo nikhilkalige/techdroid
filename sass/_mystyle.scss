@@ -432,6 +432,25 @@ h2{
     font-family: "Terminal Dosis",sans-serif !important;
 }
 
+
+/****************************************************************************************************
+                                Blog Section
+****************************************************************************************************/
+.blogTitle {
+    text-align: center;
+    margin: 2em auto;
+    font-family: Merriweather;
+}
+
+.blogTitle > .columns > h3 {
+    font-size: 3em;
+    font-family: inherit;
+    border-bottom: medium double #DDDDDD;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
 /****************************************************************************************************
                                 Footer Section
 ****************************************************************************************************/
