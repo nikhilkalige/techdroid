@@ -458,6 +458,10 @@ h2{
     transition: all 0.4s ease 0s;
 }
 
+.blogArticle {
+    text-align: center;
+}
+
 .blogArticle > .articleImage {
     max-width: 100%;
 }
@@ -501,6 +505,21 @@ h2{
     -webkit-font-smoothing: antialiased;
     vertical-align: middle;
     margin-right: 0.5em;
+}
+
+.blogArticle > p {
+    font-family: "Merriweather Sans";
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.blogArticle > .articleButton {
+    font-family: "Merriweather";
+    background-color: #e47c14;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 10px;
 }
 
 @media #{$small} {
