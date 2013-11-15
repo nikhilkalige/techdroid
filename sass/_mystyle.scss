@@ -442,12 +442,20 @@ h2{
     font-family: Merriweather;
 }
 
+.blogTitle > .columns {
+    padding: 0px;
+}
+
 .blogTitle > .columns > h2 {
     font-size: 3em;
     font-family: inherit;
     border-bottom: medium double #DDDDDD;
     padding-bottom: 20px;
     text-transform: uppercase;
+}
+
+.blogArticlesContainer {
+    padding-bottom: 70px;
 }
 
 .blogArticlesContainer > article {
