@@ -436,10 +436,16 @@ h2{
 /****************************************************************************************************
                                 Blog Section
 ****************************************************************************************************/
+#blogSection {
+    background: url("../images/bg-body.png") repeat scroll left top #A73031;
+    margin-bottom: 110px;
+}
+
 .blogTitle {
     text-align: center;
-    margin: 2em auto;
+    margin: 0em auto 2em auto;
     font-family: Merriweather;
+    padding-top: 95px;
 }
 
 .blogTitle > .columns {
