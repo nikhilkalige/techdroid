@@ -431,348 +431,120 @@ h2{
     font-size: 2.7em;
     font-family: "Terminal Dosis",sans-serif !important;
 }
+
+
 /****************************************************************************************************
-                                Accordion Section
+                                Blog Section
 ****************************************************************************************************/
-
-.accordion_box{
-    height: 85px;
+#blogSection {
+    background: url("../images/bg-body.png") repeat scroll left top #A73031;
+    margin-bottom: 110px;
 }
 
-.accordion_title {
-    background-color: rgb(240, 70, 66);
-    color: rgb(255, 255, 255);
-    height: 85px;
-    padding: 12px 0px 0px 18px;
-    display: block;
-    text-decoration: none;
-    position: relative;
-    transition: all 300ms ease 0s;
-}
-/*
-.accordion_title {
-    background-color: rgb(240, 70, 66);
-    color: rgb(255, 255, 255);
-}
-*/
-//.section-container > section > .title:after
-/*
-.accordion_title:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      border: inset 6px;
-      border-color: rgba(127, 106, 89, 0.8) transparent transparent transparent;
-      border-left-style: solid;
-      margin-right: 15px;
-      margin-top: -4.5px;
-      position: absolute;
-      top: 26px;
-      right: 0;
-}
-
-.accordion_content {
-  -webkit-transition: 0.2s all ease-in;
-  -moz-transition: 0.2s all ease-in;
-  -o-transition: 0.2s all ease-in;
-  transition: 0.2s all ease-in;
-}
-*/
-section > .accordion_title{
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px 20px;
-    position: relative;
-    z-index: 20;
-    display: block;
-    //height: 30px;
-    cursor: pointer;
-    color: #777;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-    line-height: 33px;
-    font-size: 19px;
-
-    /* background colors */
-    background-color: rgb(240, 70, 66);
-    background-color: #e4644b;
-
-    @include border-radius(5px);
-    /*
-    background: #ffffff;
-    background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
-    background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-    background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-    background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-    background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
-    */
-    box-shadow:
-        0px 0px 0px 1px rgba(155,155,155,0.3),
-        1px 0px 0px 0px rgba(255,255,255,0.9) inset,
-        0px 2px 2px rgba(0,0,0,0.1);
-
-    //@include css-arrow(bottom, 30px, #E4644B, 0px, #c2e1f5, solid, 20%);
-}
-
-.accordion_title:hover{
-    //background: #b34f3b;
-}
-
-/* Arrow related styles */
-section.active > .nik:after {
-        top: 100%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-}
-
-section.active > .nik:after {
-        border-color: rgba(228, 100, 75, 0);
-        border-top-color: #E4644B;
-        border-width: 30px;
-        left: 20%;
-        margin-left: -30px;
-}
-
-/* End of arrow styles */
-/*
-section.active > .accordion_title,
-section.active > .accordion_title:hover {
-    //background: #c6e1ec;
-    //color: #3d7489;
-    text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
-    box-shadow:
-        0px 0px 0px 1px rgba(155,155,155,0.3),
-        0px 2px 2px rgba(0,0,0,0.1);
-}
-
-.accordion_title:hover:after,
-section.active > .accordion_title:hover:after {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    right: 13px;
-    top: 7px;
-    background: transparent url(../images/arrow_down.png) no-repeat center center;
-}
-
-section.active > .accordion_title:hover:after {
-    background-image: url(../images/arrow_up.png);
-}
-*/
-.accordion_title .day {
-    display: block;
-    font-size: 50px;
-    line-height: 45px;
-}
-
-.accordion_title .month {
-    display: block;
-    font-size: 14px;
-    text-transform: capitalize;
-}
-
-.accordion_title .blog_title {
-    text-transform: capitalize;
+.blogTitle {
     text-align: center;
+    margin: 0em auto 2em auto;
+    font-family: Merriweather;
+    padding-top: 95px;
 }
 
-/* Override default display property of foundation */
-.accordion_content {
-    display: block !important;
+.blogTitle > .columns {
+    padding: 0px;
 }
 
-.accordion_content div{
-    //background: rgba(255, 255, 255, 0.5);
-    background: #484141;
-    margin-top: -1px;
-    overflow: hidden;
-    //height: 0px;
-    max-height: 0px;
-    position: relative;
-    z-index: 10;
-    @include transition(max-height 0.3s ease-in-out, box-shadow 0.6s linear);
-}
-
-.accordion_content div p{
-    font-style: italic;
-    color: #777;
-    line-height: 23px;
-    font-size: 14px;
-    padding: 20px;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-}
-
-section.active > .accordion_content > div {
-    @include transition(max-height 0.3s ease-in-out, box-shadow 0.6s linear);
-    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
-}
-
-section.active > .accordion_content > div{
-    //height: 140px;
-    max-height: 500px;
-}
-
-/*****************************************************************/
-
-#bodyW {
-    padding: 32px 0px;
-    position: relative;
-    z-index: 1;
-    background-image: url("../images/girl_bg.jpg");
-    background-repeat: no-repeat;
-    //background-attachment: fixed;
-    background-position: center top;
-}
-#bodyW {
-    //background-image: url("index.html");
-    //background-repeat: repeat;
-    background-color: rgb(33, 33, 33);
-    //background-attachment: fixed;
-}
-#bodyW, .accordionContent {
-    font-family: Tahoma,Geneva,sans-serif;
-}
-#bodyW {
-    min-height: 100%;
-    height: 100%;
-    //font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    background-position: center top;
-}
-#bodyW {
-    line-height: 1;
-}
-
-#exp {
-    display: block;
-    padding: 0px 30px !important;
-    text-align: left;
-    z-index: 0;
-}
-
-.blog_accordion1 {
-    margin-bottom: 0 !important;
-}
-
-hr {
-    opacity: 0.2;
-    float: left;
-    width: 100%;
-    height: 1px;
-    margin: 6px auto;
-    border-width: medium medium 1px;
-    border-style: none none solid;
-    border-color: -moz-use-text-color -moz-use-text-color rgb(255, 255, 255);
-}
-
-.accordionTitle {
-    position: relative;
-    font-family:"Terminal Dosis",sans-serif !important;
-    //font-size: 68px;
-    color: rgb(255, 255, 255);
-    font-style: normal;
-    font-weight: 700;
-    line-height: em-calc(68);
-    width: 100%;
-    //float: left;
-    cursor: pointer;
-    font-weight: 700;
-    opacity: 0.5;
-    text-align: center;
-}
-
-.accordionTitle:hover {
-    opacity: 1;
-}
-
-.accordionTitle > div > p {
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: em-calc(68);
-    margin: inherit;
-    margin-top: em-calc(13, 68);
-    line-height: inherit;
-}
-
-.accordionTitle .day {
-    display: block;
-    font-size: em-calc(50);
-    line-height: em-calc(50, 50);
-}
-
-.accordionTitle .month {
-    display: block;
-    text-transform: capitalize;
-    font-size: em-calc(22);
-    line-height: em-calc(45, 22);
-}
-
-.accordionContent {
-    font-size: 11px;
-    color: rgb(88, 88, 88);
-    font-style: normal;
-    font-weight: 400;
-}
-body, .accordionContent {
-    font-family: Tahoma,Geneva,sans-serif;
-}
-.accordionContent {
-    width: 100%;
-    float: left;
-    display: none;
-    color: rgb(0, 0, 0);
-    background-color: rgb(235, 235, 235);
-    margin: 10px 0px 40px -30px;
-    padding-right: 60px;
+.blogTitle > .columns > h2 {
+    font-size: 3em;
+    font-family: inherit;
+    border-bottom: medium double #DDDDDD;
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
-.accordionContent {
-    background-color: rgb(255, 255, 255);
-    color: rgb(88, 88, 88);
-    margin-bottom: -6px !important;
-    //display: none;
+.blogArticlesContainer {
+    padding-bottom: 70px;
 }
 
-/** Accordion Title arrow animation */
-.st-arrow {
-    background: transparent url(../images/down.png) no-repeat center center;
-    text-indent:-9000px;
-    width: 26px;
-    height: 14px;
-    position: absolute;
-    top: 50%;
-    right: -90px;
-    margin-top: 0px;
-    opacity:0;
-    -webkit-transition:  all 0.2s ease-in-out;
-    -moz-transition:  all 0.2s ease-in-out;
-    -o-transition:  all 0.2s ease-in-out;
-    -ms-transition:  all 0.2s ease-in-out;
-    transition:  all 0.2s ease-in-out;
+.blogArticlesContainer > article {
+    border: medium double #DDDDDD;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 20px 20px 30px;
+    transition: all 0.4s ease 0s;
 }
 
-.accordionTitle :hover .st-arrow {
-    opacity:1;
-    right: 10px;
+.blogArticle {
+    text-align: center;
 }
 
-section.active > .accordionTitle .st-arrow{
-    -webkit-transform:rotate(180deg);
-    -moz-transform:rotate(180deg);
-    transform:rotate(180deg);
-    right:10px;
-    opacity:1;
+.blogArticle > .articleImage {
+    max-width: 100%;
 }
 
+.blogArticle > h3 {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Merriweather;
+    font-size: 1.4em;
+    color: #333333;
+}
 
+.blogArticle > h3 > a {
+    color: #333333;
+}
+
+.blogArticle > .meta {
+    border-bottom: medium double #DDDDDD;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.blogArticle > .meta > p {
+    font-family: "Merriweather Sans";
+    font-style: italic;
+}
+
+.blogArticle > .meta > p > span {
+    display: block;
+    margin-top: 10px;
+}
+
+.blogArticle > .meta > p > span > i:before {
+    background: url(../images/comment_fill.svg) no-repeat;
+    background-size: 1em;
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.blogArticle > p {
+    font-family: "Merriweather Sans";
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.blogArticle > .articleButton {
+    font-family: "Merriweather";
+    background-color: #e47c14;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 10px;
+}
+
+@media #{$small} {
+    .blogArticlesContainer > .large-4 {
+        width: 32%;
+    }
+
+    #c2 {
+        margin: 0 2%;
+    }
+}
 /****************************************************************************************************
                                 Footer Section
 ****************************************************************************************************/
