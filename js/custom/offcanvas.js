@@ -21,7 +21,7 @@ $(function() {
         //container open class
         pushClass = "push-push",
         //css class to add pushy capability
-        menuBtn = $('.menu-btn, .pushy a'),
+        menuBtn = $('.menuButton, .pushy a'),
         //css classes to toggle the menu
         menuSpeed = 200,
         //jQuery fallback menu speed
