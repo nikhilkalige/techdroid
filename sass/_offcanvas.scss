@@ -31,7 +31,7 @@ $menuWidth: 300px;
     -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
     -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
     box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
-    overflow: auto;
+    //overflow: auto;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
 
     @media screen and (max-width: 768px) {
@@ -56,7 +56,7 @@ $menuWidth: 300px;
 /* Menu Movement */
 
 .pushy-left{
-    @include transformCrossBrowser(-100%,0,0);
+    @include transformCrossBrowser(-$menuWidth,0,0);
 }
 
 .pushy-open{
@@ -298,4 +298,14 @@ $button-size : 4rem;
             transform: rotate3d(0,0,1,-45deg);
         }
     }
+}
+
+.btt {
+    background-color: red;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    right: -4em;
+    top: 2em;
+    //z-index: 10000;
 }
