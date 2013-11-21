@@ -7757,29 +7757,29 @@ section.active > .accordion_title a span {
   opacity: 1;
 }
 
-/* line 15, ../sass/_offcanvas.scss */
+/* line 29, ../sass/_offcanvas.scss */
 .menu-offcanvas {
   position: fixed;
-  width: 300px;
   height: 100%;
   top: 0;
   z-index: 9999;
-  background: #333332;
+  width: 300px;
+  background: white;
   font-size: 1em;
   font-weight: bold;
-  -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
-  box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
+  /* -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+  -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+  box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7); */
   -webkit-overflow-scrolling: touch;
   /* enables momentum scrolling in iOS overflow elements */
 }
 @media screen and (max-width: 768px) {
-  /* line 15, ../sass/_offcanvas.scss */
+  /* line 29, ../sass/_offcanvas.scss */
   .menu-offcanvas {
     font-size: 1.0em;
   }
 }
-/* line 34, ../sass/_offcanvas.scss */
+/* line 48, ../sass/_offcanvas.scss */
 .menu-offcanvas ul a {
   display: block;
   color: #b3b3b1;
@@ -7788,14 +7788,14 @@ section.active > .accordion_title a span {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-decoration: none;
 }
-/* line 42, ../sass/_offcanvas.scss */
+/* line 56, ../sass/_offcanvas.scss */
 .menu-offcanvas ul a:hover {
   background: #00b4ff;
   color: #FFF;
 }
 
 /* Menu Movement */
-/* line 51, ../sass/_offcanvas.scss */
+/* line 65, ../sass/_offcanvas.scss */
 .menu-closed {
   -webkit-transform: translate3d(-300px, 0, 0);
   -moz-transform: translate3d(-300px, 0, 0);
@@ -7804,7 +7804,7 @@ section.active > .accordion_title a span {
   transform: translate3d(-300px, 0, 0);
 }
 
-/* line 55, ../sass/_offcanvas.scss */
+/* line 69, ../sass/_offcanvas.scss */
 .menu-open {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -7813,7 +7813,7 @@ section.active > .accordion_title a span {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 59, ../sass/_offcanvas.scss */
+/* line 73, ../sass/_offcanvas.scss */
 .container-push, .push-push {
   -webkit-transform: translate3d(300px, 0, 0);
   -moz-transform: translate3d(300px, 0, 0);
@@ -7823,25 +7823,24 @@ section.active > .accordion_title a span {
 }
 
 /* Menu Transitions */
-/* line 65, ../sass/_offcanvas.scss */
+/* line 79, ../sass/_offcanvas.scss */
 .menu-offcanvas, #container, .push {
   height: 100%;
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  -o-transition: -o-transform 0.3s;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  -moz-transition: -moz-transform 0.5s ease 0s;
+  -o-transition: -o-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
   /* improves performance issues on mobile*/
   -webkit-backface-visibility: hidden;
-  background-color: black;
 }
 
 /* Site Overlay */
-/* line 83, ../sass/_offcanvas.scss */
+/* line 95, ../sass/_offcanvas.scss */
 .site-overlay {
   display: none;
 }
 
-/* line 87, ../sass/_offcanvas.scss */
+/* line 99, ../sass/_offcanvas.scss */
 .menu-active .site-overlay {
   display: block;
   position: fixed;
@@ -7852,64 +7851,68 @@ section.active > .accordion_title a span {
   z-index: 9999;
 }
 
-/* line 108, ../sass/_offcanvas.scss */
+/* line 109, ../sass/_offcanvas.scss */
 .menu-trigger {
   cursor: pointer;
   display: block;
   width: 70px;
   height: 56px;
   padding: 10px;
-  transition: 0.3s;
+  transition: 0.5s;
   position: absolute;
   top: 20px;
   right: -80px;
   background-color: red;
   z-index: 100;
 }
-/* line 121, ../sass/_offcanvas.scss */
+/* line 122, ../sass/_offcanvas.scss */
 .menu-trigger span {
   background-color: #ecf0f1;
   display: block;
   font-size: 0;
   width: 50px;
   height: 6px;
-  transition: 0.3s;
+  transition: 0.5s;
   position: absolute;
   left: 10px;
   top: 50%;
   margin-top: -3px;
 }
-/* line 134, ../sass/_offcanvas.scss */
+/* line 135, ../sass/_offcanvas.scss */
 .menu-trigger span::before, .menu-trigger span::after {
   background: none repeat scroll 0 0 #ecf0f1;
   content: "";
   height: 100%;
   position: absolute;
   left: 0;
-  transition: 0.3s;
+  transition: 0.5s;
   width: 100%;
 }
-/* line 144, ../sass/_offcanvas.scss */
+/* line 145, ../sass/_offcanvas.scss */
 .menu-trigger span::before {
   transform: translateY(-250%);
   -webkit-transform: translateY(-250%);
 }
-/* line 149, ../sass/_offcanvas.scss */
+/* line 150, ../sass/_offcanvas.scss */
 .menu-trigger span::after {
   transform: translateY(250%);
   -webkit-transform: translateY(250%);
 }
 
-/* line 156, ../sass/_offcanvas.scss */
+/* line 157, ../sass/_offcanvas.scss */
+.menu-active .menu-trigger {
+  right: 0;
+}
+/* line 160, ../sass/_offcanvas.scss */
 .menu-active .menu-trigger > span {
   background: transparent;
 }
-/* line 159, ../sass/_offcanvas.scss */
+/* line 163, ../sass/_offcanvas.scss */
 .menu-active .menu-trigger > span:before {
   transform: translateY(0px) rotate(45deg);
   -webkit-transform: translateY(0px) rotate(45deg);
 }
-/* line 163, ../sass/_offcanvas.scss */
+/* line 167, ../sass/_offcanvas.scss */
 .menu-active .menu-trigger > span:after {
   transform: translateY(0px) rotate(-45deg);
   -webkit-transform: translateY(0px) rotate(-45deg);

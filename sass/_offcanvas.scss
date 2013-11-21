@@ -1,4 +1,18 @@
 $menuWidth: 300px;
+$transition: 0.5s;// increase this to see the transformations happen in slow motion
+
+$menu-background-color: white;
+
+$button-background-color: red;
+$button-line-color : #ecf0f1;
+$button-size : 4rem;
+$button-width: 70px;
+$button-line-width: 50px;
+$button-line-thickness: 6px;
+$button-line-spacing: 15px;
+$button-padding: ($button-width - $button-line-width)/2;
+$button-height: ($button-padding + ($button-line-thickness/2) + (2 * $button-line-spacing) + ($button-line-thickness/2) + $button-padding);
+
 
 @mixin transformCrossBrowser($x, $y, $z) {
     -webkit-transform: translate3d($x, $y, $z);
@@ -14,16 +28,16 @@ $menuWidth: 300px;
 
 .menu-offcanvas {
     position: fixed;
-    width: $menuWidth;
     height: 100%;
     top: 0;
     z-index: 9999;
-    background: #333332;
+    width: $menuWidth;
+    background: $menu-background-color;
     font-size: 1em;
     font-weight: bold;
-    -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    /* -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
     -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
-    box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7); */
     //overflow: auto;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
 
@@ -64,15 +78,13 @@ $menuWidth: 300px;
 
 .menu-offcanvas, #container, .push{
     height: 100%;
-    -webkit-transition: -webkit-transform .3s ;
-    -moz-transition: -moz-transform .3s ;
-    -o-transition: -o-transform .3s ;
-    transition: transform .3s ;
+    -webkit-transition: -webkit-transform $transition ease 0s;
+    -moz-transition: -moz-transform $transition ease 0s;
+    -o-transition: -o-transform $transition ease 0s;
+    transition: transform $transition ease 0s;
     /* improves performance issues on mobile*/
     -webkit-backface-visibility: hidden;
     //-webkit-perspective: 1000;
-    background-color: black;
-    //overflow: hidden;
 }
 
 #container {
@@ -93,17 +105,6 @@ $menuWidth: 300px;
     left: $menuWidth;
     z-index: 9999;
 }
-
-$button-background-color: red;
-$button-line-color : #ecf0f1;
-$transition: 0.3s;// increase this to see the transformations happen in slow motion
-$button-size : 4rem;
-$button-width: 70px;
-$button-line-width: 50px;
-$button-line-thickness: 6px;
-$button-line-spacing: 15px;
-$button-padding: ($button-width - $button-line-width)/2;
-$button-height: ($button-padding + ($button-line-thickness/2) + (2 * $button-line-spacing) + ($button-line-thickness/2) + $button-padding);
 
 .menu-trigger {
     cursor: pointer;
@@ -153,15 +154,19 @@ $button-height: ($button-padding + ($button-line-thickness/2) + (2 * $button-lin
     }
 }
 
-.menu-active .menu-trigger > span {
-    background: transparent;
+.menu-active .menu-trigger {
+    right: 0;
 
-    &:before{
-        transform: translateY(0px) rotate(45deg);
-        -webkit-transform: translateY(0px) rotate(45deg);
-    }
-    &:after{
-        transform: translateY(0px) rotate(-45deg);
-        -webkit-transform: translateY(0px) rotate(-45deg);
+        &> span {
+        background: transparent;
+
+        &:before{
+            transform: translateY(0px) rotate(45deg);
+            -webkit-transform: translateY(0px) rotate(45deg);
+        }
+        &:after{
+            transform: translateY(0px) rotate(-45deg);
+            -webkit-transform: translateY(0px) rotate(-45deg);
+        }
     }
 }
