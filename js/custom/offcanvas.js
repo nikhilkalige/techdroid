@@ -1,10 +1,5 @@
-/*! Pushy - v0.9.1 - 2013-9-16
- * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
- * https://github.com/christophery/pushy/
- * by Christopher Yee */
-
 $(function() {
-    var pushy = $('.pushy'),
+    var pushy = $('.menu-offcanvas'),
         //menu css class
         body = $('body'),
         container = $('#container'),
@@ -13,15 +8,15 @@ $(function() {
         //css class to add pushy capability
         siteOverlay = $('.site-overlay'),
         //site overlay
-        pushyClass = "pushy-left pushy-open",
+        pushyClass = "menu-closed menu-open",
         //menu position & menu open class
-        pushyActiveClass = "pushy-active",
-        //css class to toggle site overlay
+        pushyActiveClass = "menu-active",
+        //css class to toggle site overlays
         containerClass = "container-push",
         //container open class
         pushClass = "push-push",
         //css class to add pushy capability
-        menuBtn = $('.menuButton, .pushy a'),
+        menuBtn = $('#menu-button, .menu-offcanvas a'),
         //css classes to toggle the menu
         menuSpeed = 200,
         //jQuery fallback menu speed

@@ -47,6 +47,10 @@ html,body{
     height:100%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .height_full{
     min-height: 100%;
     height: 100%;

@@ -1,10 +1,3 @@
-/*! Pushy - v0.9.1 - 2013-9-16
-* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
-* https://github.com/christophery/pushy/
-* by Christopher Yee */
-
-/* Menu Appearance */
-
 $menuWidth: 300px;
 
 @mixin transformCrossBrowser($x, $y, $z) {
@@ -19,7 +12,7 @@ $menuWidth: 300px;
     //border: 1px solid blue;
 }
 
-.pushy {
+.menu-offcanvas {
     position: fixed;
     width: $menuWidth;
     height: 100%;
@@ -31,14 +24,14 @@ $menuWidth: 300px;
     -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
     -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
     box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
-    overflow: auto;
+    //overflow: auto;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
 
     @media screen and (max-width: 768px) {
         font-size: 1.0em;
     }
 
-    a {
+    ul a {
         display: block;
         color: #b3b3b1;
         padding: 15px 30px;
@@ -55,11 +48,11 @@ $menuWidth: 300px;
 
 /* Menu Movement */
 
-.pushy-left{
-    @include transformCrossBrowser(-100%,0,0);
+.menu-closed{
+    @include transformCrossBrowser(-$menuWidth,0,0);
 }
 
-.pushy-open{
+.menu-open{
     @include transformCrossBrowser(0,0,0);
 }
 
@@ -69,7 +62,7 @@ $menuWidth: 300px;
 
 /* Menu Transitions */
 
-.pushy, #container, .push{
+.menu-offcanvas, #container, .push{
     height: 100%;
     -webkit-transition: -webkit-transform .3s ;
     -moz-transition: -moz-transform .3s ;
@@ -79,6 +72,10 @@ $menuWidth: 300px;
     -webkit-backface-visibility: hidden;
     //-webkit-perspective: 1000;
     background-color: black;
+    //overflow: hidden;
+}
+
+#container {
 }
 
 /* Site Overlay */
@@ -87,7 +84,7 @@ $menuWidth: 300px;
     display: none;
 }
 
-.pushy-active .site-overlay{
+.menu-active .site-overlay{
     display: block;
     position: fixed;
     top: 0;
@@ -96,206 +93,75 @@ $menuWidth: 300px;
     left: $menuWidth;
     z-index: 9999;
 }
-/*
-$color : #ecf0f1;
-$transition: 1s;// increase this to see the transformations happen in slow motion
 
-// ==================================== grid button ====================================//
-
-$base : 1rem;
-$space : $base/4;
-
-
-/* Menu button related styling *//*
-.menuButton {*/
-    /* position: fixed;
-    background-color: blue;
-    //background-color: rgba(0, 0, 0, 0);
-    border-color: #333333;
-    border-style: solid;
-    border-width: 0;
-    height: 0;
-    left: 0;
-    position: fixed;
-    top: 0;
-    transition: border-width 0.3s ease 0s, background-color 0.3s ease 0s, height 0s ease 0.3s;
-    width: 100%;
-    z-index: 100;
-    @include testBorder;
-    -webkit-transform: translateZ(0); */
-   /* display: inline-block;
-    margin: 0 1em;
-    border:none;
-    background:none;
-    padding: $base*2;
-    cursor: pointer;
-    user-select: none;
-
-    input {
-        position: absolute;
-        left: -99999px;
-        @include testBorder;
-    }
-
-    .canvasButton {
-        @include testBorder;*/
-        /* display: block;
-        position: fixed;
-        z-index: 10;
-        left: 0;
-        //bottom: 0;
-        cursor: pointer;
-        font-size: 1em !important;
-        width: 2em;
-        height: 2em;
-        border: 0.75em solid transparent;
-        transition: 75ms;*/
-        //font-size: 1em !important;
-        /* width: 6em;
-        height: 6em;
-        background-color: red;
-        cursor: pointer;
-        display: block;
-        //height: 50px;
-        left: 20px;
-        position: fixed;
-        top: 15px;
-        //width: 50px;
-        z-index: 100;
-        -webkit-transform: translateZ(0); */
-        /*width: $base;
-        height: $base;
-        background: $color;
-        color: $color; /* Not in use when the colors are specified below */
-        /*transition: $transition;
-    }
-}
-*/
-/* .container-push .menuButton{
-  .canvasButton{
-    -webkit-transform: rotate3d(0,0,1,-45deg)  scale3d(.8,.8,.8);
-            transform: rotate3d(0,0,1,-45deg)  scale3d(.8,.8,.8);
-  }
-}
-
-//grid rearrange only
-.menuButton.rearrange {
-  .canvasButton {
-    box-shadow:
-      -($base+$space) 0 -($base+$space),
-      0 0 -($base+$space),
-      ($base+$space) (-($base + $space)),
-      -($base+$space) 0,
-      $base+$space 0,
-      -($base+$space) ($base + $space),
-      0 ($base+$space),
-      ($base+$space) ($base + $space);
-  }
-}
-
-.container-push .menuButton.rearrange {
-  .canvasButton{
-      box-shadow:
-        0 0 -$base,
-        0 0 -$base*2,
-        $base 0,
-        -$base*2 0,
-        $base*2 0,
-        -$base 0,
-        0 $base*2,
-        0 $base;
-  }
-}
- */
-
-$color : #ecf0f1;
-$transition: .3s;// increase this to see the transformations happen in slow motion
+$button-background-color: red;
+$button-line-color : #ecf0f1;
+$transition: 0.3s;// increase this to see the transformations happen in slow motion
 $button-size : 4rem;
+$button-width: 70px;
+$button-line-width: 50px;
+$button-line-thickness: 6px;
+$button-line-spacing: 15px;
+$button-padding: ($button-width - $button-line-width)/2;
+$button-height: ($button-padding + ($button-line-thickness/2) + (2 * $button-line-spacing) + ($button-line-thickness/2) + $button-padding);
 
-@mixin line {
-  display: inline-block;
-  width: $button-size;
-  height: $button-size/8;
-  background: $color;
-  border-radius: $button-size/14;
-  transition: $transition;
-}
-
-.menuButton {
-    display:inline-block;
-    margin: 0 1em;
-    border:none;
-    background:none;
-    padding: $button-size/2 $button-size/4;
-    transition: .3s;
+.menu-trigger {
     cursor: pointer;
-    user-select: none;
-    border-radius: $button-size/8;
+    display: block;
+    width: $button-width;
+    height: $button-height;
+    padding: $button-padding;
+    transition: $transition;
+    position: absolute;
+    top: 20px;
+    right: -$button-width - 10;
+    background-color: $button-background-color;
+    z-index: 100;
 
-    &:hover {
-        opacity: 1;
-    }
-    &:active {
-        transition: 0;
-    }
+    span {
+        background-color: $button-line-color;
+        display: block;
+        font-size: 0;
+        width: $button-line-width;
+        height: $button-line-thickness;
+        transition: $transition;
 
-  .canvas {
-        display:block;
-        @include line;
-        position: relative;
+        position: absolute;
+        left: $button-padding;
+        top: 50%;
+        margin-top: -($button-line-thickness/2);
 
-        &:before, &:after {
-           @include line;
+        &::before, &::after {
+            background: none repeat scroll 0 0 $button-line-color;
+            content: "";
+            height: 100%;
             position: absolute;
-            left:0;
-            content: '';
-            -webkit-transform-origin: $button-size/14 center;
-                    transform-origin: $button-size/14 center;
+            left: 0;
+            transition: $transition;
+            width: 100%;
         }
 
-        &:before {
-        top: $button-size/4;
+        &::before {
+            transform: translateY(-250%);
+            -webkit-transform: translateY(-250%);
         }
 
-        &:after {
-        top: -$button-size/4;
+        &::after {
+            transform: translateY(250%);
+            -webkit-transform: translateY(250%);
         }
     }
 }
 
-.menuButton:hover {
-    .canvas {
-        &:before {
-            top: $button-size/3.5;
-        }
+.menu-active .menu-trigger > span {
+    background: transparent;
 
-        &:after {
-            top: -$button-size/3.5;
-        }
+    &:before{
+        transform: translateY(0px) rotate(45deg);
+        -webkit-transform: translateY(0px) rotate(45deg);
     }
-}
-
-.container-push .menuButton {
-    -webkit-transform: scale3d(.8,.8,.8);
-    transform: scale3d(.8,.8,.8);
-}
-
-.container-push .menuButton{
-    .canvas {
-        background: transparent;
-        &:before, &:after{
-            -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-            top:0;
-            width: $button-size;
-        }
-        &:before{
-            -webkit-transform: rotate3d(0,0,1,45deg);
-            transform: rotate3d(0,0,1,45deg);
-        }
-        &:after{
-            -webkit-transform: rotate3d(0,0,1,-45deg);
-            transform: rotate3d(0,0,1,-45deg);
-        }
+    &:after{
+        transform: translateY(0px) rotate(-45deg);
+        -webkit-transform: translateY(0px) rotate(-45deg);
     }
 }
