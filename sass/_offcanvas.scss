@@ -1,0 +1,172 @@
+$menuWidth: 300px;
+$transition: 0.5s;// increase this to see the transformations happen in slow motion
+
+$menu-background-color: white;
+
+$button-background-color: red;
+$button-line-color : #ecf0f1;
+$button-size : 4rem;
+$button-width: 70px;
+$button-line-width: 50px;
+$button-line-thickness: 6px;
+$button-line-spacing: 15px;
+$button-padding: ($button-width - $button-line-width)/2;
+$button-height: ($button-padding + ($button-line-thickness/2) + (2 * $button-line-spacing) + ($button-line-thickness/2) + $button-padding);
+
+
+@mixin transformCrossBrowser($x, $y, $z) {
+    -webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -ms-transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}
+
+@mixin testBorder {
+    //border: 1px solid blue;
+}
+
+.menu-offcanvas {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+    width: $menuWidth;
+    background: $menu-background-color;
+    font-size: 1em;
+    font-weight: bold;
+    /* -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7); */
+    //overflow: auto;
+    -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.0em;
+    }
+
+    ul a {
+        display: block;
+        color: #b3b3b1;
+        padding: 15px 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        text-decoration: none;
+
+        &:hover {
+            background: #00b4ff;
+            color: #FFF;
+        }
+    }
+}
+
+/* Menu Movement */
+
+.menu-closed{
+    @include transformCrossBrowser(-$menuWidth,0,0);
+}
+
+.menu-open{
+    @include transformCrossBrowser(0,0,0);
+}
+
+.container-push, .push-push{
+    @include transformCrossBrowser($menuWidth,0,0);
+}
+
+/* Menu Transitions */
+
+.menu-offcanvas, #container, .push{
+    height: 100%;
+    -webkit-transition: -webkit-transform $transition ease 0s;
+    -moz-transition: -moz-transform $transition ease 0s;
+    -o-transition: -o-transform $transition ease 0s;
+    transition: transform $transition ease 0s;
+    /* improves performance issues on mobile*/
+    -webkit-backface-visibility: hidden;
+    //-webkit-perspective: 1000;
+}
+
+#container {
+}
+
+/* Site Overlay */
+
+.site-overlay{
+    display: none;
+}
+
+.menu-active .site-overlay{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: $menuWidth;
+    z-index: 9999;
+}
+
+.menu-trigger {
+    cursor: pointer;
+    display: block;
+    width: $button-width;
+    height: $button-height;
+    padding: $button-padding;
+    transition: $transition;
+    position: absolute;
+    top: 20px;
+    right: -$button-width - 10;
+    background-color: $button-background-color;
+    z-index: 100;
+
+    span {
+        background-color: $button-line-color;
+        display: block;
+        font-size: 0;
+        width: $button-line-width;
+        height: $button-line-thickness;
+        transition: $transition;
+
+        position: absolute;
+        left: $button-padding;
+        top: 50%;
+        margin-top: -($button-line-thickness/2);
+
+        &::before, &::after {
+            background: none repeat scroll 0 0 $button-line-color;
+            content: "";
+            height: 100%;
+            position: absolute;
+            left: 0;
+            transition: $transition;
+            width: 100%;
+        }
+
+        &::before {
+            transform: translateY(-250%);
+            -webkit-transform: translateY(-250%);
+        }
+
+        &::after {
+            transform: translateY(250%);
+            -webkit-transform: translateY(250%);
+        }
+    }
+}
+
+.menu-active .menu-trigger {
+    right: 0;
+
+        &> span {
+        background: transparent;
+
+        &:before{
+            transform: translateY(0px) rotate(45deg);
+            -webkit-transform: translateY(0px) rotate(45deg);
+        }
+        &:after{
+            transform: translateY(0px) rotate(-45deg);
+            -webkit-transform: translateY(0px) rotate(-45deg);
+        }
+    }
+}
