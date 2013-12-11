@@ -47,6 +47,10 @@ html,body{
     height:100%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .height_full{
     min-height: 100%;
     height: 100%;
@@ -113,9 +117,10 @@ html,body{
     //height: 20%;
     //flex-direction: column;
     text-align: center;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    display: table;
 }
 
 .face{
@@ -126,6 +131,8 @@ html,body{
 
 .faceTextBlock {
     padding-top: 2em;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .my_text{
@@ -239,7 +246,7 @@ a.next:hover {
     }
 
     .faceTextBlock {
-        padding-top: 13%;
+        padding-top: 23%;
     }
 
     .my_text{
