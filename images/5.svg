@@ -19,6 +19,28 @@
 		stroke-width: 2;
 		stroke: black;
 	}
+	#usbmain {
+		position: absolute;
+		stroke: red;
+		transition: all linear 0.5s;
+	}
+	.usb_plugin {
+		transform: translate(145px, -45px);
+	}
+	.blink {
+		fill:   #ff0000;
+		animation: blink 0.5s step-end infinite;
+	}
+	@-moz-keyframes blink  {
+		0% { fill-opacity: 1; }
+		50% { fill-opacity: 0;}
+		100% { fill-opacity: 1; }
+	}
+	@-webkit-keyframes blink  {
+		0% { fill-opacity: 1; }
+		50% { fill-opacity: 0;}
+		100% { fill-opacity: 1; }
+	}
 ]]>
 </style>
 <g id="ardusb">
