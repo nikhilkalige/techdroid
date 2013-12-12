@@ -1,0 +1,61 @@
+$frame-color: #32323a;
+$frame-size: 20px;
+
+/*
+green blue: #15B6A1
+"": #4ECDC4
+    #4AAAA4
+    #eee
+    #E6BA20
+
+*/
+$intro-background-color: #E6BA20;
+
+@mixin frame {
+    position: fixed;
+    z-index: 200;
+    background-color: $frame-color;
+}
+
+#frame1, #frame3 {
+    @include frame;
+    height: $frame-size;
+    left: 0;
+    width: 100%;
+}
+
+#frame1 {
+    top: 0;
+}
+
+#frame3 {
+    bottom: 0;
+}
+
+#frame2, #frame4 {
+    @include frame;
+    width: $frame-size;
+    top: 0;
+    height: 100%;
+}
+
+#frame2 {
+    right: 0;
+}
+
+#frame4 {
+    top: 0;
+}
+
+#new_title_section {
+    height: 100%;
+    background-color: $intro-background-color;
+}
+
+.arduino {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    //text-align: center;
+    margin: 0 auto;
+}

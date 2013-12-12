@@ -33,6 +33,13 @@
     src: url("../fonts/down.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "reklame";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/reklamescript/ReklameScript-Regular_DEMO-webfont.ttf") format("truetype");
+}
+
 .show_outline{
     border: thin;
     border-style: solid;
