@@ -1,0 +1,252 @@
+$frame-color: #32323a;
+$frame-size: 20px;
+
+/*
+green blue: #15B6A1
+"": #4ECDC4
+    #4AAAA4
+    #eee
+    #E6BA20
+
+*/
+$intro-background-color: #E6BA20;
+
+@mixin frame {
+    position: fixed;
+    z-index: 200;
+    background-color: $frame-color;
+}
+
+#frame1, #frame3 {
+    @include frame;
+    height: $frame-size;
+    left: 0;
+    width: 100%;
+}
+
+#frame1 {
+    top: 0;
+}
+
+#frame3 {
+    bottom: 0;
+}
+
+#frame2, #frame4 {
+    @include frame;
+    width: $frame-size;
+    top: 0;
+    height: 100%;
+}
+
+#frame2 {
+    right: 0;
+}
+
+#frame4 {
+    top: 0;
+}
+
+#new_title_section {
+    height: 100%;
+    background-color: $intro-background-color;
+}
+
+.arduino {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    //text-align: center;
+    margin: 0 auto;
+}
+
+
+.menu-icon{
+    position: fixed;
+    display: none;
+    top: 15px;
+    left: 15px;
+    width: 88px;
+    height: 88px;
+    cursor: pointer;
+    z-index: 15000;
+}
+.small-pulse{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 78px;
+    height: 78px;
+    margin: -39px 0 0 -39px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    animation: small-pulse 0.5s ease infinite;
+    -moz-animation: small-pulse 0.5s ease infinite;
+    -webkit-animation: small-pulse 0.5s ease infinite;
+    -o-animation: small-pulse 0.5s ease infinite;
+    -ms-animation: small-pulse 0.5s ease infinite;
+}
+.menu-icon-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+    background: url('../images/rotate-lines.png') left center no-repeat;
+    animation: inner-rotate 10s linear infinite;
+    -moz-animation: inner-rotate 10s linear infinite;
+    -webkit-animation: inner-rotate 10s linear infinite;
+    -o-animation: inner-rotate 10s linear infinite;
+    -ms-animation: inner-rotate 10s linear infinite;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.menu-icon:hover .menu-icon-inner {
+    background-position: right center;
+    animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+}
+.menu-icon-centre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -19px 0 0 -19px;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background: #7DB0BF url('../images/cross-white.png') center center no-repeat;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.menu-icon:hover .menu-icon-centre {
+    background-color: #6BD098;
+
+}
+
+
+@-moz-keyframes inner-rotate{
+    0% {-moz-transform:rotate(0deg);}
+    100% {-moz-transform:rotate(360deg);}
+}
+@-webkit-keyframes inner-rotate{
+    0% {-webkit-transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);}
+}
+
+
+@-moz-keyframes small-pulse{
+    0% {width:78px; height:78px; margin:-39px 0 0 -39px;}
+    50% {width:88px; height:88px; margin:-44px 0 0 -44px;}
+    100% {width:78px; height:78px; margin:-39px 0 0 -39px;}
+}
+@-webkit-keyframes small-pulse{
+    0% {width:78px; height:78px; margin:-39px 0 0 -39px;}
+    50% {width:88px; height:88px; margin:-44px 0 0 -44px;}
+    100% {width:78px; height:78px; margin:-39px 0 0 -39px;}
+}
+
+.menu-hex {
+    position: fixed;
+    display: none;
+    top: 155px;
+    left: 35px;
+    width: 88px;
+    height: 88px;
+    cursor: pointer;
+    z-index: 15000;
+    background-color: black;
+}
+
+.hex1 {
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+
+    &:before, &:after {
+        content: '';
+        width: 30px;
+        height: 50px;
+        position: absolute;
+        //top: 50%;
+        //left: 50%;
+        background-color: white;
+    }
+
+    &:before {
+        -webkit-transform: rotate(60deg);
+    }
+    &:after {
+        -webkit-transform: rotate(-60deg);
+    }
+}
+
+.hex1 {
+    width: 30px;
+    height: 1.732*30 px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+
+    &:before, &:after {
+        content: '';
+        width: 30px;
+        height: 1.732*30px;
+        position: absolute;
+        //top: 50%;
+        //left: 50%;
+        background-color: red;
+    }
+
+    &:before {
+        -webkit-transform: rotate(60deg);
+    }
+    &:after {
+        -webkit-transform: rotate(-60deg);
+    }
+}
+
+
+
+.hex2 {
+    width: 30px;
+    height: 1.732*30px;
+    position: absolute;
+    display: inline-block;
+    top: 80%;
+    left: 50%;
+    margin-top: (1.732*30px - 5px)/2;
+    margin-left: (1.732*5px + 30px)/2;
+    background-color: blue;
+
+    &:before, &:after {
+        content: '';
+        width: 30px;
+        height: 1.732*30px;
+        position: absolute;
+        //top: 50%;
+        //left: 50%;
+        background-color: blue;
+    }
+
+    &:before {
+        -webkit-transform: rotate(60deg);
+    }
+    &:after {
+        -webkit-transform: rotate(-60deg);
+    }
+}

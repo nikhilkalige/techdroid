@@ -33,6 +33,13 @@
     src: url("../fonts/down.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "reklame";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/reklamescript/ReklameScript-Regular_DEMO-webfont.ttf") format("truetype");
+}
+
 .show_outline{
     border: thin;
     border-style: solid;
@@ -45,6 +52,10 @@
 
 html,body{
     height:100%;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .height_full{
@@ -113,9 +124,10 @@ html,body{
     //height: 20%;
     //flex-direction: column;
     text-align: center;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    display: table;
 }
 
 .face{
@@ -126,6 +138,8 @@ html,body{
 
 .faceTextBlock {
     padding-top: 2em;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .my_text{
@@ -239,7 +253,7 @@ a.next:hover {
     }
 
     .faceTextBlock {
-        padding-top: 13%;
+        padding-top: 23%;
     }
 
     .my_text{
@@ -436,10 +450,16 @@ h2{
 /****************************************************************************************************
                                 Blog Section
 ****************************************************************************************************/
+#blogSection {
+    background: url("../images/bg-body.png") repeat scroll left top #A73031;
+    margin-bottom: 110px;
+}
+
 .blogTitle {
     text-align: center;
-    margin: 2em auto;
+    margin: 0em auto 2em auto;
     font-family: Merriweather;
+    padding-top: 95px;
 }
 
 .blogTitle > .columns {
