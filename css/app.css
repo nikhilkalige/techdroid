@@ -6985,7 +6985,7 @@ h2 {
 .portfolio_filter {
   list-style-type: none;
 }
-/* line 5, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+/* line 5, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
 .portfolio_filter, .portfolio_filter li {
   margin: 0px;
   padding: 0px;
@@ -7830,99 +7830,103 @@ green blue: #15B6A1
   }
 }
 
-/* line 158, ../sass/_intro.scss */
+/* Hex Menu styling */
+/* line 190, ../sass/_intro.scss */
 .menu-hex {
   position: fixed;
   display: none;
   top: 155px;
   left: 35px;
-  width: 88px;
-  height: 88px;
   cursor: pointer;
   z-index: 15000;
+  font-size: 0px;
+}
+
+/* line 203, ../sass/_intro.scss */
+.hex1 {
+  width: 17px;
+  height: 29.444px;
+  display: inline-block;
+  position: relative;
   background-color: black;
 }
-
-/* line 170, ../sass/_intro.scss */
-.hex1 {
-  width: 30px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: red;
-}
-/* line 178, ../sass/_intro.scss */
+/* line 172, ../sass/_intro.scss */
 .hex1:before, .hex1:after {
   content: '';
-  width: 30px;
-  height: 50px;
+  width: 17px;
+  height: 29.444px;
+  background-color: black;
   position: absolute;
-  background-color: white;
 }
-/* line 188, ../sass/_intro.scss */
+/* line 179, ../sass/_intro.scss */
 .hex1:before {
   -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
 }
-/* line 191, ../sass/_intro.scss */
+/* line 183, ../sass/_intro.scss */
 .hex1:after {
   -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
 }
 
-/* line 196, ../sass/_intro.scss */
-.hex1 {
-  width: 30px;
-  height: 51.96 px;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: red;
-}
-/* line 205, ../sass/_intro.scss */
-.hex1:before, .hex1:after {
-  content: '';
-  width: 30px;
-  height: 51.96px;
-  position: absolute;
-  background-color: red;
-}
-/* line 215, ../sass/_intro.scss */
-.hex1:before {
-  -webkit-transform: rotate(60deg);
-}
-/* line 218, ../sass/_intro.scss */
-.hex1:after {
-  -webkit-transform: rotate(-60deg);
-}
-
-/* line 225, ../sass/_intro.scss */
+/* line 207, ../sass/_intro.scss */
 .hex2 {
-  width: 30px;
-  height: 51.96px;
-  position: absolute;
+  width: 17px;
+  height: 29.444px;
   display: inline-block;
-  top: 80%;
-  left: 50%;
-  margin-top: 23.48px;
-  margin-left: 19.33px;
-  background-color: blue;
+  position: relative;
+  background-color: black;
+  position: relative;
+  top: 17.22243px;
+  left: 12.83013px;
 }
-/* line 236, ../sass/_intro.scss */
+/* line 172, ../sass/_intro.scss */
 .hex2:before, .hex2:after {
   content: '';
-  width: 30px;
-  height: 51.96px;
+  width: 17px;
+  height: 29.444px;
+  background-color: black;
   position: absolute;
-  background-color: blue;
 }
-/* line 246, ../sass/_intro.scss */
+/* line 179, ../sass/_intro.scss */
 .hex2:before {
   -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
 }
-/* line 249, ../sass/_intro.scss */
+/* line 183, ../sass/_intro.scss */
 .hex2:after {
   -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+/* line 214, ../sass/_intro.scss */
+.hex3 {
+  width: 17px;
+  height: 29.444px;
+  display: inline-block;
+  position: relative;
+  background-color: black;
+  position: relative;
+  top: -17.22243px;
+  left: -4.16987px;
+}
+/* line 172, ../sass/_intro.scss */
+.hex3:before, .hex3:after {
+  content: '';
+  width: 17px;
+  height: 29.444px;
+  background-color: black;
+  position: absolute;
+}
+/* line 179, ../sass/_intro.scss */
+.hex3:before {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+/* line 183, ../sass/_intro.scss */
+.hex3:after {
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
 }
 
 /* Flexible Slide-to-top Accordion Style*/
