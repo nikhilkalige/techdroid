@@ -25,21 +25,23 @@
     </div>
     -->
     <div class="menu-hex" style="display: block;">
-        <div class="hex1"></div>
-        <div class="hex2"></div>
-        <div class="hex3"></div>
+        <div id="menu-div" >
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+            <div class="hex3"></div>
+        </div>
         <ul class="flyout">
             <li>
-                <a href="#">HOME</a>
+                <a class="click" href="#">HOME</a>
             </li>
             <li>
-                <a href="#">PRODUCTS</a>
+                <a class="click" href="#">PRODUCTS</a>
             </li>
             <li>
-                <a href="#">BLOG</a>
+                <a class="click" href="#">BLOG</a>
             </li>
             <li>
-                <a href="#">CONTACT</a>
+                <a class="click" href="#">CONTACT</a>
             </li>
         </ul>
     </div>
@@ -262,6 +264,9 @@
             e.preventDefault();
             Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
         });
+        $('#menu-div').on('click', function() {
+            $('.flyout li > a').toggleClass("click");
+        })
         $(".my_text").fitText(1, { minFontSize: '0px', maxFontSize: '63px' });
     </script>
 </body>
