@@ -337,14 +337,14 @@ $hex-vert-dist: ($hex-width * sqrt(3)) - (sqrt(3) * $hex-width - $hex-gap)/2;
 }
 
 .flyout li:nth-of-type(1) a {
-    top: -44px;
+    top: -50px;
     left: 71px;
     padding-left: 22px;
     padding-top: 8px;
 }
 
 .flyout li:nth-of-type(2) a {
-    top: -38px;
+    top: -50px;
     left: 71px;
     //background-position-y: -58px;
     background-position-y: -205px;
@@ -353,7 +353,7 @@ $hex-vert-dist: ($hex-width * sqrt(3)) - (sqrt(3) * $hex-width - $hex-gap)/2;
 }
 
 .flyout li:nth-of-type(3) a {
-    top: -38px;
+    top: -55px;
     left: 71px;
     background-position-y: -106px;
     padding-left: 22px;
@@ -361,7 +361,7 @@ $hex-vert-dist: ($hex-width * sqrt(3)) - (sqrt(3) * $hex-width - $hex-gap)/2;
 }
 
 .flyout li:nth-of-type(4) a {
-    top: -38px;
+    top: -61px;
     left: 71px;
     background-position-y: -156px;
     padding-left: 22px;

@@ -8079,7 +8079,7 @@ green blue: #15B6A1
 
 /* line 339, ../sass/_intro.scss */
 .flyout li:nth-of-type(1) a {
-  top: -44px;
+  top: -50px;
   left: 71px;
   padding-left: 22px;
   padding-top: 8px;
@@ -8087,7 +8087,7 @@ green blue: #15B6A1
 
 /* line 346, ../sass/_intro.scss */
 .flyout li:nth-of-type(2) a {
-  top: -38px;
+  top: -50px;
   left: 71px;
   background-position-y: -205px;
   padding-left: 22px;
@@ -8096,7 +8096,7 @@ green blue: #15B6A1
 
 /* line 355, ../sass/_intro.scss */
 .flyout li:nth-of-type(3) a {
-  top: -38px;
+  top: -55px;
   left: 71px;
   background-position-y: -106px;
   padding-left: 22px;
@@ -8105,7 +8105,7 @@ green blue: #15B6A1
 
 /* line 363, ../sass/_intro.scss */
 .flyout li:nth-of-type(4) a {
-  top: -38px;
+  top: -61px;
   left: 71px;
   background-position-y: -156px;
   padding-left: 22px;
