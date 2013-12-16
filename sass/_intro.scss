@@ -319,11 +319,24 @@ $hex-vert-dist: ($hex-width * sqrt(3)) - (sqrt(3) * $hex-width - $hex-gap)/2;
     font-size: 16px;
 }
 
+.flyout > li {
+    list-style: none;
+
+    & > a {
+        display: block;
+        width: 151px;
+        height: 46px;
+        color: white;
+        font-size: 1.4em;
+        font-weight: bold;
+        position: relative;
+        background-image: url("../images/menu_small.svg");
+    }
+}
+
 .flyout li:nth-of-type(1) a {
-    color: red;
-    font-size: 1.7em;
-    font-weight: bold;
-    position: relative;
-    top: 0;
-    left: 0;
+    top: -39px;
+    left: 71px;
+    padding-left: 22px;
+    padding-top: 8px;
 }
