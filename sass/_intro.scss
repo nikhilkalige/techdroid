@@ -190,8 +190,10 @@ $hex-vert-dist: ($hex-width * sqrt(3)) - (sqrt(3) * $hex-width - $hex-gap)/2;
 .menu-hex {
     position: fixed;
     display: none;
-    top: 155px;
-    left: 35px;
+    //top: 155px;
+    //left: 35px;
+    top: 41px;
+    left: 37px;
     //width: 500px;
     //height: 120px;
     cursor: pointer;
@@ -324,19 +326,44 @@ $hex-vert-dist: ($hex-width * sqrt(3)) - (sqrt(3) * $hex-width - $hex-gap)/2;
 
     & > a {
         display: block;
-        width: 151px;
+        width: 204px;
         height: 46px;
         color: white;
         font-size: 1.4em;
         font-weight: bold;
         position: relative;
-        background-image: url("../images/menu_small.svg");
+        background-image: url("../images/menu_big.svg");
     }
 }
 
 .flyout li:nth-of-type(1) a {
-    top: -39px;
+    top: -44px;
     left: 71px;
     padding-left: 22px;
     padding-top: 8px;
+}
+
+.flyout li:nth-of-type(2) a {
+    top: -38px;
+    left: 71px;
+    //background-position-y: -58px;
+    background-position-y: -205px;
+    padding-left: 22px;
+    padding-top: 2px;
+}
+
+.flyout li:nth-of-type(3) a {
+    top: -38px;
+    left: 71px;
+    background-position-y: -106px;
+    padding-left: 22px;
+    padding-top: 2px;
+}
+
+.flyout li:nth-of-type(4) a {
+    top: -38px;
+    left: 71px;
+    background-position-y: -156px;
+    padding-left: 22px;
+    padding-top: 2px;
 }
