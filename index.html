@@ -17,52 +17,49 @@
 </head>
 
 <body>
-<!--
-<body id="menuPush"class="menuPush">
--->
-    <!-- Border Menu Section
-    ================================================== -->
-<!--
-    <nav id="borderMenu" class="borderMenu">
-        <a href="#" class="borderMenuTrigger"><span>Menu</span></a>
-        <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="social">
-            <li><a href="http://github.com/nikhilkalige" class="gb" title="Github" target="_blank"></a>Github</li>
-            <li><a href="http://facebook.com/nikhilkalige" class="fb" title="Facebook" target="_blank"></a>Facebook</li>
-            <li><a href="http://twitter.com/nikhilkalige" class="tw" title="Twitter" target="_blank"></a>Twitter</li>
-            <li><a href="http://linkedin.com/nikhilkalige" class="ln" title="Linkedin" target="_blank"></a>Linkedin</li>
-        </ul>
-    </nav>
--->
-        <!--<a href="#" class="menu-trigger" id="menu-button">
-            <span class="menu"></span>
-        </a>-->
-
-    <nav class="menu-offcanvas menu-closed">
-        <div  class="menu-trigger" id="menu-button">
-            <span class="menu"></span>
+    <!--
+    <div class="menu-icon" style="display: block;">
+        <div class="small-pulse"></div>
+        <div class="menu-icon-inner"></div>
+        <div class="menu-icon-centre"></div>
+    </div>
+    -->
+    <div class="menu-hex" style="display: block;">
+        <div id="menu-div" >
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+            <div class="hex3"></div>
         </div>
-        <ul>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 2</a></li>
-            <li><a href="#">Item 3</a></li>
-            <li><a href="#">Item 4</a></li>
-            <li><a href="#">Item 5</a></li>
-            <li><a href="#">Item 6</a></li>
+        <ul class="flyout">
+            <li>
+                <a class="click" href="#">HOME</a>
+            </li>
+            <li>
+                <a class="click" href="#">PRODUCTS</a>
+            </li>
+            <li>
+                <a class="click" href="#">BLOG</a>
+            </li>
+            <li>
+                <a class="click" href="#">CONTACT</a>
+            </li>
         </ul>
-    </nav>
+    </div>
     <!-- Site Overlay -->
     <div class="site-overlay"></div>
+    <!--<div id="frame1"></div>
+    <div id="frame2"></div>
+    <div id="frame3"></div>
+    <div id="frame4"></div>-->
     <!-- Content wrapper -->
     <div id="container">
+
+        <section id="new_title_section">
+            <object id="arduino_anim" class="arduino" data="images/5.svg" type="image/svg+xml"></object>
+        </section>
         <!-- Title Section
         ================================================== -->
+        <!--
         <section id="title_section">
             <div class="row faceRow">
                 <div class="large-6 columns faceImg">
@@ -82,7 +79,7 @@
 
             </a>
         </section>
-
+-->
         <!-- Products Section
         ================================================== -->
         <section id="productsSection" class="height_ninty">
@@ -266,6 +263,9 @@
             e.preventDefault();
             Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
         });
+        $('#menu-div').on('click', function() {
+            $('.flyout li > a').toggleClass("click");
+        })
         $(".my_text").fitText(1, { minFontSize: '0px', maxFontSize: '63px' });
     </script>
 </body>
