@@ -1,20 +1,11 @@
-/*
-colors:
-  #F3D284
-  #663D4E
-  #6AD2BD
-  #6AD2BD
-  #CFDBD0
-*/
-
-#productsSection {
+#skill-section {
     position: relative;
-    padding: 4em 0;
-    background-color: #45BB77;
+    width: 100%;
     height: 720px;
-    color: white;
+    overflow: hidden;
+    background-color: #eeeeee;
 
-    .products-icon {
+    .icon {
         display: block;
         margin-top: 20px;
         position: absolute;
@@ -24,7 +15,7 @@ colors:
         width: 100px;
         margin-left: -50px;
         //margin-top: 100px;
-        background-image: url(../images/04.png);
+        background-image: url(../images/02.png);
     }
 
     .line4 {
@@ -56,16 +47,11 @@ colors:
         margin-top: 0px;
         text-transform: uppercase;
     }
-    .products-display {
+    .display {
         position: absolute;
         width: 100%;
         height: 650px;
         top: 300px;
         left: 0px;
-    }
-
-    h3 {
-        font-size: 2.7em;
-        font-family: "Terminal Dosis",sans-serif !important;
     }
 }

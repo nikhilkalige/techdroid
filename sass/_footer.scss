@@ -1,0 +1,191 @@
+#footer {
+    //background-color: #060D15;
+    min-width: 100%;
+    //border-top: 8px solid rgba(0, 170, 187, 0.8);
+
+    position: relative;
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    background-color: rgba(0, 170, 187, 0.8);
+
+    .icon {
+        display: block;
+        margin-top: 20px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        height: 75px;
+        width: 100px;
+        margin-left: -50px;
+        //margin-top: 100px;
+        background-image: url(../images/10.png);
+    }
+
+    .line4 {
+        //display: none;
+        position: absolute;
+        width: 300px;
+        height: 1px;
+        top: 120px;
+        left: 50%;
+        margin-left: -150px;
+        background-image: url(../images/darkline.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .title {
+        position: absolute;
+        top: 125px;
+        height: auto;
+        width: 900px;
+        left: 50%;
+        margin-left: -450px;
+        font-family: 'Terminal Dosis';
+        line-height: 70px;
+        text-align: center;
+        font-size: 50px;
+        color: #32323a;
+        display: block;
+        margin-top: 0px;
+        text-transform: uppercase;
+    }
+    .display {
+        position: absolute;
+        width: 100%;
+        height: 650px;
+        top: 300px;
+        left: 0px;
+    }
+}
+
+.social > a:before {
+    background: url(../images/social.svg) no-repeat;
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.social > a:hover:before {
+    -webkit-animation: spinAround 2s linear infinite;
+    -moz-animation: spinAround 2s linear infinite;
+    animation: spinAround 2s linear infinite;
+}
+
+.social > .gb:before{
+    background-position: -210px -1px;
+}
+
+.social > .tw:before{
+    background-position: -1px -1px;
+}
+
+.social > .fb:before{
+    background-position: -140px -1px;
+}
+
+.social > .ln:before{
+    background-position: -280px -1px;
+}
+
+/* To accomodate new border menu */
+.social > li > a:before {
+    background: url(../images/social.svg) no-repeat;
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.social > li > a:hover:before {
+    -webkit-animation: spinAround 2s linear infinite;
+    -moz-animation: spinAround 2s linear infinite;
+    animation: spinAround 2s linear infinite;
+}
+
+.social > li >.gb:before{
+    background-position: -210px -1px;
+}
+
+.social > li >.tw:before{
+    background-position: -1px -1px;
+}
+
+.social > li >.fb:before{
+    background-position: -140px -1px;
+}
+
+.social > li >.ln:before{
+    background-position: -280px -1px;
+}
+
+@-webkit-keyframes spinAround {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spinAround {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@keyframes spinAround {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.contact {
+    color: white;
+    font-size: 1.4em;
+    display: inline-block;
+    //line-height: em-calc(60, (1.4*16));
+    padding-top: em-calc(32, (1.4*16));
+    text-align: center;
+}
+
+.email {
+    display: inline-block;
+}
+
+.email:after {
+    content: "";
+    display: inline-block;
+    background: url(../images/email.png) no-repeat;
+    background-size: 80px;
+    width: 128px;
+    height: 80px;
+    position: relative;
+    top: 2.9em;
+    left: 1em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.colophon {
+    color: white;
+    font-size: 1.4em;
+    line-height: 1em;
+    padding-top: em-calc(32, (1.4*16));
+    text-align: center;
+}
+
+.regards {
+    color: white;
+    font-size: 1.4em;
+    line-height: 1em;
+    padding-top: em-calc(32, (1.4*16));
+    text-align: center;
+}
