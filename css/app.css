@@ -8132,9 +8132,8 @@ colors:
   background-color: #45BB77;
   color: white;
 }
-
-/* line 17, ../sass/_products.scss */
-.products-icon {
+/* line 16, ../sass/_products.scss */
+#productsSection .products-icon {
   display: block;
   margin-top: 20px;
   position: absolute;
@@ -8145,9 +8144,8 @@ colors:
   margin-left: -50px;
   background-image: url(../images/04.png);
 }
-
-/* line 30, ../sass/_products.scss */
-.line4 {
+/* line 29, ../sass/_products.scss */
+#productsSection .line4 {
   position: absolute;
   width: 300px;
   height: 1px;
@@ -8158,9 +8156,8 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/* line 43, ../sass/_products.scss */
-.title {
+/* line 42, ../sass/_products.scss */
+#productsSection .title {
   position: absolute;
   top: 125px;
   height: auto;
@@ -8176,20 +8173,202 @@ colors:
   margin-top: 0px;
   text-transform: uppercase;
 }
-
-/* line 59, ../sass/_products.scss */
-.products-display {
+/* line 58, ../sass/_products.scss */
+#productsSection .products-display {
   position: absolute;
   width: 100%;
   height: 650px;
   top: 300px;
   left: 0px;
 }
-
 /* line 66, ../sass/_products.scss */
 #productsSection h3 {
   font-size: 2.7em;
   font-family: "Terminal Dosis",sans-serif !important;
+}
+
+/****************************************************************************************************
+                                Blog Section
+****************************************************************************************************/
+/* line 4, ../sass/_blog.scss */
+#blogSection {
+  background: url("../images/bg-body.png") repeat scroll left top #a73031;
+  margin-bottom: 110px;
+}
+
+/* line 9, ../sass/_blog.scss */
+.blogTitle {
+  text-align: center;
+  margin: 0em auto 2em auto;
+  font-family: Merriweather;
+  padding-top: 95px;
+}
+
+/* line 16, ../sass/_blog.scss */
+.blogTitle > .columns {
+  padding: 0px;
+}
+
+/* line 20, ../sass/_blog.scss */
+.blogTitle > .columns > h2 {
+  font-size: 3em;
+  font-family: inherit;
+  border-bottom: medium double #DDDDDD;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* line 28, ../sass/_blog.scss */
+.blogArticlesContainer {
+  padding-bottom: 70px;
+}
+
+/* line 32, ../sass/_blog.scss */
+.blogArticlesContainer > article {
+  border: medium double #DDDDDD;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  padding: 20px 20px 30px;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 40, ../sass/_blog.scss */
+.blogArticle {
+  text-align: center;
+}
+
+/* line 44, ../sass/_blog.scss */
+.blogArticle > .articleImage {
+  max-width: 100%;
+}
+
+/* line 48, ../sass/_blog.scss */
+.blogArticle > h3 {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Merriweather;
+  font-size: 1.4em;
+  color: #333333;
+}
+
+/* line 57, ../sass/_blog.scss */
+.blogArticle > h3 > a {
+  color: #333333;
+}
+
+/* line 61, ../sass/_blog.scss */
+.blogArticle > .meta {
+  border-bottom: medium double #DDDDDD;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* line 67, ../sass/_blog.scss */
+.blogArticle > .meta > p {
+  font-family: "Merriweather Sans";
+  font-style: italic;
+}
+
+/* line 72, ../sass/_blog.scss */
+.blogArticle > .meta > p > span {
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 77, ../sass/_blog.scss */
+.blogArticle > .meta > p > span > i:before {
+  background: url(../images/comment_fill.svg) no-repeat;
+  background-size: 1em;
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+/* line 89, ../sass/_blog.scss */
+.blogArticle > p {
+  font-family: "Merriweather Sans";
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+/* line 95, ../sass/_blog.scss */
+.blogArticle > .articleButton {
+  font-family: "Merriweather";
+  background-color: #e47c14;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 105, ../sass/_blog.scss */
+  .blogArticlesContainer > .large-4 {
+    width: 32%;
+  }
+
+  /* line 109, ../sass/_blog.scss */
+  #c2 {
+    margin: 0 2%;
+  }
+}
+/* line 114, ../sass/_blog.scss */
+#blogSection {
+  position: relative;
+}
+/* line 116, ../sass/_blog.scss */
+#blogSection .blog-icon {
+  display: block;
+  margin-top: 20px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  height: 75px;
+  width: 100px;
+  margin-left: -50px;
+  background-image: url(../images/quill.png);
+}
+/* line 129, ../sass/_blog.scss */
+#blogSection .line4 {
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  top: 120px;
+  left: 50%;
+  margin-left: -150px;
+  background-image: url(../images/darkline.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 142, ../sass/_blog.scss */
+#blogSection .title {
+  position: absolute;
+  top: 125px;
+  height: auto;
+  width: 900px;
+  left: 50%;
+  margin-left: -450px;
+  font-family: 'Terminal Dosis';
+  line-height: 70px;
+  text-align: center;
+  font-size: 50px;
+  color: #32323a;
+  display: block;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+/* line 158, ../sass/_blog.scss */
+#blogSection .display {
+  position: absolute;
+  width: 100%;
+  height: 650px;
+  top: 300px;
+  left: 0px;
 }
 
 /* Flexible Slide-to-top Accordion Style*/
