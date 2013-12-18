@@ -17,66 +17,40 @@
 </head>
 
 <body>
-<!--
-<body id="menuPush"class="menuPush">
--->
-    <!-- Border Menu Section
-    ================================================== -->
-<!--
-    <nav id="borderMenu" class="borderMenu">
-        <a href="#" class="borderMenuTrigger"><span>Menu</span></a>
-        <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="social">
-            <li><a href="http://github.com/nikhilkalige" class="gb" title="Github" target="_blank"></a>Github</li>
-            <li><a href="http://facebook.com/nikhilkalige" class="fb" title="Facebook" target="_blank"></a>Facebook</li>
-            <li><a href="http://twitter.com/nikhilkalige" class="tw" title="Twitter" target="_blank"></a>Twitter</li>
-            <li><a href="http://linkedin.com/nikhilkalige" class="ln" title="Linkedin" target="_blank"></a>Linkedin</li>
-        </ul>
-    </nav>
--->
-        <!--<a href="#" class="menu-trigger" id="menu-button">
-            <span class="menu"></span>
-        </a>-->
-<!--
-    <nav class="menu-offcanvas menu-closed">
-        <div  class="menu-trigger" id="menu-button">
-            <span class="menu"></span>
-        </div>
-        <ul>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 2</a></li>
-            <li><a href="#">Item 3</a></li>
-            <li><a href="#">Item 4</a></li>
-            <li><a href="#">Item 5</a></li>
-            <li><a href="#">Item 6</a></li>
-        </ul>
-    </nav>-->
-
-
+    <!--
     <div class="menu-icon" style="display: block;">
         <div class="small-pulse"></div>
         <div class="menu-icon-inner"></div>
         <div class="menu-icon-centre"></div>
     </div>
-
+    -->
     <div class="menu-hex" style="display: block;">
-        <div class="hex1"></div>
-        <div class="hex2"></div>
-        <div class="hex3"></div>
+        <div id="menu-div" >
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+            <div class="hex3"></div>
+        </div>
+        <ul class="flyout">
+            <li>
+                <a class="click" href="#">HOME</a>
+            </li>
+            <li>
+                <a class="click" href="#">PRODUCTS</a>
+            </li>
+            <li>
+                <a class="click" href="#">BLOG</a>
+            </li>
+            <li>
+                <a class="click" href="#">CONTACT</a>
+            </li>
+        </ul>
     </div>
-
     <!-- Site Overlay -->
     <div class="site-overlay"></div>
-    <div id="frame1"></div>
+    <!--<div id="frame1"></div>
     <div id="frame2"></div>
     <div id="frame3"></div>
-    <div id="frame4"></div>
+    <div id="frame4"></div>-->
     <!-- Content wrapper -->
     <div id="container">
 
@@ -85,6 +59,7 @@
         </section>
         <!-- Title Section
         ================================================== -->
+        <!--
         <section id="title_section">
             <div class="row faceRow">
                 <div class="large-6 columns faceImg">
@@ -104,11 +79,15 @@
 
             </a>
         </section>
-
+-->
         <!-- Products Section
         ================================================== -->
         <section id="productsSection" class="height_ninty">
-            <div class="row height_ninty">
+            <div class="products-icon"></div>
+            <div class="line4"></div>
+            <div class="title">products</div>
+            <div class="products-display"></div>
+            <!--<div class="row height_ninty">
                 <div class="row">
                     <div class="large-12 columns">
                         <h3>Products</h3>
@@ -122,12 +101,17 @@
                         <p>"A GSM based device that can be used to control appliances"</p>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </section>
 
         <!-- Blog Section
         ================================================== -->
         <section id="blogSection">
+            <div class="blog-icon"></div>
+            <div class="line4"></div>
+            <div class="title">recent articles</div>
+            <div class="display"></div>
+        <!--
             <div class="row blogTitle">
                 <div class="large-12 columns">
                     <h2>Recent Articles</h2>
@@ -203,12 +187,72 @@
                     <a class="articleButton" href="http://nashwp.guuhuu.com/meeting-banksy/">Read more →</a>
                 </article>
             </div>
+            -->
+        </section>
+        <section id="skill-section">
+            <div class="icon"></div>
+            <div class="line4"></div>
+            <div class="title">skills</div>
+            <div class="display"></div>
         </section>
 
+        <section id="about-section">
+        <div class="display">
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered icon1"></div>
+                </div>
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered line-about"></div>
+                </div>
+                <div class="row">
+                    <div class="large-3 columns small-centered large-centered title-about">about</div>
+                </div>
+            </div>
+            <div class="row display-about">
+                <div class="row">
+                    <div class="large-12 columns large-centered myself">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, debitis voluptas veniam ea maxime dolor sint enim esse doloremque quo beatae recusandae nesciunt facere voluptates illum porro ab dolores eaque.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns edu">
+                        <div class="edu-icon"></div>
+                        <div class="edu-line"></div>
+                        <div class="edu-title">education</div>
+                        <p class="about-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, expedita veritatis eveniet ea dolorem quos nemo odit minima ipsum est cumque excepturi blanditiis eligendi repellat ducimus doloremque cum consequatur quia!
+                        </p>
+                    </div>
+                    <div class="large-6 columns work">
+                        <div class="work-icon"></div>
+                        <div class="work-line"></div>
+                        <div class="work-title">experience</div>
+                        <p class="about-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cupiditate commodi vitae alias ullam et itaque nobis doloremque facere laborum ipsum error. Est, molestias atque iure ut molestiae ipsa odio?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="colophon-section">
+            <div class="icon"></div>
+            <div class="line4"></div>
+            <div class="title">colophon</div>
+            <div class="display"></div>
+        </section>
         <!-- Footer Section
         ================================================== -->
         <footer id="footer">
-            <div class="row">
+            <div class="icon"></div>
+            <div class="line4"></div>
+            <div class="title">contact</div>
+            <div class="display"></div>
+
+            <!---<div class="row">
                 <div class="large-12 columns show-for-small">
                     <h4>CONNECT</h4>
                     <div class="social">
@@ -237,7 +281,7 @@
                         <p class="regards">Thankyou for visiting</p>
                     </div>
                 </div>
-            </div>
+            </div>-->
     <!--
             <div id="copyright">
                 <div class="row">
@@ -288,6 +332,9 @@
             e.preventDefault();
             Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
         });
+        $('#menu-div').on('click', function() {
+            $('.flyout li > a').toggleClass("click");
+        })
         $(".my_text").fitText(1, { minFontSize: '0px', maxFontSize: '63px' });
     </script>
 </body>

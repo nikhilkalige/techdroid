@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="221px" height="251.5px" viewBox="0 0 221 251.5" enable-background="new 0 0 221 251.5" xml:space="preserve">
+<style type="text/css">
+    <![CDATA[
+        #p1 {
+            //fill: brown;
+            fill: #8B8D8B;
+            stroke: black;
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+        }
+        #p2 {
+            fill: #020202;
+            stroke: none;
+            stroke-miterlimit: 10;
+        }
+        #p3 {
+            fill: #020202;
+            stroke: black;
+            stroke-miterlimit: 10;
+        }
+        #p4 {
+            fill: #020202;
+            stroke: black;
+            stroke-miterlimit: 10;
+        }
+        #p5 {
+            fill: #020202;
+            stroke: black;
+            stroke-miterlimit: 10;
+        }
+    ]]>
+</style>
+<polygon id="p1" points="10,12.25 202.375,10 197.875,40.125 12.375,41.75 "/>
+<polygon id="p2" points="10,62.125 198.75,60 200.75,89.25 13.625,92.375 "/>
+<polygon id="p3" points="10,111 187.875,110 190.125,139.125 10,138.375 "/>
+<polygon id="p4" points="10,160 194.75,160 196.875,190.875 10,188.5 "/>
+<polygon id="p5" points="10,210.625 184.875,210 185.75,240 10,238.625 "/>
+</svg>
