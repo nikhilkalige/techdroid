@@ -8252,14 +8252,27 @@ colors:
 }
 /* line 50, ../sass/_skills.scss */
 #skill-section .display {
-  position: absolute;
+  /* position: absolute;
   width: 100%;
   height: 650px;
   top: 300px;
-  left: 0px;
+  left: 0px; */
+  display: block;
+  position: relative;
+  top: 45%;
+  height: auto;
+  width: 900px;
+  left: 50%;
+  margin-left: -450px;
+  font-family: 'pxn_light';
+  text-align: center;
+  font-size: 37px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 45px;
 }
 
-/* line 59, ../sass/_skills.scss */
+/* line 72, ../sass/_skills.scss */
 #about-section {
   position: relative;
   width: 100%;
@@ -8267,7 +8280,7 @@ colors:
   overflow: hidden;
   background-color: #33B294;
 }
-/* line 66, ../sass/_skills.scss */
+/* line 79, ../sass/_skills.scss */
 #about-section .icon {
   display: block;
   margin-top: 20px;
@@ -8279,7 +8292,7 @@ colors:
   margin-left: -35px;
   background-image: url(../images/beard.png);
 }
-/* line 79, ../sass/_skills.scss */
+/* line 92, ../sass/_skills.scss */
 #about-section .line4 {
   position: absolute;
   width: 300px;
@@ -8291,7 +8304,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 92, ../sass/_skills.scss */
+/* line 105, ../sass/_skills.scss */
 #about-section .title {
   position: absolute;
   top: 140px;
@@ -8308,16 +8321,29 @@ colors:
   margin-top: 0px;
   text-transform: uppercase;
 }
-/* line 108, ../sass/_skills.scss */
+/* line 121, ../sass/_skills.scss */
 #about-section .display {
-  position: absolute;
+  /* position: absolute;
   width: 100%;
   height: 650px;
-  top: 315px;
-  left: 0px;
+  top: 300px + 15px;
+  left: 0px; */
+  display: block;
+  position: relative;
+  top: 45%;
+  height: auto;
+  width: 900px;
+  left: 50%;
+  margin-left: -450px;
+  font-family: 'pxn_light';
+  text-align: center;
+  font-size: 37px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 45px;
 }
 
-/* line 118, ../sass/_skills.scss */
+/* line 144, ../sass/_skills.scss */
 #colophon-section {
   position: relative;
   width: 100%;
@@ -8325,7 +8351,7 @@ colors:
   overflow: hidden;
   background-color: #F1F1F1;
 }
-/* line 125, ../sass/_skills.scss */
+/* line 151, ../sass/_skills.scss */
 #colophon-section .icon {
   display: block;
   margin-top: 20px;
@@ -8337,7 +8363,7 @@ colors:
   margin-left: -50px;
   background-image: url(../images/const.png);
 }
-/* line 138, ../sass/_skills.scss */
+/* line 164, ../sass/_skills.scss */
 #colophon-section .line4 {
   position: absolute;
   width: 300px;
@@ -8349,7 +8375,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 151, ../sass/_skills.scss */
+/* line 177, ../sass/_skills.scss */
 #colophon-section .title {
   position: absolute;
   top: 125px;
@@ -8366,7 +8392,7 @@ colors:
   margin-top: 0px;
   text-transform: uppercase;
 }
-/* line 167, ../sass/_skills.scss */
+/* line 193, ../sass/_skills.scss */
 #colophon-section .display {
   position: absolute;
   width: 100%;
