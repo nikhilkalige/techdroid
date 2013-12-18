@@ -8207,7 +8207,7 @@ colors:
   width: 100%;
   height: 720px;
   overflow: hidden;
-  background-color: #eeeeee;
+  background-color: #d1d1d1;
 }
 /* line 8, ../sass/_skills.scss */
 #skill-section .icon {
@@ -8252,6 +8252,122 @@ colors:
 }
 /* line 50, ../sass/_skills.scss */
 #skill-section .display {
+  position: absolute;
+  width: 100%;
+  height: 650px;
+  top: 300px;
+  left: 0px;
+}
+
+/* line 59, ../sass/_skills.scss */
+#about-section {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  background-color: #33B294;
+}
+/* line 66, ../sass/_skills.scss */
+#about-section .icon {
+  display: block;
+  margin-top: 20px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  height: 90px;
+  width: 70px;
+  margin-left: -35px;
+  background-image: url(../images/beard.png);
+}
+/* line 79, ../sass/_skills.scss */
+#about-section .line4 {
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  top: 135px;
+  left: 50%;
+  margin-left: -150px;
+  background-image: url(../images/darkline.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 92, ../sass/_skills.scss */
+#about-section .title {
+  position: absolute;
+  top: 140px;
+  height: auto;
+  width: 900px;
+  left: 50%;
+  margin-left: -450px;
+  font-family: 'Terminal Dosis';
+  line-height: 70px;
+  text-align: center;
+  font-size: 50px;
+  color: #32323a;
+  display: block;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+/* line 108, ../sass/_skills.scss */
+#about-section .display {
+  position: absolute;
+  width: 100%;
+  height: 650px;
+  top: 315px;
+  left: 0px;
+}
+
+/* line 118, ../sass/_skills.scss */
+#colophon-section {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  background-color: #F1F1F1;
+}
+/* line 125, ../sass/_skills.scss */
+#colophon-section .icon {
+  display: block;
+  margin-top: 20px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  height: 75px;
+  width: 100px;
+  margin-left: -50px;
+  background-image: url(../images/const.png);
+}
+/* line 138, ../sass/_skills.scss */
+#colophon-section .line4 {
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  top: 120px;
+  left: 50%;
+  margin-left: -150px;
+  background-image: url(../images/darkline.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 151, ../sass/_skills.scss */
+#colophon-section .title {
+  position: absolute;
+  top: 125px;
+  height: auto;
+  width: 900px;
+  left: 50%;
+  margin-left: -450px;
+  font-family: 'Terminal Dosis';
+  line-height: 70px;
+  text-align: center;
+  font-size: 50px;
+  color: #32323a;
+  display: block;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+/* line 167, ../sass/_skills.scss */
+#colophon-section .display {
   position: absolute;
   width: 100%;
   height: 650px;
