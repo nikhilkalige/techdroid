@@ -7969,7 +7969,7 @@ colors:
   padding-bottom: 50px;
 }
 /* line 19, ../sass/_products.scss */
-#productsSection .products-icon1 {
+#productsSection .icon {
   display: block;
   margin-top: 30px;
   height: 75px;
@@ -7977,7 +7977,7 @@ colors:
   background-image: url(../images/04.png);
 }
 /* line 27, ../sass/_products.scss */
-#productsSection .line-products {
+#productsSection .line4 {
   width: 300px;
   height: 1px;
   margin-top: 15px;
@@ -7986,7 +7986,7 @@ colors:
   background-repeat: no-repeat;
 }
 /* line 36, ../sass/_products.scss */
-#productsSection .title-products {
+#productsSection .title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
   text-align: center;
@@ -7997,7 +7997,7 @@ colors:
   text-transform: uppercase;
 }
 /* line 47, ../sass/_products.scss */
-#productsSection .display-products {
+#productsSection .display {
   display: block;
   position: relative;
   margin-top: 106px;
@@ -8034,7 +8034,7 @@ colors:
 }
 
 /* line 24, ../sass/_blog.scss */
-.display-blog > article {
+#blogSection .display > article {
   border: medium double #DDDDDD;
   border-radius: 2px;
   margin-bottom: 20px;
@@ -8118,7 +8118,7 @@ colors:
 
 @media only screen and (min-width: 768px) {
   /* line 97, ../sass/_blog.scss */
-  .display-blog > .large-4 {
+  #blogSection .display > .large-4 {
     width: 32%;
   }
 
@@ -8138,7 +8138,7 @@ colors:
   padding-bottom: 50px;
 }
 /* line 116, ../sass/_blog.scss */
-#blogSection .blog-icon1 {
+#blogSection .icon {
   display: block;
   margin-top: 30px;
   height: 75px;
@@ -8146,7 +8146,7 @@ colors:
   background-image: url(../images/quill.png);
 }
 /* line 124, ../sass/_blog.scss */
-#blogSection .line-blog {
+#blogSection .line4 {
   width: 300px;
   height: 1px;
   margin-top: 15px;
@@ -8155,7 +8155,7 @@ colors:
   background-repeat: no-repeat;
 }
 /* line 133, ../sass/_blog.scss */
-#blogSection .title-blog {
+#blogSection .title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
   text-align: center;
@@ -8166,7 +8166,7 @@ colors:
   text-transform: uppercase;
 }
 /* line 144, ../sass/_blog.scss */
-#blogSection .display-blog {
+#blogSection .display {
   display: block;
   position: relative;
   margin-top: 106px;
@@ -8233,27 +8233,14 @@ colors:
 }
 /* line 57, ../sass/_skills.scss */
 #about-section .icon {
-  display: none;
-  display: block;
-  margin-top: 20px;
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  height: 90px;
-  width: 70px;
-  margin-left: -35px;
-  background-image: url(../images/beard.png);
-}
-/* line 71, ../sass/_skills.scss */
-#about-section .icon1 {
   display: block;
   margin-top: 30px;
   height: 90px;
   width: 70px;
   background-image: url(../images/beard.png);
 }
-/* line 79, ../sass/_skills.scss */
-#about-section .line-about {
+/* line 65, ../sass/_skills.scss */
+#about-section .line4 {
   width: 300px;
   height: 1px;
   margin-top: 15px;
@@ -8261,37 +8248,8 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 88, ../sass/_skills.scss */
-#about-section .line4 {
-  position: absolute;
-  width: 300px;
-  height: 1px;
-  top: 135px;
-  left: 50%;
-  margin-left: -150px;
-  background-image: url(../images/darkline.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-/* line 100, ../sass/_skills.scss */
-#about-section .title-about {
-  font-family: 'Terminal Dosis';
-  line-height: 70px;
-  text-align: center;
-  font-size: 50px;
-  color: #32323a;
-  display: block;
-  margin-top: 0px;
-  text-transform: uppercase;
-}
-/* line 111, ../sass/_skills.scss */
+/* line 74, ../sass/_skills.scss */
 #about-section .title {
-  position: absolute;
-  top: 140px;
-  height: auto;
-  width: 900px;
-  left: 50%;
-  margin-left: -450px;
   font-family: 'Terminal Dosis';
   line-height: 70px;
   text-align: center;
@@ -8301,34 +8259,13 @@ colors:
   margin-top: 0px;
   text-transform: uppercase;
 }
-/* line 127, ../sass/_skills.scss */
+/* line 85, ../sass/_skills.scss */
 #about-section .display {
-  /* position: absolute;
-  width: 100%;
-  height: 650px;
-  top: 300px + 15px;
-  left: 0px; */
-  display: block;
-  position: absolute;
-  top: 45%;
-  height: auto;
-  width: 900px;
-  left: 50%;
-  margin-left: -450px;
-  font-family: 'pxn_light';
-  text-align: center;
-  font-size: 37px;
-  color: #fff;
-  text-transform: uppercase;
-  line-height: 45px;
-}
-/* line 148, ../sass/_skills.scss */
-#about-section .display-about {
   display: block;
   position: relative;
   margin-top: 120px;
 }
-/* line 154, ../sass/_skills.scss */
+/* line 91, ../sass/_skills.scss */
 #about-section .myself {
   font-size: 26px;
   line-height: 1.5;
@@ -8336,7 +8273,7 @@ colors:
   font-family: "Merriweather";
   margin-bottom: 24px;
 }
-/* line 162, ../sass/_skills.scss */
+/* line 99, ../sass/_skills.scss */
 #about-section .edu-icon {
   display: block;
   margin-top: 30px;
@@ -8346,7 +8283,7 @@ colors:
   width: 100px;
   background-image: url(../images/board.png);
 }
-/* line 172, ../sass/_skills.scss */
+/* line 109, ../sass/_skills.scss */
 #about-section .edu-line {
   width: 300px;
   height: 1px;
@@ -8357,7 +8294,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 183, ../sass/_skills.scss */
+/* line 120, ../sass/_skills.scss */
 #about-section .edu-title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
@@ -8368,7 +8305,7 @@ colors:
   margin-top: 0px;
   text-transform: uppercase;
 }
-/* line 194, ../sass/_skills.scss */
+/* line 131, ../sass/_skills.scss */
 #about-section .work-icon {
   display: block;
   margin-top: 30px;
@@ -8378,7 +8315,7 @@ colors:
   width: 100px;
   background-image: url(../images/work.png);
 }
-/* line 204, ../sass/_skills.scss */
+/* line 141, ../sass/_skills.scss */
 #about-section .work-line {
   width: 300px;
   height: 1px;
@@ -8389,7 +8326,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 215, ../sass/_skills.scss */
+/* line 152, ../sass/_skills.scss */
 #about-section .work-title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
@@ -8400,15 +8337,15 @@ colors:
   margin-top: 0px;
   text-transform: uppercase;
 }
-/* line 225, ../sass/_skills.scss */
+/* line 162, ../sass/_skills.scss */
 #about-section .edu {
   padding-right: 38px;
 }
-/* line 228, ../sass/_skills.scss */
+/* line 165, ../sass/_skills.scss */
 #about-section .work {
   padding-left: 38px;
 }
-/* line 231, ../sass/_skills.scss */
+/* line 168, ../sass/_skills.scss */
 #about-section .about-content {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -8418,7 +8355,7 @@ colors:
   font-family: "Merriweather Sans", "Merriweather";
 }
 
-/* line 242, ../sass/_skills.scss */
+/* line 179, ../sass/_skills.scss */
 #colophon-section {
   position: relative;
   width: 100%;
@@ -8427,7 +8364,7 @@ colors:
   min-height: 720px;
   padding-bottom: 50px;
 }
-/* line 250, ../sass/_skills.scss */
+/* line 187, ../sass/_skills.scss */
 #colophon-section .icon {
   display: block;
   margin-top: 30px;
@@ -8435,7 +8372,7 @@ colors:
   width: 100px;
   background-image: url(../images/const.png);
 }
-/* line 258, ../sass/_skills.scss */
+/* line 195, ../sass/_skills.scss */
 #colophon-section .line4 {
   width: 300px;
   height: 1px;
@@ -8444,7 +8381,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 267, ../sass/_skills.scss */
+/* line 204, ../sass/_skills.scss */
 #colophon-section .title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
@@ -8455,7 +8392,7 @@ colors:
   margin-top: 4px;
   text-transform: uppercase;
 }
-/* line 278, ../sass/_skills.scss */
+/* line 215, ../sass/_skills.scss */
 #colophon-section .display {
   display: block;
   position: relative;

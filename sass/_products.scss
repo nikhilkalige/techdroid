@@ -16,7 +16,7 @@ colors:
     overflow: hidden;
     padding-bottom: 50px;
 
-    .products-icon1 {
+    .icon {
         display: block;
         margin-top: 30px;
         height: 75px;
@@ -24,7 +24,7 @@ colors:
         background-image: url(../images/04.png);
     }
 
-    .line-products {
+    .line4 {
         width: 300px;
         height: 1px;
         margin-top: 15px;
@@ -33,7 +33,7 @@ colors:
         background-repeat: no-repeat;
     }
 
-    .title-products {
+    .title {
         font-family: 'Terminal Dosis';
         line-height: 70px;
         text-align: center;
@@ -44,7 +44,7 @@ colors:
         text-transform: uppercase;
     }
 
-    .display-products {
+    .display {
         display: block;
         position: relative;
         margin-top: 106px;
