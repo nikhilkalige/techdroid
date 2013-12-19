@@ -21,7 +21,7 @@
     text-transform: uppercase;
 }
 
-.display-blog > article {
+#blogSection .display > article {
     border: medium double #DDDDDD;
     border-radius: 2px;
     margin-bottom: 20px;
@@ -94,7 +94,7 @@
 }
 
 @media #{$small} {
-    .display-blog > .large-4 {
+    #blogSection .display > .large-4 {
         width: 32%;
     }
 
@@ -113,7 +113,7 @@
     padding-bottom: 50px;
     //margin-bottom: 110px;
 
-    .blog-icon1 {
+    .icon {
         display: block;
         margin-top: 30px;
         height: 75px;
@@ -121,7 +121,7 @@
         background-image: url(../images/quill.png);
     }
 
-    .line-blog {
+    .line4 {
         width: 300px;
         height: 1px;
         margin-top: 15px;
@@ -130,26 +130,18 @@
         background-repeat: no-repeat;
     }
 
-    .title-blog {
+    .title {
         font-family: 'Terminal Dosis';
         line-height: 70px;
         text-align: center;
         font-size: 50px;
         color: #32323a;
         display: block;
-        margin-top: 3px;
+        margin-top: 4px;
         text-transform: uppercase;
     }
 
     .display {
-        position: absolute;
-        width: 100%;
-        height: 650px;
-        top: 300px;
-        left: 0px;
-    }
-
-    .display-blog {
         display: block;
         position: relative;
         margin-top: 106px;
