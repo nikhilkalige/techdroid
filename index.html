@@ -24,6 +24,15 @@
         <div class="menu-icon-centre"></div>
     </div>
     -->
+    <a id="under-construction" style="display:none" href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+    <div id="myModal" class="reveal-modal" data-reveal>
+        <h2>Under Construction</h2>
+        <p>You can have a look at the theme. I am working hard to get it live and runnning. You can contact me by <a href="mailto:nikhilkalige@gmail.com">email</a>. </p>
+        <p>Thank you for visiting</p>
+        <p>Regards <br><i>Nikhil K</i></p>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
     <div class="menu-hex" style="display: block;">
         <div id="menu-div" >
             <div class="hex1"></div>
@@ -368,6 +377,11 @@
             $('.flyout li > a').toggleClass("click");
         })
         $(".my_text").fitText(1, { minFontSize: '0px', maxFontSize: '63px' });
+    </script>
+    <script>
+        $( document ).ready(function() {
+            $('#under-construction').click();
+        });
     </script>
 </body>
 </html>
