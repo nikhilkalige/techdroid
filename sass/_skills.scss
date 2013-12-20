@@ -3,6 +3,7 @@
     width: 100%;
     overflow: hidden;
     background-color: #d1d1d1;
+    background-color: rgba(0, 170, 187, 0.8);
     min-height: 720px;
     padding-bottom: 50px;
 
@@ -38,6 +39,31 @@
         display: block;
         position: relative;
         margin-top: 106px;
+    }
+
+    .skill {
+        font-size: 26px;
+        line-height: 1.5;
+        text-align: center;
+        font-family: "Merriweather";
+        margin-bottom: 24px;
+    }
+
+    .skill-text {
+        font-size: 26px;
+        line-height: 1.5;
+        text-align: center;
+        font-family: "Merriweather";
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 37px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 45px;
+    }
+
+    .skill-text:first-child {
+        margin-bottom: 24px;
     }
 }
 
