@@ -7967,8 +7967,9 @@ colors:
   min-height: 720px;
   overflow: hidden;
   padding-bottom: 50px;
+  padding-bottom: 120px;
 }
-/* line 19, ../sass/_products.scss */
+/* line 21, ../sass/_products.scss */
 #productsSection .icon {
   display: block;
   margin-top: 30px;
@@ -7976,7 +7977,7 @@ colors:
   width: 100px;
   background-image: url(../images/04.png);
 }
-/* line 27, ../sass/_products.scss */
+/* line 29, ../sass/_products.scss */
 #productsSection .line4 {
   width: 300px;
   height: 1px;
@@ -7985,7 +7986,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 36, ../sass/_products.scss */
+/* line 38, ../sass/_products.scss */
 #productsSection .title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
@@ -7996,13 +7997,85 @@ colors:
   margin-top: 4px;
   text-transform: uppercase;
 }
-/* line 47, ../sass/_products.scss */
+/* line 49, ../sass/_products.scss */
 #productsSection .display {
   display: block;
   position: relative;
   margin-top: 106px;
 }
-/* line 53, ../sass/_products.scss */
+/* line 54, ../sass/_products.scss */
+#productsSection .display .columns {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* line 60, ../sass/_products.scss */
+#productsSection .product-intro p {
+  font-family: "Merriweather";
+  text-align: right;
+}
+/* line 65, ../sass/_products.scss */
+#productsSection .product-intro h2 {
+  text-align: center;
+  font-family: "Terminal Dosis";
+  font-size: 20px;
+}
+/* line 71, ../sass/_products.scss */
+#productsSection .product-left {
+  border: 2px solid #4c3d6d;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+}
+/* line 80, ../sass/_products.scss */
+#productsSection .product-left img {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+/* line 92, ../sass/_products.scss */
+#productsSection .product-right {
+  padding-left: 1.5% !important;
+  margin-right: 0;
+  text-align: right;
+  line-height: 1.333;
+}
+/* line 99, ../sass/_products.scss */
+#productsSection .product-right h2:before {
+  background: #4c3d6d;
+  content: "";
+  height: 8px;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+/* line 108, ../sass/_products.scss */
+#productsSection .product-right h2 {
+  color: #4c3d6d;
+  font-family: "Terminal Dosis";
+  font-size: 36px;
+  line-height: 1;
+  padding-top: 32px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: .83em 0;
+}
+/* line 121, ../sass/_products.scss */
+#productsSection .product-right p {
+  font-family: "Merriweather Sans";
+  margin: 24px 0;
+  font-size: 20px;
+}
+/* line 128, ../sass/_products.scss */
 #productsSection h3 {
   font-size: 2.7em;
   font-family: "Terminal Dosis",sans-serif !important;
