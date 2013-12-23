@@ -7967,8 +7967,9 @@ colors:
   min-height: 720px;
   overflow: hidden;
   padding-bottom: 50px;
+  padding-bottom: 120px;
 }
-/* line 19, ../sass/_products.scss */
+/* line 21, ../sass/_products.scss */
 #productsSection .icon {
   display: block;
   margin-top: 30px;
@@ -7976,7 +7977,7 @@ colors:
   width: 100px;
   background-image: url(../images/04.png);
 }
-/* line 27, ../sass/_products.scss */
+/* line 29, ../sass/_products.scss */
 #productsSection .line4 {
   width: 300px;
   height: 1px;
@@ -7985,7 +7986,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 36, ../sass/_products.scss */
+/* line 38, ../sass/_products.scss */
 #productsSection .title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
@@ -7996,13 +7997,85 @@ colors:
   margin-top: 4px;
   text-transform: uppercase;
 }
-/* line 47, ../sass/_products.scss */
+/* line 49, ../sass/_products.scss */
 #productsSection .display {
   display: block;
   position: relative;
   margin-top: 106px;
 }
-/* line 53, ../sass/_products.scss */
+/* line 54, ../sass/_products.scss */
+#productsSection .display .columns {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* line 60, ../sass/_products.scss */
+#productsSection .product-intro p {
+  font-family: "Merriweather";
+  text-align: right;
+}
+/* line 65, ../sass/_products.scss */
+#productsSection .product-intro h2 {
+  text-align: center;
+  font-family: "Terminal Dosis";
+  font-size: 20px;
+}
+/* line 71, ../sass/_products.scss */
+#productsSection .product-left {
+  border: 2px solid #4c3d6d;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+}
+/* line 80, ../sass/_products.scss */
+#productsSection .product-left img {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+/* line 92, ../sass/_products.scss */
+#productsSection .product-right {
+  padding-left: 1.5% !important;
+  margin-right: 0;
+  text-align: right;
+  line-height: 1.333;
+}
+/* line 99, ../sass/_products.scss */
+#productsSection .product-right h2:before {
+  background: #4c3d6d;
+  content: "";
+  height: 8px;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+/* line 108, ../sass/_products.scss */
+#productsSection .product-right h2 {
+  color: #4c3d6d;
+  font-family: "Terminal Dosis";
+  font-size: 36px;
+  line-height: 1;
+  padding-top: 32px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: .83em 0;
+}
+/* line 121, ../sass/_products.scss */
+#productsSection .product-right p {
+  font-family: "Merriweather Sans";
+  margin: 24px 0;
+  font-size: 20px;
+}
+/* line 128, ../sass/_products.scss */
 #productsSection h3 {
   font-size: 2.7em;
   font-family: "Terminal Dosis",sans-serif !important;
@@ -8179,10 +8252,11 @@ colors:
   width: 100%;
   overflow: hidden;
   background-color: #d1d1d1;
+  background-color: rgba(0, 170, 187, 0.8);
   min-height: 720px;
   padding-bottom: 50px;
 }
-/* line 9, ../sass/_skills.scss */
+/* line 10, ../sass/_skills.scss */
 #skill-section .icon {
   display: block;
   margin-top: 30px;
@@ -8190,7 +8264,7 @@ colors:
   width: 100px;
   background-image: url(../images/02.png);
 }
-/* line 17, ../sass/_skills.scss */
+/* line 18, ../sass/_skills.scss */
 #skill-section .line4 {
   width: 300px;
   height: 1px;
@@ -8199,7 +8273,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 26, ../sass/_skills.scss */
+/* line 27, ../sass/_skills.scss */
 #skill-section .title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
@@ -8210,14 +8284,39 @@ colors:
   margin-top: 4px;
   text-transform: uppercase;
 }
-/* line 37, ../sass/_skills.scss */
+/* line 38, ../sass/_skills.scss */
 #skill-section .display {
   display: block;
   position: relative;
   margin-top: 106px;
 }
-
 /* line 44, ../sass/_skills.scss */
+#skill-section .skill {
+  font-size: 26px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Merriweather";
+  margin-bottom: 24px;
+}
+/* line 52, ../sass/_skills.scss */
+#skill-section .skill-text {
+  font-size: 26px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Merriweather";
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 37px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+/* line 65, ../sass/_skills.scss */
+#skill-section .skill-text:first-child {
+  margin-bottom: 24px;
+}
+
+/* line 70, ../sass/_skills.scss */
 #about-section {
   position: relative;
   width: 100%;
@@ -8226,12 +8325,12 @@ colors:
   background-color: #33B294;
   padding-bottom: 50px;
 }
-/* line 52, ../sass/_skills.scss */
+/* line 78, ../sass/_skills.scss */
 #about-section .columns {
   padding-left: 0px;
   padding-right: 0px;
 }
-/* line 57, ../sass/_skills.scss */
+/* line 83, ../sass/_skills.scss */
 #about-section .icon {
   display: block;
   margin-top: 30px;
@@ -8239,7 +8338,7 @@ colors:
   width: 70px;
   background-image: url(../images/beard.png);
 }
-/* line 65, ../sass/_skills.scss */
+/* line 91, ../sass/_skills.scss */
 #about-section .line4 {
   width: 300px;
   height: 1px;
@@ -8248,7 +8347,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 74, ../sass/_skills.scss */
+/* line 100, ../sass/_skills.scss */
 #about-section .title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
@@ -8259,13 +8358,13 @@ colors:
   margin-top: 0px;
   text-transform: uppercase;
 }
-/* line 85, ../sass/_skills.scss */
+/* line 111, ../sass/_skills.scss */
 #about-section .display {
   display: block;
   position: relative;
   margin-top: 120px;
 }
-/* line 91, ../sass/_skills.scss */
+/* line 117, ../sass/_skills.scss */
 #about-section .myself {
   font-size: 26px;
   line-height: 1.5;
@@ -8273,7 +8372,7 @@ colors:
   font-family: "Merriweather";
   margin-bottom: 24px;
 }
-/* line 99, ../sass/_skills.scss */
+/* line 125, ../sass/_skills.scss */
 #about-section .edu-icon {
   display: block;
   margin-top: 30px;
@@ -8283,7 +8382,7 @@ colors:
   width: 100px;
   background-image: url(../images/board.png);
 }
-/* line 109, ../sass/_skills.scss */
+/* line 135, ../sass/_skills.scss */
 #about-section .edu-line {
   width: 300px;
   height: 1px;
@@ -8294,7 +8393,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 120, ../sass/_skills.scss */
+/* line 146, ../sass/_skills.scss */
 #about-section .edu-title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
@@ -8305,7 +8404,7 @@ colors:
   margin-top: 0px;
   text-transform: uppercase;
 }
-/* line 131, ../sass/_skills.scss */
+/* line 157, ../sass/_skills.scss */
 #about-section .work-icon {
   display: block;
   margin-top: 30px;
@@ -8315,7 +8414,7 @@ colors:
   width: 100px;
   background-image: url(../images/work.png);
 }
-/* line 141, ../sass/_skills.scss */
+/* line 167, ../sass/_skills.scss */
 #about-section .work-line {
   width: 300px;
   height: 1px;
@@ -8326,7 +8425,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 152, ../sass/_skills.scss */
+/* line 178, ../sass/_skills.scss */
 #about-section .work-title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
@@ -8337,15 +8436,15 @@ colors:
   margin-top: 0px;
   text-transform: uppercase;
 }
-/* line 162, ../sass/_skills.scss */
+/* line 188, ../sass/_skills.scss */
 #about-section .edu {
   padding-right: 38px;
 }
-/* line 165, ../sass/_skills.scss */
+/* line 191, ../sass/_skills.scss */
 #about-section .work {
   padding-left: 38px;
 }
-/* line 168, ../sass/_skills.scss */
+/* line 194, ../sass/_skills.scss */
 #about-section .about-content {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -8355,7 +8454,7 @@ colors:
   font-family: "Merriweather Sans", "Merriweather";
 }
 
-/* line 179, ../sass/_skills.scss */
+/* line 205, ../sass/_skills.scss */
 #colophon-section {
   position: relative;
   width: 100%;
@@ -8364,7 +8463,7 @@ colors:
   min-height: 720px;
   padding-bottom: 50px;
 }
-/* line 187, ../sass/_skills.scss */
+/* line 213, ../sass/_skills.scss */
 #colophon-section .icon {
   display: block;
   margin-top: 30px;
@@ -8372,7 +8471,7 @@ colors:
   width: 100px;
   background-image: url(../images/const.png);
 }
-/* line 195, ../sass/_skills.scss */
+/* line 221, ../sass/_skills.scss */
 #colophon-section .line4 {
   width: 300px;
   height: 1px;
@@ -8381,7 +8480,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 204, ../sass/_skills.scss */
+/* line 230, ../sass/_skills.scss */
 #colophon-section .title {
   font-family: 'Terminal Dosis';
   line-height: 70px;
@@ -8392,11 +8491,24 @@ colors:
   margin-top: 4px;
   text-transform: uppercase;
 }
-/* line 215, ../sass/_skills.scss */
+/* line 241, ../sass/_skills.scss */
 #colophon-section .display {
   display: block;
   position: relative;
   margin-top: 106px;
+}
+/* line 247, ../sass/_skills.scss */
+#colophon-section .columns {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* line 252, ../sass/_skills.scss */
+#colophon-section .colo-text {
+  font-size: 26px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Merriweather";
+  margin-bottom: 24px;
 }
 
 /* line 1, ../sass/_footer.scss */
@@ -8404,7 +8516,6 @@ colors:
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color: rgba(0, 170, 187, 0.8);
   min-height: 720px;
   padding-bottom: 50px;
 }
@@ -8442,8 +8553,106 @@ colors:
   position: relative;
   margin-top: 106px;
 }
+/* line 45, ../sass/_footer.scss */
+#footer .myself {
+  font-size: 26px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Merriweather";
+  margin-bottom: 24px;
+}
+/* line 53, ../sass/_footer.scss */
+#footer .mail-button {
+  color: #4c3d6d;
+  display: inline-block;
+  padding: 1.166666667em 3em;
+  text-align: center;
+  border-color: #4c3d6d;
+  background: none;
+  border: 2px solid #e9b921;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
+}
+/* line 80, ../sass/_footer.scss */
+#footer .mail-button:hover {
+  -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.4) inset, 13px 0 17px rgba(217, 137, 36, 0.4) inset, -13px 0 17px rgba(217, 137, 36, 0.4) inset, 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 0 0 4px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.4) inset, 13px 0 17px rgba(217, 137, 36, 0.4) inset, -13px 0 17px rgba(217, 137, 36, 0.4) inset, 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 0 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.4) inset, 13px 0 17px rgba(217, 137, 36, 0.4) inset, -13px 0 17px rgba(217, 137, 36, 0.4) inset, 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 0 0 4px rgba(0, 0, 0, 0.05);
+  background-color: #efcc5f;
+  background-position: center -10px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(119, 61, 25, 0.4);
+  border-color: #4c3d6d;
+  outline: none;
+}
+/* line 91, ../sass/_footer.scss */
+#footer .social a {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border-color: #ededed;
+  line-height: 48px;
+  padding: 11px 0;
+  font-size: 26px;
+  color: #4c3d6d;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
+}
+/* line 109, ../sass/_footer.scss */
+#footer .social .logo {
+  background: url("../images/logos.png") no-repeat;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: middle;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
+}
+/* line 124, ../sass/_footer.scss */
+#footer .social a:hover .logo {
+  margin-right: 24px;
+}
+/* line 129, ../sass/_footer.scss */
+#footer .fb .logo {
+  background-position: -1px -1px;
+}
+/* line 133, ../sass/_footer.scss */
+#footer .tw .logo {
+  background-position: -52px -1px;
+}
+/* line 137, ../sass/_footer.scss */
+#footer .gb .logo {
+  background-position: -104px -1px;
+}
+/* line 141, ../sass/_footer.scss */
+#footer .ln .logo {
+  background-position: -154px -1px;
+}
 
-/* line 46, ../sass/_footer.scss */
+/* line 146, ../sass/_footer.scss */
 .social > a:before {
   background: url(../images/social.svg) no-repeat;
   content: "";
@@ -8453,35 +8662,35 @@ colors:
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 55, ../sass/_footer.scss */
+/* line 155, ../sass/_footer.scss */
 .social > a:hover:before {
   -webkit-animation: spinAround 2s linear infinite;
   -moz-animation: spinAround 2s linear infinite;
   animation: spinAround 2s linear infinite;
 }
 
-/* line 61, ../sass/_footer.scss */
+/* line 161, ../sass/_footer.scss */
 .social > .gb:before {
   background-position: -210px -1px;
 }
 
-/* line 65, ../sass/_footer.scss */
+/* line 165, ../sass/_footer.scss */
 .social > .tw:before {
   background-position: -1px -1px;
 }
 
-/* line 69, ../sass/_footer.scss */
+/* line 169, ../sass/_footer.scss */
 .social > .fb:before {
   background-position: -140px -1px;
 }
 
-/* line 73, ../sass/_footer.scss */
+/* line 173, ../sass/_footer.scss */
 .social > .ln:before {
   background-position: -280px -1px;
 }
 
 /* To accomodate new border menu */
-/* line 78, ../sass/_footer.scss */
+/* line 178, ../sass/_footer.scss */
 .social > li > a:before {
   background: url(../images/social.svg) no-repeat;
   content: "";
@@ -8491,70 +8700,70 @@ colors:
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 87, ../sass/_footer.scss */
+/* line 187, ../sass/_footer.scss */
 .social > li > a:hover:before {
   -webkit-animation: spinAround 2s linear infinite;
   -moz-animation: spinAround 2s linear infinite;
   animation: spinAround 2s linear infinite;
 }
 
-/* line 93, ../sass/_footer.scss */
+/* line 193, ../sass/_footer.scss */
 .social > li > .gb:before {
   background-position: -210px -1px;
 }
 
-/* line 97, ../sass/_footer.scss */
+/* line 197, ../sass/_footer.scss */
 .social > li > .tw:before {
   background-position: -1px -1px;
 }
 
-/* line 101, ../sass/_footer.scss */
+/* line 201, ../sass/_footer.scss */
 .social > li > .fb:before {
   background-position: -140px -1px;
 }
 
-/* line 105, ../sass/_footer.scss */
+/* line 205, ../sass/_footer.scss */
 .social > li > .ln:before {
   background-position: -280px -1px;
 }
 
 @-webkit-keyframes spinAround {
-  /* line 110, ../sass/_footer.scss */
+  /* line 210, ../sass/_footer.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 113, ../sass/_footer.scss */
+  /* line 213, ../sass/_footer.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
 }
 
 @-moz-keyframes spinAround {
-  /* line 118, ../sass/_footer.scss */
+  /* line 218, ../sass/_footer.scss */
   from {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 121, ../sass/_footer.scss */
+  /* line 221, ../sass/_footer.scss */
   to {
     -moz-transform: rotate(360deg);
   }
 }
 
 @keyframes spinAround {
-  /* line 126, ../sass/_footer.scss */
+  /* line 226, ../sass/_footer.scss */
   from {
     transform: rotate(0deg);
   }
 
-  /* line 129, ../sass/_footer.scss */
+  /* line 229, ../sass/_footer.scss */
   to {
     transform: rotate(360deg);
   }
 }
 
-/* line 134, ../sass/_footer.scss */
+/* line 234, ../sass/_footer.scss */
 .contact {
   color: white;
   font-size: 1.4em;
@@ -8563,12 +8772,12 @@ colors:
   text-align: center;
 }
 
-/* line 143, ../sass/_footer.scss */
+/* line 243, ../sass/_footer.scss */
 .email {
   display: inline-block;
 }
 
-/* line 147, ../sass/_footer.scss */
+/* line 247, ../sass/_footer.scss */
 .email:after {
   content: "";
   display: inline-block;
@@ -8582,7 +8791,7 @@ colors:
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 160, ../sass/_footer.scss */
+/* line 260, ../sass/_footer.scss */
 .colophon {
   color: white;
   font-size: 1.4em;
@@ -8591,7 +8800,7 @@ colors:
   text-align: center;
 }
 
-/* line 168, ../sass/_footer.scss */
+/* line 268, ../sass/_footer.scss */
 .regards {
   color: white;
   font-size: 1.4em;
