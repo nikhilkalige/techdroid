@@ -17,52 +17,49 @@
 </head>
 
 <body>
-<!--
-<body id="menuPush"class="menuPush">
--->
-    <!-- Border Menu Section
-    ================================================== -->
-<!--
-    <nav id="borderMenu" class="borderMenu">
-        <a href="#" class="borderMenuTrigger"><span>Menu</span></a>
-        <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="social">
-            <li><a href="http://github.com/nikhilkalige" class="gb" title="Github" target="_blank"></a>Github</li>
-            <li><a href="http://facebook.com/nikhilkalige" class="fb" title="Facebook" target="_blank"></a>Facebook</li>
-            <li><a href="http://twitter.com/nikhilkalige" class="tw" title="Twitter" target="_blank"></a>Twitter</li>
-            <li><a href="http://linkedin.com/nikhilkalige" class="ln" title="Linkedin" target="_blank"></a>Linkedin</li>
-        </ul>
-    </nav>
--->
-        <!--<a href="#" class="menu-trigger" id="menu-button">
-            <span class="menu"></span>
-        </a>-->
-
-    <nav class="menu-offcanvas menu-closed">
-        <div  class="menu-trigger" id="menu-button">
-            <span class="menu"></span>
+    <!--
+    <div class="menu-icon" style="display: block;">
+        <div class="small-pulse"></div>
+        <div class="menu-icon-inner"></div>
+        <div class="menu-icon-centre"></div>
+    </div>
+    -->
+    <div class="menu-hex" style="display: block;">
+        <div id="menu-div" >
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+            <div class="hex3"></div>
         </div>
-        <ul>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 2</a></li>
-            <li><a href="#">Item 3</a></li>
-            <li><a href="#">Item 4</a></li>
-            <li><a href="#">Item 5</a></li>
-            <li><a href="#">Item 6</a></li>
+        <ul class="flyout">
+            <li>
+                <a class="click" href="#">HOME</a>
+            </li>
+            <li>
+                <a class="click" href="#">PRODUCTS</a>
+            </li>
+            <li>
+                <a class="click" href="#">BLOG</a>
+            </li>
+            <li>
+                <a class="click" href="#">CONTACT</a>
+            </li>
         </ul>
-    </nav>
+    </div>
     <!-- Site Overlay -->
     <div class="site-overlay"></div>
+    <!--<div id="frame1"></div>
+    <div id="frame2"></div>
+    <div id="frame3"></div>
+    <div id="frame4"></div>-->
     <!-- Content wrapper -->
     <div id="container">
+
+        <section id="new_title_section">
+            <object id="arduino_anim" class="arduino" data="images/5.svg" type="image/svg+xml"></object>
+        </section>
         <!-- Title Section
         ================================================== -->
+        <!--
         <section id="title_section">
             <div class="row faceRow">
                 <div class="large-6 columns faceImg">
@@ -82,11 +79,40 @@
 
             </a>
         </section>
-
+-->
         <!-- Products Section
         ================================================== -->
         <section id="productsSection" class="height_ninty">
-            <div class="row height_ninty">
+            <div class="row">
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered icon"></div>
+                </div>
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered line4"></div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns small-centered large-centered title">products</div>
+                </div>
+            </div>
+            <div class="row display">
+                <div class="large-8 columns product-left">
+                    <img alt=""  src="images/gsm.jpg">
+                </div>
+                <div class="large-4 columns product-right">
+                    <h2>Fueled Collective</h2>
+                    <p>
+                        The Fueled Collective is a great new coworking space set up in Soho, home to over 20 exciting startups. We needed a website which was equally as beautiful as the space itself. Completed for Fueled (obviously).
+                    </p>
+                    <p>
+                        View live at <br/>
+                        <a href="http://fueled.com/collective">http://fueled.com/collective</a>
+                    </p>
+                </div>
+                <!--<div class="large-5 columns">
+                    <img src="images/product_1.jpg" alt="product1">
+                </div>-->
+            </div>
+            <!--<div class="row height_ninty">
                 <div class="row">
                     <div class="large-12 columns">
                         <h3>Products</h3>
@@ -100,18 +126,24 @@
                         <p>"A GSM based device that can be used to control appliances"</p>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </section>
 
         <!-- Blog Section
         ================================================== -->
         <section id="blogSection">
-            <div class="row blogTitle">
-                <div class="large-12 columns">
-                    <h2>Recent Articles</h2>
+            <div class="row">
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered icon"></div>
+                </div>
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered line4"></div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns small-centered large-centered title">recent articles</div>
                 </div>
             </div>
-            <div class="row blogArticlesContainer">
+            <div class="row display">
                 <article id="c1" class="large-4 columns blogArticle">
                     <div class="articleImage">
                         <img src="images/image21.jpg" alt="Container 1">
@@ -183,10 +215,139 @@
             </div>
         </section>
 
+        <section id="skill-section">
+            <div class="row">
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered icon"></div>
+                </div>
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered line4"></div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns small-centered large-centered title">skills</div>
+                </div>
+            </div>
+            <div class="row display">
+                <div class="large-12 columns skill">
+                    <p class="skill-text">Electronics System Design + Embedded C/C++</p>
+                    <p>I have also worked on below mentioned areas as a hobby</p>
+                    <p class="skill-text">PHP + CakePHP</p>
+                    <p class="skill-text">Python + Pelican</p>
+                    <p class="skill-text">Bash Scripts</p>
+                    <p class="skill-text">Solidworks</p>
+                    <p class="skill-text">Sketching + Carpentry + Bookbinding + etc..</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-section">
+            <div class="row">
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered icon"></div>
+                </div>
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered line4"></div>
+                </div>
+                <div class="row">
+                    <div class="large-3 columns small-centered large-centered title">about</div>
+                </div>
+            </div>
+            <div class="row display">
+                <div class="row">
+                    <div class="large-12 columns large-centered myself">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, debitis voluptas veniam ea maxime dolor sint enim esse doloremque quo beatae recusandae nesciunt facere voluptates illum porro ab dolores eaque.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns edu">
+                        <div class="edu-icon"></div>
+                        <div class="edu-line"></div>
+                        <div class="edu-title">education</div>
+                        <p class="about-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, expedita veritatis eveniet ea dolorem quos nemo odit minima ipsum est cumque excepturi blanditiis eligendi repellat ducimus doloremque cum consequatur quia!
+                        </p>
+                    </div>
+                    <div class="large-6 columns work">
+                        <div class="work-icon"></div>
+                        <div class="work-line"></div>
+                        <div class="work-title">experience</div>
+                        <p class="about-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cupiditate commodi vitae alias ullam et itaque nobis doloremque facere laborum ipsum error. Est, molestias atque iure ut molestiae ipsa odio?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="colophon-section">
+            <div class="row">
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered icon"></div>
+                </div>
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered line4"></div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns small-centered large-centered title">colophon</div>
+                </div>
+            </div>
+            <div class="row display">
+                <div class="large-12 columns colo-text">
+                    <p>This is a static website. Static pages were generated using <a href="http://blog.getpelican.com/" alt="Pelican">Pelican - a python based static site generator</a>. The site is responsive and makes use of <a href="http://foundation.zurb.com/" alt="Foundation 5">Zurb Foundation 5</a> to achieve the same. The site is currently hosted on Github. I'm using Terminal Dosis, Merriweather fonts served by Google. </p>
+                    <p>The complete site was coded using <a href="http://www.sublimetext.com/3" alt="Sublime Text 3">Sublime Text 3</a> and <a href="http://emmet.io/" alt="emmet">Emmet</a> which makes life a lot easier. The complete source is hosted on <a href="http://github.com/nikhilkalige/techdroid" alt="github">github</a>. Feel free to tinker with it.</p>
+                </div>
+            </div>
+        </section>
         <!-- Footer Section
         ================================================== -->
         <footer id="footer">
             <div class="row">
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered icon"></div>
+                </div>
+                <div class="row">
+                    <div class="large-1 columns small-centered large-centered line4"></div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns small-centered large-centered title">contact</div>
+                </div>
+            </div>
+            <div class="row display">
+                <div class="row">
+                    <div class="large-12 columns myself">
+                        <p>
+                            Whether you would like to get extra information on any of my work, ask me about this site or just say hello then I would love to hear from you.
+                        </p>
+                        <a class="mail-button" href="mailto:nikhilkalige@gmail.com">Email nikhilkalige@gmail.com </a>
+                    </div>
+                </div>
+                <div class="row social">
+                    <div class="large-6 columns">
+                        <a href="http://facebook.com/nikhilkalige" class="fb" title="Facebook" target="_blank">
+                            <span class="logo"></span>
+                            <span class="text">facebook.com/nikhilkalige</span>
+                        </a>
+                        <a href="http://twitter.com/nikhilkalige" class="tw" title="Twitter" target="_blank">
+                            <span class="logo"></span>
+                            <span class="text">@nikhilkalige</span>
+                        </a>
+                    </div>
+                    <div class="large-6 columns">
+                        <a href="http://linkedin.com/nikhilkalige" class="ln" title="Linkedin" target="_blank">
+                            <span class="logo"></span>
+                            <span class="text">linkedin://nikhilkalige</span>
+                        </a>
+                        <a href="http://github.com/nikhilkalige" class="gb" title="Github" target="_blank">
+                            <span class="logo"></span>
+                            <span class="text">nikhilkalige@github</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!---<div class="row">
                 <div class="large-12 columns show-for-small">
                     <h4>CONNECT</h4>
                     <div class="social">
@@ -215,7 +376,7 @@
                         <p class="regards">Thankyou for visiting</p>
                     </div>
                 </div>
-            </div>
+            </div>-->
     <!--
             <div id="copyright">
                 <div class="row">
@@ -266,6 +427,9 @@
             e.preventDefault();
             Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
         });
+        $('#menu-div').on('click', function() {
+            $('.flyout li > a').toggleClass("click");
+        })
         $(".my_text").fitText(1, { minFontSize: '0px', maxFontSize: '63px' });
     </script>
 </body>
