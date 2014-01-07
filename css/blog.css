@@ -8126,3 +8126,62 @@ th.hide-for-touch {
 }
 
 /* Background colors */
+/* line 3, ../sass/_blog-header.scss */
+body {
+  background-image: url("../images/pattern6.png");
+}
+
+/* line 7, ../sass/_blog-header.scss */
+header {
+  border-bottom: 0.063em solid rgba(0, 0, 0, 0.2);
+}
+/* line 9, ../sass/_blog-header.scss */
+header .logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -87.5px;
+}
+/* line 13, ../sass/_blog-header.scss */
+header .logo a {
+  display: block;
+  text-align: center;
+}
+/* line 17, ../sass/_blog-header.scss */
+header .logo img {
+  height: 175px;
+}
+
+/* line 24, ../sass/_blog-header.scss */
+nav .navigation {
+  padding-left: 0;
+  text-align: center;
+  margin-left: 0;
+}
+/* line 29, ../sass/_blog-header.scss */
+nav .navigation li {
+  display: inline-block;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-top: 6.2rem;
+  text-align: center;
+  margin: 0 3rem;
+}
+/* line 38, ../sass/_blog-header.scss */
+nav .navigation li > a {
+  font-family: 'Merriweather Sans';
+  font-size: 1.4em;
+  font-weight: bold;
+}
+/* line 45, ../sass/_blog-header.scss */
+nav .navigation li:nth-child(2) {
+  padding-right: 300px;
+}
+/* line 48, ../sass/_blog-header.scss */
+nav .navigation li:nth-child(3) {
+  padding-left: 0px;
+}
+
+/* line 1, ../sass/_blog-posts.scss */
+#blog-posts {
+  margin-top: 4rem;
+}

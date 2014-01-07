@@ -1,0 +1,52 @@
+$logo-width: 175px;
+
+body {
+    background-image: url("../images/pattern6.png");
+}
+
+header {
+    border-bottom: 0.063em solid rgba(0, 0, 0, 0.2);
+    .logo {
+        position: absolute;
+        left: 50%;
+        margin-left: -$logo-width/2;
+        a {
+            display: block;
+            text-align: center;
+        }
+        & img {
+            height: $logo-width;
+        }
+    }
+}
+
+nav {
+    .navigation {
+        //width: 100%;
+        padding-left: 0;
+        text-align: center;
+        margin-left: 0;
+        li {
+            display: inline-block;
+            font-size: 24px;
+            text-transform: uppercase;
+            padding-top: 6.2rem;
+            text-align: center;
+            //line-height: $logo-width;
+            margin: 0 3rem;
+        }
+        li > a {
+            //font-family: 'Terminal Dosis';
+            //font-family: 'Merriweather';
+            font-family: 'Merriweather Sans';
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        li:nth-child(2) {
+            padding-right: 300px;
+        }
+        li:nth-child(3) {
+            padding-left: 0px;
+        }
+    }
+}
