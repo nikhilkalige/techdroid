@@ -35,3 +35,30 @@ footer {
         margin-bottom: 1rem;
     }
 }
+
+.paginate {
+    font-family: Merriweather;
+    font-size: rem-calc(19px);
+    height: 28px;
+    line-height: 54px;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    text-align: center;
+    border-bottom: 2px dashed rgba(255,255,255,0.15);
+    span {
+        background: #C95A5D;
+        font-style: italic;
+        display: inline-block;
+        padding: 0 25px;
+        margin: 0 auto;
+    }
+}
+
+.right {
+    text-align: right;
+}
