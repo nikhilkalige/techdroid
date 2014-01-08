@@ -8173,31 +8173,33 @@ nav .navigation li > a {
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 47, ../sass/_blog-header.scss */
+/* line 45, ../sass/_blog-header.scss */
 nav .navigation li:nth-child(2) {
   padding-right: 300px;
 }
-/* line 50, ../sass/_blog-header.scss */
+/* line 48, ../sass/_blog-header.scss */
 nav .navigation li:nth-child(3) {
   padding-left: 0px;
 }
 
-/* line 56, ../sass/_blog-header.scss */
+/* line 54, ../sass/_blog-header.scss */
 #navig {
   padding: 0 0 20px 0;
   position: relative;
   z-index: 1;
   font-family: "Merriweather";
 }
-/* line 61, ../sass/_blog-header.scss */
+/* line 59, ../sass/_blog-header.scss */
 #navig li {
   font-family: "sans-serif";
   font-weight: normal;
   text-transform: capitalize;
   list-style-type: none;
 }
-/* line 69, ../sass/_blog-header.scss */
+/* line 67, ../sass/_blog-header.scss */
 #navig a {
+  color: white;
+  opacity: .7;
   font-size: 34px;
   font-family: "Merriweather";
 }

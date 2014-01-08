@@ -38,8 +38,6 @@ nav {
             margin: 0 3rem;
         }
         li > a {
-            //font-family: 'Terminal Dosis';
-            //font-family: 'Merriweather';
             font-family: 'Merriweather Sans';
             font-size: 1.4em;
             font-weight: bold;
@@ -67,6 +65,8 @@ nav {
         list-style-type: none;
     }
     a {
+        color: white;
+        opacity: .7;
         font-size: 34px;
         font-family: "Merriweather";
     }
