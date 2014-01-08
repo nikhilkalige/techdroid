@@ -1,7 +1,9 @@
-$logo-width: 175px;
+$logo-width: 145px;
 
 body {
-    background-image: url("../images/pattern6.png");
+    //background-image: url("../images/pattern6.png");
+    background-color: #cd595a;
+    color: #fff;
 }
 
 header {
@@ -48,5 +50,36 @@ nav {
         li:nth-child(3) {
             padding-left: 0px;
         }
+    }
+}
+
+#navig {
+    padding: 0 0 20px 0;
+    position: relative;
+    z-index: 1;
+    font-family: "Merriweather";
+    li {
+
+        font-family: "sans-serif";
+        font-weight: normal;
+        //letter-spacing: 1px;
+        text-transform: capitalize;
+        list-style-type: none;
+    }
+    a {
+        font-size: 34px;
+        font-family: "Merriweather";
+    }
+    ul {
+        margin-bottom: 0;
+        padding: 43px 0;
+        margin-left: 0px;
+    }
+    .logo1 {
+        width: $logo-width;
+    }
+    .left {
+        text-align: center;
+        width: 50%;
     }
 }
