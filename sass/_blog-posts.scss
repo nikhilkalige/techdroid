@@ -1,0 +1,94 @@
+#blog-posts {
+    //margin-top: rem-calc(64px);
+    header {
+        border-bottom: 0;
+        h2 {
+            font-family: "Merriweather";
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 30px;
+            line-height: 1.2;
+            margin: 1em 0 10px -30px;
+            padding: 15px 0 0 30px;
+        }
+    }
+    article:last-child {
+        //border-bottom: none;
+    }
+}
+
+.post {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    margin-bottom: 30px !important;
+    display: block;
+
+    h2 {
+        font-family: Merriweather;
+        font-weight: normal;
+        text-align: center;
+        font-size: 1.75em;
+        line-height: 46px;
+        color: white;
+        a {
+            color: white;
+        }
+    }
+    p {
+        font-family: Merriweather;
+        font-weight: 400;
+        font-size: 1.375em;
+        line-height: 36px;
+        margin: 60px 0;
+        display: block;
+    }
+}
+
+.timestamp {
+    font-family: Merriweather;
+    margin: 30px auto 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    opacity: 0.6;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #fff;
+}
+
+#blog {
+    height: 27px;
+    margin: 60px 0 80px 0;
+    font-size: 2.250em;
+    line-height: 54px;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    font-family: Merriweather;
+    font-weight: bold;
+    color: #fff;
+    span {
+        background: #C95A5D;
+        display: inline-block;
+        padding: 0 25px;
+        margin: 0 auto;
+    }
+}
+
+aside {
+    ul {
+        margin: 0 0 1em -5px;
+        padding-left: 5px;
+        color: #777777;
+        font-size: 16px;
+        text-transform: uppercase;
+
+        li {
+            line-height: 30px;
+            padding: 0 16px 0 0px;
+            display: inline-block;
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+}
