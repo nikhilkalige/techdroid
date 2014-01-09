@@ -8246,14 +8246,22 @@ nav .navigation li:nth-child(3) {
 /* line 21, ../sass/_post-article.scss */
 .post h3 {
   color: white;
-  font-size: 40px;
+  font-size: 41px;
   line-height: 52.5px;
   font-family: Merriweather;
   font-weight: 400;
-  margin-bottom: 11px;
+  margin-bottom: 30px;
+}
+/* line 29, ../sass/_post-article.scss */
+.post p {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 23px;
+  margin-bottom: 48px;
+  line-height: 1.8;
 }
 
-/* line 31, ../sass/_post-article.scss */
+/* line 38, ../sass/_post-article.scss */
 .timestamp {
   font-family: Merriweather;
   margin: 30px auto 60px auto;
