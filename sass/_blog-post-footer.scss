@@ -22,6 +22,9 @@ footer {
             margin: 0 auto;
         }
     }
+    ul {
+        margin-left: 0px;
+    }
     li {
         color: #fff;
         display: inline-block;
@@ -31,5 +34,8 @@ footer {
         line-height: 1.8;
         font-style: inherit;
         font-weight: inherit;
+    }
+    li:first-child {
+        margin-left: 0px;
     }
 }

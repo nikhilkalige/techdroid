@@ -8321,6 +8321,10 @@ footer h3 span {
   margin: 0 auto;
 }
 /* line 25, ../sass/_blog-post-footer.scss */
+footer ul {
+  margin-left: 0px;
+}
+/* line 28, ../sass/_blog-post-footer.scss */
 footer li {
   color: #fff;
   display: inline-block;
@@ -8330,6 +8334,10 @@ footer li {
   line-height: 1.8;
   font-style: inherit;
   font-weight: inherit;
+}
+/* line 38, ../sass/_blog-post-footer.scss */
+footer li:first-child {
+  margin-left: 0px;
 }
 
 /* line 1, ../sass/_blog-footer.scss */
