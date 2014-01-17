@@ -468,10 +468,10 @@ body {
 /* line 325, ../bower_components/foundation/scss/foundation/components/_global.scss */
 body {
   background: white;
-  color: #222222;
+  color: black;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -2520,7 +2520,7 @@ select {
   color: #222222;
   padding: 1rem;
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1rem;
 }
 /* line 36, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
@@ -3217,7 +3217,7 @@ select {
 /* line 197, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button, .button {
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -4811,7 +4811,7 @@ kbd {
 /* line 87, ../bower_components/foundation/scss/foundation/components/_labels.scss */
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -5374,7 +5374,7 @@ ul.pagination li {
   color: #eeeeee;
   font-weight: normal;
   font-size: 1rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 139, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
 .pricing-table .price {
@@ -5384,7 +5384,7 @@ ul.pagination li {
   color: #333333;
   font-weight: normal;
   font-size: 2rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 140, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
 .pricing-table .description {
@@ -5568,7 +5568,7 @@ ul.pagination li {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 54, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li {
@@ -5584,7 +5584,7 @@ ul.pagination li {
 .side-nav li.active > a:first-child {
   color: #4d4d4d;
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 69, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.divider {
@@ -5753,7 +5753,7 @@ ul.pagination li {
   display: inline;
   margin-left: 1rem;
   margin-bottom: 0.625rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
   color: #999999;
@@ -6098,7 +6098,7 @@ table tfoot tr td {
   padding-right: 2rem;
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1rem;
 }
 /* line 41, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
@@ -6386,7 +6386,7 @@ p aside {
 /* Default header styles */
 /* line 182, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #222222;
@@ -6559,7 +6559,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222222;
+  color: black;
   border-bottom: 1px dotted #dddddd;
   cursor: help;
 }
@@ -6965,7 +6965,7 @@ meta.foundation-mq-topbar {
   color: white;
   padding: 12px 0 12px 0;
   padding-left: 15px;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
   background: #333333;
@@ -8126,94 +8126,71 @@ th.hide-for-touch {
 }
 
 /* Background colors */
-/* line 3, ../sass/_post-header.scss */
+/* line 3, ../sass/_blog-post-header.scss */
 body {
   background-color: #111;
   color: #fff;
 }
 
-/* line 10, ../sass/_post-header.scss */
-header {
-  border-bottom: 0.063em solid rgba(0, 0, 0, 0.2);
-}
-/* line 12, ../sass/_post-header.scss */
-header .logo {
-  position: absolute;
-  left: 50%;
-  margin-left: -72.5px;
-}
-/* line 16, ../sass/_post-header.scss */
-header .logo a {
-  display: block;
-  text-align: center;
-}
-/* line 20, ../sass/_post-header.scss */
-header .logo img {
-  height: 145px;
-}
-
-/* line 27, ../sass/_post-header.scss */
+/* line 11, ../sass/_blog-post-header.scss */
 nav .navigation {
   padding-left: 0;
   text-align: center;
   margin-left: 0;
 }
-/* line 32, ../sass/_post-header.scss */
+/* line 16, ../sass/_blog-post-header.scss */
 nav .navigation li {
   display: inline-block;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   padding-top: 6.2rem;
   text-align: center;
   margin: 0 3rem;
 }
-/* line 41, ../sass/_post-header.scss */
+/* line 25, ../sass/_blog-post-header.scss */
 nav .navigation li > a {
   font-family: 'Merriweather Sans';
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 46, ../sass/_post-header.scss */
+/* line 30, ../sass/_blog-post-header.scss */
 nav .navigation li:nth-child(2) {
   padding-right: 300px;
 }
-/* line 49, ../sass/_post-header.scss */
+/* line 33, ../sass/_blog-post-header.scss */
 nav .navigation li:nth-child(3) {
   padding-left: 0px;
 }
 
-/* line 55, ../sass/_post-header.scss */
+/* line 39, ../sass/_blog-post-header.scss */
 #navig {
   padding: 0 0 20px 0;
   position: relative;
   z-index: 1;
-  font-family: "Merriweather";
 }
-/* line 60, ../sass/_post-header.scss */
+/* line 44, ../sass/_blog-post-header.scss */
 #navig li {
-  font-family: "sans-serif";
   font-weight: normal;
   text-transform: capitalize;
   list-style-type: none;
 }
-/* line 68, ../sass/_post-header.scss */
+/* line 50, ../sass/_blog-post-header.scss */
 #navig a {
   color: white;
   opacity: .7;
   font-size: 34px;
-  font-family: "Merriweather";
 }
-/* line 74, ../sass/_post-header.scss */
+/* line 56, ../sass/_blog-post-header.scss */
 #navig ul {
   margin-bottom: 0;
   padding: 43px 0;
   margin-left: 0px;
 }
-/* line 79, ../sass/_post-header.scss */
+/* line 61, ../sass/_blog-post-header.scss */
 #navig .logo1 {
   width: 145px;
 }
-/* line 82, ../sass/_post-header.scss */
+/* line 64, ../sass/_blog-post-header.scss */
 #navig .left {
   text-align: center;
   width: 50%;
