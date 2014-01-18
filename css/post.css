@@ -8209,21 +8209,21 @@ nav .navigation li:nth-child(3) {
   line-height: 100px;
   text-align: center;
   display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
   font-family: Merriweather;
   font-weight: bold;
-  color: #fff;
+  color: #000;
 }
 /* line 14, ../sass/_post-article.scss */
 .post h1 span {
-  background: #C95A5D;
+  background: #fff;
   display: inline-block;
   padding: 0 25px;
   margin: 0 auto;
 }
 /* line 21, ../sass/_post-article.scss */
 .post h3 {
-  color: white;
+  color: #000;
   font-size: 41px;
   line-height: 52.5px;
   font-family: Merriweather;
@@ -8234,20 +8234,22 @@ nav .navigation li:nth-child(3) {
 .post p {
   font-family: "Merriweather";
   font-weight: 400;
-  font-size: 23px;
+  font-size: 1.4375rem;
   margin-bottom: 48px;
   line-height: 1.8;
+  color: #000;
 }
-/* line 36, ../sass/_post-article.scss */
+/* line 37, ../sass/_post-article.scss */
 .post h5 {
   font-size: 32px;
   line-height: 1.8;
   font-family: Merriweather;
   margin-bottom: 25px;
-  color: white;
+  color: black;
 }
-/* line 43, ../sass/_post-article.scss */
+/* line 44, ../sass/_post-article.scss */
 .post ul {
+  color: #000;
   font-family: Merriweather;
   margin-bottom: 48px;
   line-height: 1.8;
@@ -8255,7 +8257,7 @@ nav .navigation li:nth-child(3) {
   margin-left: 0;
   list-style-position: inside;
 }
-/* line 50, ../sass/_post-article.scss */
+/* line 52, ../sass/_post-article.scss */
 .post ul li {
   margin-left: 23px;
   font-family: inherit;
@@ -8265,17 +8267,17 @@ nav .navigation li:nth-child(3) {
   font-weight: inherit;
 }
 
-/* line 61, ../sass/_post-article.scss */
+/* line 63, ../sass/_post-article.scss */
 .timestamp {
   font-family: Merriweather;
   margin: 30px auto 60px auto;
   display: block;
   text-align: center;
-  font-size: 1em;
-  opacity: 0.6;
+  font-size: 1.2rem;
+  opacity: 0.8;
   font-weight: 300;
   line-height: 1.5em;
-  color: #fff;
+  color: #000;
 }
 
 /* line 1, ../sass/_blog-post-footer.scss */

@@ -7,19 +7,19 @@
         line-height: 100px;
         text-align: center;
         display: block;
-        border-bottom: 1px solid rgba(255,255,255,0.15);
+        border-bottom: 1px solid rgba(0,0,0,0.35);
         font-family: Merriweather;
         font-weight: bold;
-        color: #fff;
+        color: #000;
         span {
-            background: #C95A5D;
+            background: #fff;
             display: inline-block;
             padding: 0 25px;
             margin: 0 auto;
         }
     }
     h3 {
-        color: white;
+        color: #000;
         font-size: 41px;
         line-height: 52.5px;
         font-family: Merriweather;
@@ -29,18 +29,20 @@
     p {
         font-family: "Merriweather";
         font-weight: 400;
-        font-size: 23px;
+        font-size: rem-calc(23px);
         margin-bottom: 48px;
         line-height: 1.8;
+        color: #000;
     }
     h5 {
         font-size: 32px;
         line-height: 1.8;
         font-family: Merriweather;
         margin-bottom: 25px;
-        color: white;
+        color: black;
     }
     ul {
+        color: #000;
         font-family: Merriweather;
         margin-bottom: 48px;
         line-height: 1.8;
@@ -63,9 +65,9 @@
     margin: 30px auto 60px auto;
     display: block;
     text-align: center;
-    font-size: 1em;
-    opacity: 0.6;
+    font-size: 1.2rem;
+    opacity: 0.8;
     font-weight: 300;
     line-height: 1.5em;
-    color: #fff;
+    color: #000;
 }
