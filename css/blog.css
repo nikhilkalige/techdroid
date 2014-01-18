@@ -8265,7 +8265,7 @@ footer {
 }
 /* line 6, ../sass/_blog-post-footer.scss */
 footer h3 {
-  color: #fff;
+  color: #000;
   font-size: 2.25rem;
   font-family: Merriweather;
   font-weight: 400;
@@ -8275,11 +8275,11 @@ footer h3 {
   line-height: 54px;
   text-align: center;
   display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
 /* line 18, ../sass/_blog-post-footer.scss */
 footer h3 span {
-  background: #C95A5D;
+  background: #fff;
   display: inline-block;
   padding: 0 25px;
   margin: 0 auto;
@@ -8311,7 +8311,7 @@ footer li:first-child {
 /* line 3, ../sass/_blog-footer.scss */
 #paginate div {
   font-family: Merriweather;
-  font-size: 1.1875rem;
+  font-size: 1.5rem;
   height: 28px;
   line-height: 54px;
 }
@@ -8324,11 +8324,11 @@ footer li:first-child {
 /* line 15, ../sass/_blog-footer.scss */
 .center {
   text-align: center;
-  border-bottom: 2px dashed rgba(255, 255, 255, 0.15);
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.35);
 }
 /* line 18, ../sass/_blog-footer.scss */
 .center span {
-  background: #C95A5D;
+  background: #fff;
   font-style: italic;
   display: inline-block;
   padding: 0 25px;
