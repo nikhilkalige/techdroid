@@ -8128,17 +8128,18 @@ th.hide-for-touch {
 /* Background colors */
 /* line 3, ../sass/_blog-post-header.scss */
 body {
-  background-color: #111;
-  color: #fff;
+  background-color: #fff;
+  color: black;
+  border-top: 6px solid #CF0A2C;
 }
 
-/* line 11, ../sass/_blog-post-header.scss */
+/* line 13, ../sass/_blog-post-header.scss */
 nav .navigation {
   padding-left: 0;
   text-align: center;
   margin-left: 0;
 }
-/* line 16, ../sass/_blog-post-header.scss */
+/* line 18, ../sass/_blog-post-header.scss */
 nav .navigation li {
   display: inline-block;
   font-size: 1.5rem;
@@ -8147,50 +8148,50 @@ nav .navigation li {
   text-align: center;
   margin: 0 3rem;
 }
-/* line 25, ../sass/_blog-post-header.scss */
+/* line 27, ../sass/_blog-post-header.scss */
 nav .navigation li > a {
   font-family: 'Merriweather Sans';
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 30, ../sass/_blog-post-header.scss */
+/* line 32, ../sass/_blog-post-header.scss */
 nav .navigation li:nth-child(2) {
   padding-right: 300px;
 }
-/* line 33, ../sass/_blog-post-header.scss */
+/* line 35, ../sass/_blog-post-header.scss */
 nav .navigation li:nth-child(3) {
   padding-left: 0px;
 }
 
-/* line 39, ../sass/_blog-post-header.scss */
+/* line 41, ../sass/_blog-post-header.scss */
 #navig {
   padding: 0 0 20px 0;
   position: relative;
   z-index: 1;
 }
-/* line 44, ../sass/_blog-post-header.scss */
+/* line 46, ../sass/_blog-post-header.scss */
 #navig li {
   font-weight: normal;
   text-transform: capitalize;
   list-style-type: none;
 }
-/* line 50, ../sass/_blog-post-header.scss */
+/* line 52, ../sass/_blog-post-header.scss */
 #navig a {
-  color: white;
+  color: black;
   opacity: .7;
   font-size: 34px;
 }
-/* line 56, ../sass/_blog-post-header.scss */
+/* line 58, ../sass/_blog-post-header.scss */
 #navig ul {
   margin-bottom: 0;
   padding: 43px 0;
   margin-left: 0px;
 }
-/* line 61, ../sass/_blog-post-header.scss */
+/* line 63, ../sass/_blog-post-header.scss */
 #navig .logo1 {
   width: 145px;
 }
-/* line 64, ../sass/_blog-post-header.scss */
+/* line 66, ../sass/_blog-post-header.scss */
 #navig .left {
   text-align: center;
   width: 50%;

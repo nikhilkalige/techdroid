@@ -3,8 +3,10 @@ $logo-width: 145px;
 body {
     //background-image: url("../images/pattern6.png");
     //background-color: #cd595a;
-    background-color: #111;
-    color: #fff;
+    //background-color: #111;
+    background-color: #fff;
+    color: black;
+    border-top: 6px solid #CF0A2C;
 }
 
 nav {
@@ -48,7 +50,7 @@ nav {
         list-style-type: none;
     }
     a {
-        color: white;
+        color: black;
         opacity: .7;
         font-size: 34px;
         //font-family: "Merriweather";
