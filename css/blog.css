@@ -8197,43 +8197,46 @@ nav .navigation li:nth-child(3) {
   width: 50%;
 }
 
-/* line 3, ../sass/_blog-posts.scss */
-#blog-posts header {
-  border-bottom: 0;
-}
-/* line 5, ../sass/_blog-posts.scss */
-#blog-posts header h2 {
-  font-family: "Merriweather";
+/* line 2, ../sass/_blog-posts.scss */
+#blog-posts h1 {
+  height: 27px;
+  margin: 60px 0 80px 0;
+  font-size: 2.25rem;
+  line-height: 54px;
+  text-align: center;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   font-weight: bold;
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 1.2;
-  margin: 1em 0 10px -30px;
-  padding: 15px 0 0 30px;
+  color: black;
+}
+/* line 12, ../sass/_blog-posts.scss */
+#blog-posts h1 span {
+  background: #fff;
+  display: inline-block;
+  padding: 0 25px;
+  margin: 0 auto;
 }
 
-/* line 20, ../sass/_blog-posts.scss */
+/* line 21, ../sass/_blog-posts.scss */
 .post {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   margin-bottom: 30px !important;
   display: block;
 }
-/* line 25, ../sass/_blog-posts.scss */
+/* line 26, ../sass/_blog-posts.scss */
 .post h2 {
-  font-family: Merriweather;
   font-weight: normal;
   text-align: center;
   font-size: 1.75em;
   line-height: 46px;
   color: white;
 }
-/* line 32, ../sass/_blog-posts.scss */
+/* line 33, ../sass/_blog-posts.scss */
 .post h2 a {
   color: white;
 }
-/* line 36, ../sass/_blog-posts.scss */
+/* line 37, ../sass/_blog-posts.scss */
 .post p {
-  font-family: Merriweather;
   font-weight: 400;
   font-size: 1.375em;
   line-height: 36px;
@@ -8241,9 +8244,8 @@ nav .navigation li:nth-child(3) {
   display: block;
 }
 
-/* line 46, ../sass/_blog-posts.scss */
+/* line 47, ../sass/_blog-posts.scss */
 .timestamp {
-  font-family: Merriweather;
   margin: 30px auto 0 auto;
   display: block;
   text-align: center;
@@ -8254,28 +8256,7 @@ nav .navigation li:nth-child(3) {
   color: #fff;
 }
 
-/* line 58, ../sass/_blog-posts.scss */
-#blog {
-  height: 27px;
-  margin: 60px 0 80px 0;
-  font-size: 2.250em;
-  line-height: 54px;
-  text-align: center;
-  display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  font-family: Merriweather;
-  font-weight: bold;
-  color: #fff;
-}
-/* line 69, ../sass/_blog-posts.scss */
-#blog span {
-  background: #C95A5D;
-  display: inline-block;
-  padding: 0 25px;
-  margin: 0 auto;
-}
-
-/* line 78, ../sass/_blog-posts.scss */
+/* line 62, ../sass/_blog-posts.scss */
 aside ul {
   margin: 0 0 1em -5px;
   padding-left: 5px;
@@ -8283,13 +8264,13 @@ aside ul {
   font-size: 16px;
   text-transform: uppercase;
 }
-/* line 85, ../sass/_blog-posts.scss */
+/* line 69, ../sass/_blog-posts.scss */
 aside ul li {
   line-height: 30px;
   padding: 0 16px 0 0px;
   display: inline-block;
 }
-/* line 89, ../sass/_blog-posts.scss */
+/* line 73, ../sass/_blog-posts.scss */
 aside ul li i {
   font-size: 24px;
 }

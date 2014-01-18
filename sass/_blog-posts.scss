@@ -1,29 +1,30 @@
 #blog-posts {
-    //margin-top: rem-calc(64px);
-    header {
-        border-bottom: 0;
-        h2 {
-            font-family: "Merriweather";
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 30px;
-            line-height: 1.2;
-            margin: 1em 0 10px -30px;
-            padding: 15px 0 0 30px;
+    h1 {
+        height: 27px;
+        margin: 60px 0 80px 0;
+        font-size: rem-calc(36px);
+        line-height: 54px;
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        font-weight: bold;
+        color: black;
+        span {
+            background: #fff;
+            display: inline-block;
+            padding: 0 25px;
+            margin: 0 auto;
         }
-    }
-    article:last-child {
-        //border-bottom: none;
     }
 }
 
 .post {
-    border-bottom: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
     margin-bottom: 30px !important;
     display: block;
 
     h2 {
-        font-family: Merriweather;
+        //font-family: Merriweather;
         font-weight: normal;
         text-align: center;
         font-size: 1.75em;
@@ -34,7 +35,7 @@
         }
     }
     p {
-        font-family: Merriweather;
+        //font-family: Merriweather;
         font-weight: 400;
         font-size: 1.375em;
         line-height: 36px;
@@ -44,7 +45,7 @@
 }
 
 .timestamp {
-    font-family: Merriweather;
+    //font-family: Merriweather;
     margin: 30px auto 0 auto;
     display: block;
     text-align: center;
@@ -55,24 +56,7 @@
     color: #fff;
 }
 
-#blog {
-    height: 27px;
-    margin: 60px 0 80px 0;
-    font-size: 2.250em;
-    line-height: 54px;
-    text-align: center;
-    display: block;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
-    font-family: Merriweather;
-    font-weight: bold;
-    color: #fff;
-    span {
-        background: #C95A5D;
-        display: inline-block;
-        padding: 0 25px;
-        margin: 0 auto;
-    }
-}
+
 
 aside {
     ul {
