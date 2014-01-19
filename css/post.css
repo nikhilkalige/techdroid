@@ -8126,9 +8126,22 @@ th.hide-for-touch {
 }
 
 /* Background colors */
+/* line 5, ../sass/_blog-post-common.scss */
+.timestamp {
+  font-family: Merriweather;
+  margin: 30px auto 60px auto;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: black;
+}
+
 /* line 3, ../sass/_blog-post-header.scss */
 body {
-  background-color: #fff;
+  background-color: white;
   color: black;
   border-top: 6px solid #CF0A2C;
 }
@@ -8150,7 +8163,7 @@ nav .navigation li {
 }
 /* line 27, ../sass/_blog-post-header.scss */
 nav .navigation li > a {
-  font-family: 'Merriweather Sans';
+  font-family: Merriweather;
   font-size: 1.4em;
   font-weight: bold;
 }
@@ -8199,7 +8212,7 @@ nav .navigation li:nth-child(3) {
 
 /* line 1, ../sass/_post-article.scss */
 .post {
-  color: white;
+  color: black;
 }
 /* line 3, ../sass/_post-article.scss */
 .post h1 {
@@ -8212,7 +8225,7 @@ nav .navigation li:nth-child(3) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
   font-family: Merriweather;
   font-weight: bold;
-  color: #000;
+  color: black;
 }
 /* line 14, ../sass/_post-article.scss */
 .post h1 span {
@@ -8223,7 +8236,7 @@ nav .navigation li:nth-child(3) {
 }
 /* line 21, ../sass/_post-article.scss */
 .post h3 {
-  color: #000;
+  color: black;
   font-size: 41px;
   line-height: 52.5px;
   font-family: Merriweather;
@@ -8232,12 +8245,12 @@ nav .navigation li:nth-child(3) {
 }
 /* line 29, ../sass/_post-article.scss */
 .post p {
-  font-family: "Merriweather";
+  font-family: Merriweather;
   font-weight: 400;
   font-size: 1.4375rem;
   margin-bottom: 48px;
   line-height: 1.8;
-  color: #000;
+  color: black;
 }
 /* line 37, ../sass/_post-article.scss */
 .post h5 {
@@ -8249,7 +8262,7 @@ nav .navigation li:nth-child(3) {
 }
 /* line 44, ../sass/_post-article.scss */
 .post ul {
-  color: #000;
+  color: black;
   font-family: Merriweather;
   margin-bottom: 48px;
   line-height: 1.8;
@@ -8260,24 +8273,11 @@ nav .navigation li:nth-child(3) {
 /* line 52, ../sass/_post-article.scss */
 .post ul li {
   margin-left: 23px;
-  font-family: inherit;
+  font-family: Merriweather;
   font-size: 23px;
   line-height: 1.8;
   font-style: inherit;
   font-weight: inherit;
-}
-
-/* line 63, ../sass/_post-article.scss */
-.timestamp {
-  font-family: Merriweather;
-  margin: 30px auto 60px auto;
-  display: block;
-  text-align: center;
-  font-size: 1.2rem;
-  opacity: 0.8;
-  font-weight: 300;
-  line-height: 1.5em;
-  color: #000;
 }
 
 /* line 1, ../sass/_blog-post-footer.scss */
@@ -8288,7 +8288,7 @@ footer {
 }
 /* line 6, ../sass/_blog-post-footer.scss */
 footer h3 {
-  color: #000;
+  color: black;
   font-size: 2.25rem;
   font-family: Merriweather;
   font-weight: 400;
@@ -8313,7 +8313,7 @@ footer ul {
 }
 /* line 28, ../sass/_blog-post-footer.scss */
 footer li {
-  color: #fff;
+  color: black;
   display: inline-block;
   margin-left: 1.375rem;
   margin-bottom: 1rem;

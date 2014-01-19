@@ -4,8 +4,8 @@ body {
     //background-image: url("../images/pattern6.png");
     //background-color: #cd595a;
     //background-color: #111;
-    background-color: #fff;
-    color: black;
+    background-color: $background-color;
+    color: $font-color;
     border-top: 6px solid #CF0A2C;
 }
 
@@ -25,7 +25,7 @@ nav {
             margin: 0 3rem;
         }
         li > a {
-            font-family: 'Merriweather Sans';
+            font-family: $font-family;
             font-size: 1.4em;
             font-weight: bold;
         }
@@ -42,7 +42,7 @@ nav {
     padding: 0 0 20px 0;
     position: relative;
     z-index: 1;
-    //font-family: "Merriweather";
+    //font-family: $font-family;
     li {
 
         font-weight: normal;
@@ -50,10 +50,10 @@ nav {
         list-style-type: none;
     }
     a {
-        color: black;
+        color: $font-color;
         opacity: .7;
         font-size: 34px;
-        //font-family: "Merriweather";
+        //font-family: $font-family;
     }
     ul {
         margin-bottom: 0;

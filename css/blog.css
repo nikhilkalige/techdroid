@@ -8126,9 +8126,22 @@ th.hide-for-touch {
 }
 
 /* Background colors */
+/* line 5, ../sass/_blog-post-common.scss */
+.timestamp {
+  font-family: Merriweather;
+  margin: 30px auto 60px auto;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: black;
+}
+
 /* line 3, ../sass/_blog-post-header.scss */
 body {
-  background-color: #fff;
+  background-color: white;
   color: black;
   border-top: 6px solid #CF0A2C;
 }
@@ -8150,7 +8163,7 @@ nav .navigation li {
 }
 /* line 27, ../sass/_blog-post-header.scss */
 nav .navigation li > a {
-  font-family: 'Merriweather Sans';
+  font-family: Merriweather;
   font-size: 1.4em;
   font-weight: bold;
 }
@@ -8247,14 +8260,7 @@ nav .navigation li:nth-child(3) {
 
 /* line 46, ../sass/_blog-posts.scss */
 .timestamp {
-  margin: 30px auto 0 auto;
-  display: block;
-  text-align: center;
-  font-size: 1rem;
-  opacity: 0.9;
-  font-weight: 300;
-  line-height: 1.5rem;
-  color: black;
+  font-size: 1.1rem;
 }
 
 /* line 1, ../sass/_blog-post-footer.scss */
@@ -8265,7 +8271,7 @@ footer {
 }
 /* line 6, ../sass/_blog-post-footer.scss */
 footer h3 {
-  color: #000;
+  color: black;
   font-size: 2.25rem;
   font-family: Merriweather;
   font-weight: 400;
@@ -8290,7 +8296,7 @@ footer ul {
 }
 /* line 28, ../sass/_blog-post-footer.scss */
 footer li {
-  color: #fff;
+  color: black;
   display: inline-block;
   margin-left: 1.375rem;
   margin-bottom: 1rem;
