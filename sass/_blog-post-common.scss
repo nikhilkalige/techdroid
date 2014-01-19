@@ -13,3 +13,13 @@ $font-family: Merriweather;
     line-height: 1.5em;
     color: $font-color;
 }
+
+@media screen and (max-width: 75em) //1200px
+{
+    .row .row {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
