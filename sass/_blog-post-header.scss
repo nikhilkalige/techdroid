@@ -1,0 +1,70 @@
+$logo-width: 145px;
+
+body {
+    //background-image: url("../images/pattern6.png");
+    //background-color: #cd595a;
+    //background-color: #111;
+    background-color: $background-color;
+    color: $font-color;
+    border-top: 6px solid #CF0A2C;
+}
+
+nav {
+    .navigation {
+        //width: 100%;
+        padding-left: 0;
+        text-align: center;
+        margin-left: 0;
+        li {
+            display: inline-block;
+            font-size: rem-calc(24px);
+            text-transform: uppercase;
+            padding-top: 6.2rem;
+            text-align: center;
+            //line-height: $logo-width;
+            margin: 0 3rem;
+        }
+        li > a {
+            font-family: $font-family;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        li:nth-child(2) {
+            padding-right: 300px;
+        }
+        li:nth-child(3) {
+            padding-left: 0px;
+        }
+    }
+}
+
+#navig {
+    padding: 0 0 20px 0;
+    position: relative;
+    z-index: 1;
+    //font-family: $font-family;
+    li {
+
+        font-weight: normal;
+        text-transform: capitalize;
+        list-style-type: none;
+    }
+    a {
+        color: $font-color;
+        opacity: .7;
+        font-size: 34px;
+        //font-family: $font-family;
+    }
+    ul {
+        margin-bottom: 0;
+        padding: 43px 0;
+        margin-left: 0px;
+    }
+    .logo1 {
+        width: $logo-width;
+    }
+    .left {
+        text-align: center;
+        width: 50%;
+    }
+}
