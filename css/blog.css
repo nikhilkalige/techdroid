@@ -8239,7 +8239,7 @@ nav .navigation li:nth-child(3) {
 /* line 26, ../sass/_blog-posts.scss */
 .post h2 {
   font-family: Merriweather;
-  font-weight: normal;
+  font-weight: 600;
   text-align: center;
   font-size: 1.75rem;
   line-height: 46px;
