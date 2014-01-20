@@ -13,3 +13,12 @@ $font-family: Merriweather;
     line-height: 1.5em;
     color: $font-color;
 }
+
+.row .row {
+    @include respond-to(max1200) {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
