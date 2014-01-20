@@ -2,6 +2,21 @@ $background-color: white;
 $font-color: black;
 $font-family: Merriweather;
 
+html, body {
+
+}
+
+.row {
+    max-width: 1140px;
+}
+
+.row .row {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right: 15px;
+        padding-left: 15px;
+}
+
 .timestamp {
     font-family: $font-family;
     margin: 30px auto 60px auto;
@@ -12,13 +27,4 @@ $font-family: Merriweather;
     font-weight: 300;
     line-height: 1.5em;
     color: $font-color;
-}
-
-.row .row {
-    @include respond-to(max1200) {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
 }

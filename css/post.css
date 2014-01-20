@@ -8126,7 +8126,20 @@ th.hide-for-touch {
 }
 
 /* Background colors */
-/* line 5, ../sass/_blog-post-common.scss */
+/* line 9, ../sass/_blog-post-common.scss */
+.row {
+  max-width: 1140px;
+}
+
+/* line 13, ../sass/_blog-post-common.scss */
+.row .row {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 20, ../sass/_blog-post-common.scss */
 .timestamp {
   font-family: Merriweather;
   margin: 30px auto 60px auto;
@@ -8137,16 +8150,6 @@ th.hide-for-touch {
   font-weight: 300;
   line-height: 1.5em;
   color: black;
-}
-
-@media only screen and (max-width: 75em) {
-  /* line 17, ../sass/_blog-post-common.scss */
-  .row .row {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
 }
 
 /* line 3, ../sass/_blog-post-header.scss */
