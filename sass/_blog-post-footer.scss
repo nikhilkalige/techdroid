@@ -1,0 +1,41 @@
+footer {
+    margin-bottom: 140px !important;
+    margin-top: 140px !important;
+    //border-top: 1px solid rgba(255,255,255,0.15);
+    position: relative;
+    h3 {
+        color: $font-color;
+        font-size: rem-calc(36px);
+        font-family: $font-family;
+        font-weight: 400;
+        font-weight: bold;
+        height: 27px;
+        margin: 60px 0 80px 0;
+        line-height: 54px;
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid rgba(0,0,0,0.35);
+        span {
+            background: #fff;
+            display: inline-block;
+            padding: 0 25px;
+            margin: 0 auto;
+        }
+    }
+    ul {
+        margin-left: 0px;
+    }
+    li {
+        color: $font-color;
+        display: inline-block;
+        margin-left: 1.375rem;
+        margin-bottom: 1rem;
+        font-size: 23px;
+        line-height: 1.8;
+        font-style: inherit;
+        font-weight: inherit;
+    }
+    li:first-child {
+        margin-left: 0px;
+    }
+}

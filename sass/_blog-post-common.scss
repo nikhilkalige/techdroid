@@ -1,0 +1,24 @@
+$background-color: white;
+$font-color: black;
+$font-family: Merriweather;
+
+.timestamp {
+    font-family: $font-family;
+    margin: 30px auto 60px auto;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: $font-color;
+}
+
+.row .row {
+    @include respond-to(max1200) {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}

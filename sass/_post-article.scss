@@ -1,0 +1,61 @@
+.post {
+    color: $font-color;
+    h1 {
+        height: 50px;
+        margin: 60px 0 120px 0;
+        font-size: rem-calc(50);
+        line-height: 100px;
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid rgba(0,0,0,0.35);
+        font-family: $font-family;
+        font-weight: bold;
+        color: $font-color;
+        span {
+            background: #fff;
+            display: inline-block;
+            padding: 0 25px;
+            margin: 0 auto;
+        }
+    }
+    h3 {
+        color: $font-color;
+        font-size: 41px;
+        line-height: 52.5px;
+        font-family: $font-family;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: rem-calc(23px);
+        margin-bottom: 48px;
+        line-height: 1.8;
+        color: $font-color;
+    }
+    h5 {
+        font-size: 32px;
+        line-height: 1.8;
+        font-family: $font-family;
+        margin-bottom: 25px;
+        color: $font-color;
+    }
+    ul {
+        color: $font-color;
+        font-family: $font-family;
+        margin-bottom: 48px;
+        line-height: 1.8;
+        list-style-type: disc;
+        margin-left: 0;
+        list-style-position: inside;
+        li {
+            margin-left: 23px;
+            font-family: $font-family;
+            font-size: 23px;
+            line-height: 1.8;
+            font-style: inherit;
+            font-weight: inherit;
+        }
+    }
+}
