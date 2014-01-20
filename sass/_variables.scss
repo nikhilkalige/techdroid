@@ -4,3 +4,26 @@ $light_green: #0AA46E;
 $pink: #E16649;
 $grey: #343434;
 $grey_dark: #1D1A1A;
+
+@function emcalc($value, $base-value: 16px)  {
+    $value: strip-unit($value) / strip-unit($base-value) * 1em;
+    @if ($value == 0em) { $value: 0; } // Turn 0em into 0
+    @return $value;
+}
+
+$max1200: emcalc(1200px);
+$min1030: emcalc(1030px);
+
+@mixin respond-to($media) {
+    @if $media == max1200 {
+        @media only screen and (max-width: $max1200) { @content; }
+    }
+    @else if $media == min1030 {
+        @media only screen and (min-width: $min1030) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and (min-width: $break-large) { @content; }
+    }
+}
+
+

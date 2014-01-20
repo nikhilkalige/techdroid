@@ -8139,8 +8139,8 @@ th.hide-for-touch {
   color: black;
 }
 
-@media screen and (max-width: 75em) {
-  /* line 19, ../sass/_blog-post-common.scss */
+@media only screen and (max-width: 75em) {
+  /* line 17, ../sass/_blog-post-common.scss */
   .row .row {
     margin-left: 0px;
     margin-right: 0px;
@@ -8148,6 +8148,7 @@ th.hide-for-touch {
     padding-left: 15px;
   }
 }
+
 /* line 3, ../sass/_blog-post-header.scss */
 body {
   background-color: white;

@@ -14,9 +14,8 @@ $font-family: Merriweather;
     color: $font-color;
 }
 
-@media screen and (max-width: 75em) //1200px
-{
-    .row .row {
+.row .row {
+    @include respond-to(max1200) {
         margin-left: 0px;
         margin-right: 0px;
         padding-right: 15px;
