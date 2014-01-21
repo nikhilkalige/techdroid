@@ -1,4 +1,5 @@
 #blog-posts {
+    padding: 0 15px;
     h1 {
         $local-font-size: rem-calc(22px);
         height: $local-font-size * 1.5/2;
@@ -34,6 +35,7 @@
 }
 
 .post {
+    padding: 0 !important;
     border-bottom: 1px solid rgba(0,0,0,0.25);
     margin-bottom: rem-calc(30px) !important;
     display: block;
