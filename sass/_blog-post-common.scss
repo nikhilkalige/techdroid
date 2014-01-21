@@ -3,7 +3,9 @@ $font-color: black;
 $font-family: Merriweather;
 
 html, body {
-
+    @include respond-to(min1200) {
+        font-size: 150%;
+    }
 }
 
 .row {
