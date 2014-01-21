@@ -8377,47 +8377,78 @@ nav .navigation li:nth-child(3) {
 
 /* line 1, ../sass/_blog-post-footer.scss */
 footer {
-  margin-bottom: 140px !important;
-  margin-top: 140px !important;
+  padding: 0 15px;
+  margin-top: 0px !important;
   position: relative;
+  margin-bottom: 40px !important;
 }
-/* line 6, ../sass/_blog-post-footer.scss */
+@media screen and (min-width: 50em) {
+  /* line 1, ../sass/_blog-post-footer.scss */
+  footer {
+    margin-top: 60px !important;
+    margin-bottom: 140px !important;
+  }
+}
+/* line 13, ../sass/_blog-post-footer.scss */
 footer h3 {
   color: black;
-  height: 1.25rem;
-  font-size: 1.66667rem;
-  line-height: 2.5rem;
   font-family: Merriweather;
+  height: 1.03125rem;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
   font-weight: 400;
   font-weight: bold;
-  margin: 60px 0 80px 0;
+  margin: 60px 0 60px 0;
   text-align: center;
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
-/* line 19, ../sass/_blog-post-footer.scss */
+@media screen and (min-width: 37.5em) {
+  /* line 13, ../sass/_blog-post-footer.scss */
+  footer h3 {
+    height: 1.25rem;
+    font-size: 1.66667rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 13, ../sass/_blog-post-footer.scss */
+  footer h3 {
+    margin: 60px 0 80px 0;
+  }
+}
+@media screen and (min-width: 64.375em) {
+  /* line 13, ../sass/_blog-post-footer.scss */
+  footer h3 {
+    height: 1.36364rem;
+    font-size: 1.81818rem;
+    line-height: 2.72727rem;
+  }
+}
+/* line 41, ../sass/_blog-post-footer.scss */
 footer h3 span {
   background: #fff;
   display: inline-block;
   padding: 0 25px;
   margin: 0 auto;
 }
-/* line 26, ../sass/_blog-post-footer.scss */
+/* line 48, ../sass/_blog-post-footer.scss */
 footer ul {
+  display: block;
   margin-left: 0px;
 }
-/* line 29, ../sass/_blog-post-footer.scss */
+/* line 52, ../sass/_blog-post-footer.scss */
 footer li {
   color: black;
   display: inline-block;
-  margin-left: 1.375rem;
+  padding-left: 1.375rem;
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.8;
   font-style: inherit;
   font-weight: inherit;
 }
-/* line 39, ../sass/_blog-post-footer.scss */
+/* line 62, ../sass/_blog-post-footer.scss */
 footer li:first-child {
   margin-left: 0px;
 }
