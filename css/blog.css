@@ -8441,7 +8441,7 @@ footer ul {
 footer li {
   color: black;
   display: inline-block;
-  padding-left: 1.375rem;
+  padding: 0 1rem;
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.8;
