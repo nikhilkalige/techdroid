@@ -1,14 +1,30 @@
 #blog-posts {
+    padding: 0 15px;
     h1 {
-        height: 27px;
-        margin: 60px 0 80px 0;
-        font-size: rem-calc(36px);
-        line-height: 54px;
+        $local-font-size: rem-calc(22px);
+        height: $local-font-size * 1.5/2;
+        font-size: $local-font-size;
+        line-height: $local-font-size * 1.5;
+        font-family: $font-family;
+        margin: rem-calc(20px) 0 rem-calc(48px) 0;
         text-align: center;
         display: block;
         border-bottom: 1px solid rgba(0,0,0,0.25);
         font-weight: bold;
         color: $font-color;
+        @include respond-to(min600) {
+            $local-font-size: rem-calc(40px, $font-base-1200);
+            height: $local-font-size * 1.5/2;
+            font-size: $local-font-size;
+            line-height: $local-font-size * 1.5;
+        }
+        @include respond-to(min1030) {
+            $local-font-size: rem-calc(40px, $font-base-1030);
+            height: $local-font-size * 1.5/2;
+            font-size: $local-font-size;
+            line-height: $local-font-size * 1.5;
+            margin: rem-calc(60px, $font-base-1030) 0 rem-calc(80px, $font-base-1030) 0;
+        }
         span {
             background: #fff;
             display: inline-block;
@@ -19,30 +35,45 @@
 }
 
 .post {
+    padding: 0 !important;
     border-bottom: 1px solid rgba(0,0,0,0.25);
-    margin-bottom: 30px !important;
+    margin-bottom: rem-calc(30px) !important;
     display: block;
 
     h2 {
+        //$local-font-size: rem-calc(31px,$font-base-1200);
         font-family: $font-family;
         font-weight: 600;
         text-align: center;
-        font-size: rem-calc(28px);
-        line-height: 46px;
+        font-size: rem-calc(20px);
+        line-height: 1.65;
         color: $font-color;
+        @include respond-to(min600) {
+            font-size: rem-calc(24px, $font-base-600);
+        }
+        @include respond-to(min800) {
+            font-size: rem-calc(28px, $font-base-800);
+        }
+        @include respond-to(min1030) {
+            font-size: rem-calc(31px, $font-base-1030);
+        }
         a {
             color: $font-color;
         }
     }
     p {
         font-weight: 400;
-        font-size: rem-calc(22px);
-        line-height: 36px;
-        margin: 60px 0;
+        font-size: 1rem;
+        line-height: 1.45;
+        margin: 30px 0;
+        @include respond-to(min400) {
+            font-size: rem-calc(18);
+        }
+        @include respond-to(min600) {
+            font-size: 1rem;
+            line-height: 1.65;
+            margin: 60px 0;
+        }
         display: block;
     }
-}
-
-.timestamp {
-    font-size: 1.1rem;
 }

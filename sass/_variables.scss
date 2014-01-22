@@ -12,14 +12,30 @@ $grey_dark: #1D1A1A;
 }
 
 $max1200: emcalc(1200px);
+$min1200: emcalc(1200px);
 $min1030: emcalc(1030px);
+$min800: emcalc(800px);
+$min600: emcalc(600px);
+$min400: emcalc(400px);
 
 @mixin respond-to($media) {
     @if $media == max1200 {
-        @media only screen and (max-width: $max1200) { @content; }
+        @media screen and (max-width: $max1200) { @content; }
+    }
+    @else if $media == min1200 {
+        @media screen and (min-width: $min1200) { @content; }
     }
     @else if $media == min1030 {
-        @media only screen and (min-width: $min1030) { @content; }
+        @media screen and (min-width: $min1030) { @content; }
+    }
+    @else if $media == min800 {
+        @media screen and (min-width: $min800) { @content; }
+    }
+    @else if $media == min600 {
+        @media screen and (min-width: $min600) { @content; }
+    }
+    @else if $media == min400 {
+        @media screen and (min-width: $min400) { @content; }
     }
     @else if $media == wide-screens {
         @media only screen and (min-width: $break-large) { @content; }
