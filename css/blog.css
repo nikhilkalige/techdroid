@@ -8126,26 +8126,78 @@ th.hide-for-touch {
 }
 
 /* Background colors */
-/* line 5, ../sass/_blog-post-common.scss */
+@media screen and (min-width: 37.5em) {
+  /* line 5, ../sass/_blog-post-common.scss */
+  html {
+    font-size: 112.5%;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 5, ../sass/_blog-post-common.scss */
+  html {
+    font-size: 125%;
+  }
+}
+@media screen and (min-width: 64.375em) {
+  /* line 5, ../sass/_blog-post-common.scss */
+  html {
+    font-size: 137.5%;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 5, ../sass/_blog-post-common.scss */
+  html {
+    font-size: 150%;
+  }
+}
+
+/* line 26, ../sass/_blog-post-common.scss */
+.row {
+  max-width: 1140px;
+}
+
+/* line 30, ../sass/_blog-post-common.scss */
+.row .row {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 37, ../sass/_blog-post-common.scss */
 .timestamp {
   font-family: Merriweather;
-  margin: 30px auto 60px auto;
+  margin: 30px auto 0 auto;
   display: block;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   opacity: 0.8;
   font-weight: 300;
   line-height: 1.5em;
   color: black;
 }
-
-@media only screen and (max-width: 75em) {
-  /* line 17, ../sass/_blog-post-common.scss */
-  .row .row {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-right: 15px;
-    padding-left: 15px;
+@media screen and (min-width: 25em) {
+  /* line 37, ../sass/_blog-post-common.scss */
+  .timestamp {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 37.5em) {
+  /* line 37, ../sass/_blog-post-common.scss */
+  .timestamp {
+    font-size: 0.88889rem;
+  }
+}
+@media screen and (min-width: 64.375em) {
+  /* line 37, ../sass/_blog-post-common.scss */
+  .timestamp {
+    font-size: 0.86364rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 37, ../sass/_blog-post-common.scss */
+  .timestamp {
+    font-size: 0.79167rem;
   }
 }
 
@@ -8220,19 +8272,41 @@ nav .navigation li:nth-child(3) {
   width: 50%;
 }
 
-/* line 2, ../sass/_blog-posts.scss */
+/* line 1, ../sass/_blog-posts.scss */
+#blog-posts {
+  padding: 0 15px;
+}
+/* line 3, ../sass/_blog-posts.scss */
 #blog-posts h1 {
-  height: 27px;
-  margin: 60px 0 80px 0;
-  font-size: 2.25rem;
-  line-height: 54px;
+  height: 1.03125rem;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  font-family: Merriweather;
+  margin: 1.25rem 0 3rem 0;
   text-align: center;
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   font-weight: bold;
   color: black;
 }
-/* line 12, ../sass/_blog-posts.scss */
+@media screen and (min-width: 37.5em) {
+  /* line 3, ../sass/_blog-posts.scss */
+  #blog-posts h1 {
+    height: 1.25rem;
+    font-size: 1.66667rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (min-width: 64.375em) {
+  /* line 3, ../sass/_blog-posts.scss */
+  #blog-posts h1 {
+    height: 1.36364rem;
+    font-size: 1.81818rem;
+    line-height: 2.72727rem;
+    margin: 2.72727rem 0 3.63636rem 0;
+  }
+}
+/* line 28, ../sass/_blog-posts.scss */
 #blog-posts h1 span {
   background: #fff;
   display: inline-block;
@@ -8240,118 +8314,236 @@ nav .navigation li:nth-child(3) {
   margin: 0 auto;
 }
 
-/* line 21, ../sass/_blog-posts.scss */
+/* line 37, ../sass/_blog-posts.scss */
 .post {
+  padding: 0 !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  margin-bottom: 30px !important;
+  margin-bottom: 1.875rem !important;
   display: block;
 }
-/* line 26, ../sass/_blog-posts.scss */
+/* line 43, ../sass/_blog-posts.scss */
 .post h2 {
   font-family: Merriweather;
   font-weight: 600;
   text-align: center;
-  font-size: 1.75rem;
-  line-height: 46px;
+  font-size: 1.25rem;
+  line-height: 1.65;
   color: black;
 }
-/* line 33, ../sass/_blog-posts.scss */
+@media screen and (min-width: 37.5em) {
+  /* line 43, ../sass/_blog-posts.scss */
+  .post h2 {
+    font-size: 1.33333rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 43, ../sass/_blog-posts.scss */
+  .post h2 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 64.375em) {
+  /* line 43, ../sass/_blog-posts.scss */
+  .post h2 {
+    font-size: 1.40909rem;
+  }
+}
+/* line 60, ../sass/_blog-posts.scss */
 .post h2 a {
   color: black;
 }
-/* line 37, ../sass/_blog-posts.scss */
+/* line 64, ../sass/_blog-posts.scss */
 .post p {
   font-weight: 400;
-  font-size: 1.375rem;
-  line-height: 36px;
-  margin: 60px 0;
+  font-size: 1rem;
+  line-height: 1.45;
+  margin: 30px 0;
   display: block;
 }
-
-/* line 46, ../sass/_blog-posts.scss */
-.timestamp {
-  font-size: 1.1rem;
+@media screen and (min-width: 25em) {
+  /* line 64, ../sass/_blog-posts.scss */
+  .post p {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 37.5em) {
+  /* line 64, ../sass/_blog-posts.scss */
+  .post p {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 60px 0;
+  }
 }
 
 /* line 1, ../sass/_blog-post-footer.scss */
 footer {
-  margin-bottom: 140px !important;
-  margin-top: 140px !important;
+  padding: 0 15px;
+  margin-top: 0px !important;
   position: relative;
+  margin-bottom: 40px !important;
 }
-/* line 6, ../sass/_blog-post-footer.scss */
+@media screen and (min-width: 50em) {
+  /* line 1, ../sass/_blog-post-footer.scss */
+  footer {
+    margin-top: 60px !important;
+    margin-bottom: 140px !important;
+  }
+}
+/* line 13, ../sass/_blog-post-footer.scss */
 footer h3 {
   color: black;
-  font-size: 2.25rem;
   font-family: Merriweather;
+  height: 1.03125rem;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
   font-weight: 400;
   font-weight: bold;
-  height: 27px;
-  margin: 60px 0 80px 0;
-  line-height: 54px;
+  margin: 60px 0 60px 0;
   text-align: center;
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
-/* line 18, ../sass/_blog-post-footer.scss */
+@media screen and (min-width: 37.5em) {
+  /* line 13, ../sass/_blog-post-footer.scss */
+  footer h3 {
+    height: 1.25rem;
+    font-size: 1.66667rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 13, ../sass/_blog-post-footer.scss */
+  footer h3 {
+    margin: 60px 0 80px 0;
+  }
+}
+@media screen and (min-width: 64.375em) {
+  /* line 13, ../sass/_blog-post-footer.scss */
+  footer h3 {
+    height: 1.36364rem;
+    font-size: 1.81818rem;
+    line-height: 2.72727rem;
+  }
+}
+/* line 41, ../sass/_blog-post-footer.scss */
 footer h3 span {
   background: #fff;
   display: inline-block;
   padding: 0 25px;
   margin: 0 auto;
 }
-/* line 25, ../sass/_blog-post-footer.scss */
+/* line 48, ../sass/_blog-post-footer.scss */
 footer ul {
+  display: block;
   margin-left: 0px;
 }
-/* line 28, ../sass/_blog-post-footer.scss */
+/* line 52, ../sass/_blog-post-footer.scss */
 footer li {
   color: black;
   display: inline-block;
-  margin-left: 1.375rem;
+  padding: 0 1rem;
   margin-bottom: 1rem;
-  font-size: 23px;
+  font-size: 1rem;
   line-height: 1.8;
   font-style: inherit;
   font-weight: inherit;
 }
-/* line 38, ../sass/_blog-post-footer.scss */
+/* line 62, ../sass/_blog-post-footer.scss */
 footer li:first-child {
   margin-left: 0px;
 }
 
 /* line 1, ../sass/_blog-footer.scss */
 #paginate {
-  margin-top: 50px;
+  margin-top: 20px;
 }
-/* line 3, ../sass/_blog-footer.scss */
+@media screen and (min-width: 25em) {
+  /* line 1, ../sass/_blog-footer.scss */
+  #paginate {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 1, ../sass/_blog-footer.scss */
+  #paginate {
+    margin-top: 50px;
+  }
+}
+/* line 9, ../sass/_blog-footer.scss */
 #paginate div {
   font-family: Merriweather;
-  font-size: 1.5rem;
-  height: 28px;
-  line-height: 54px;
+  font-size: 1.125rem;
+  height: 1.33333rem;
+  line-height: 2.41667rem;
+  line-height: 2;
+}
+@media screen and (min-width: 25em) {
+  /* line 9, ../sass/_blog-footer.scss */
+  #paginate div {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 37.5em) {
+  /* line 9, ../sass/_blog-footer.scss */
+  #paginate div {
+    font-size: 1.16667rem;
+    line-height: 2;
+  }
 }
 
-/* line 11, ../sass/_blog-footer.scss */
+/* line 27, ../sass/_blog-footer.scss */
 .left {
   float: left;
 }
 
-/* line 15, ../sass/_blog-footer.scss */
+/* line 31, ../sass/_blog-footer.scss */
 .center {
   text-align: center;
-  border-bottom: 2px dashed rgba(0, 0, 0, 0.35);
 }
-/* line 18, ../sass/_blog-footer.scss */
+@media screen and (min-width: 25em) {
+  /* line 31, ../sass/_blog-footer.scss */
+  .center {
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.35);
+  }
+}
+/* line 36, ../sass/_blog-footer.scss */
 .center span {
   background: #fff;
   font-style: italic;
   display: inline-block;
-  padding: 0 25px;
+  padding: 0;
   margin: 0 auto;
 }
+@media screen and (min-width: 25em) {
+  /* line 36, ../sass/_blog-footer.scss */
+  .center span {
+    padding: 0 25px;
+  }
+}
 
-/* line 27, ../sass/_blog-footer.scss */
+/* line 48, ../sass/_blog-footer.scss */
 .right {
   text-align: right;
+}
+
+/* line 52, ../sass/_blog-footer.scss */
+.hide {
+  display: inherit !important;
+}
+@media screen and (min-width: 37.5em) {
+  /* line 52, ../sass/_blog-footer.scss */
+  .hide {
+    display: none !important;
+  }
+}
+
+/* line 59, ../sass/_blog-footer.scss */
+.show {
+  display: none !important;
+}
+@media screen and (min-width: 37.5em) {
+  /* line 59, ../sass/_blog-footer.scss */
+  .show {
+    display: inherit !important;
+  }
 }

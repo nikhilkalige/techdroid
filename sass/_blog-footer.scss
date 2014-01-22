@@ -1,10 +1,26 @@
 #paginate {
-    margin-top: 50px;
+    margin-top: 20px;
+    @include respond-to(min400) {
+        margin-top: 30px;
+    }
+    @include respond-to(min800) {
+        margin-top: 50px;
+    }
     div {
         font-family: $font-family;
-        font-size: 1.5rem;
-        height: 28px;
-        line-height: 54px;
+        //font-size: rem-calc(28px, 24px);
+        font-size: rem-calc(18);
+        height: rem-calc(32px, 24px);
+        line-height: rem-calc(58px, 24px);
+        //font-size: 1rem;
+        line-height: 2;
+        @include respond-to(min400) {
+            font-size: rem-calc(20);
+        }
+        @include respond-to(min600) {
+            font-size: rem-calc(28px, 24px);
+            line-height: 2;
+        }
     }
 }
 
@@ -14,16 +30,35 @@
 
 .center {
     text-align: center;
-    border-bottom: 2px dashed rgba(0,0,0,0.35);
+    @include respond-to(min400) {
+        border-bottom: 2px dashed rgba(0,0,0,0.35);
+    }
     span {
         background: #fff;
         font-style: italic;
         display: inline-block;
-        padding: 0 25px;
+        padding: 0;
+        @include respond-to(min400) {
+            padding: 0 25px;
+        }
         margin: 0 auto;
     }
 }
 
 .right {
     text-align: right;
+}
+
+.hide {
+    display: inherit !important;
+    @include respond-to(min600) {
+        display: none !important;
+    }
+}
+
+.show {
+    display: none !important;
+    @include respond-to(min600) {
+        display: inherit !important;
+    }
 }
