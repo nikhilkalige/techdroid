@@ -9843,8 +9843,24 @@ colors:
   background-color: rgba(0, 170, 187, 0.8);
   min-height: 720px;
   padding-bottom: 50px;
+  font-family: "Merriweather";
+  font-size: 1rem;
+  line-height: 1.45;
 }
-/* line 10, ../sass/_index-skills.scss */
+@media screen and (min-width: 25em) {
+  /* line 1, ../sass/_index-skills.scss */
+  #skill-section {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 37.5em) {
+  /* line 1, ../sass/_index-skills.scss */
+  #skill-section {
+    font-size: 1.1rem;
+    line-height: 1.65;
+  }
+}
+/* line 19, ../sass/_index-skills.scss */
 #skill-section .icon {
   display: block;
   margin-top: 30px;
@@ -9852,7 +9868,7 @@ colors:
   width: 100px;
   background-image: url(../images/02.png);
 }
-/* line 18, ../sass/_index-skills.scss */
+/* line 26, ../sass/_index-skills.scss */
 #skill-section .line {
   width: 300px;
   height: 1px;
@@ -9861,50 +9877,66 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 27, ../sass/_index-skills.scss */
+/* line 34, ../sass/_index-skills.scss */
 #skill-section .title {
-  font-family: 'Terminal Dosis';
-  line-height: 70px;
-  text-align: center;
-  font-size: 50px;
-  color: #32323a;
   display: block;
+  color: #32323a;
+  font-family: 'Terminal Dosis';
+  font-size: 2.25rem;
+  line-height: 1.4;
+  text-align: center;
   margin-top: 4px;
   text-transform: uppercase;
 }
-/* line 38, ../sass/_index-skills.scss */
+@media screen and (min-width: 64.375em) {
+  /* line 34, ../sass/_index-skills.scss */
+  #skill-section .title {
+    font-size: 2.18182rem;
+  }
+}
+/* line 47, ../sass/_index-skills.scss */
 #skill-section .display {
   display: block;
   position: relative;
-  margin-top: 106px;
+  margin-top: 2.5rem;
 }
-/* line 44, ../sass/_index-skills.scss */
+@media screen and (min-width: 37.5em) {
+  /* line 47, ../sass/_index-skills.scss */
+  #skill-section .display {
+    margin-top: 2.77778rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 47, ../sass/_index-skills.scss */
+  #skill-section .display {
+    margin-top: 4.4166rem;
+  }
+}
+/* line 58, ../sass/_index-skills.scss */
 #skill-section .skill {
-  font-size: 26px;
-  line-height: 1.5;
+  margin-bottom: 1.5rem;
   text-align: center;
-  font-family: "Merriweather";
-  margin-bottom: 24px;
 }
-/* line 52, ../sass/_index-skills.scss */
+/* line 63, ../sass/_index-skills.scss */
 #skill-section .skill-text {
-  font-size: 26px;
-  line-height: 1.5;
-  text-align: center;
-  font-family: "Merriweather";
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 37px;
   color: white;
   text-transform: uppercase;
-  line-height: 45px;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 1.54167rem;
+  line-height: 1.4;
 }
-/* line 65, ../sass/_index-skills.scss */
+/* line 71, ../sass/_index-skills.scss */
+#skill-section p {
+  font-size: inherit;
+  line-height: inherit;
+}
+/* line 76, ../sass/_index-skills.scss */
 #skill-section .skill-text:first-child {
-  margin-bottom: 24px;
+  margin-bottom: 1rem;
 }
 
-/* line 70, ../sass/_index-skills.scss */
+/* line 81, ../sass/_index-skills.scss */
 #about-section {
   position: relative;
   width: 100%;
@@ -9917,19 +9949,19 @@ colors:
   line-height: 1.45;
 }
 @media screen and (min-width: 25em) {
-  /* line 70, ../sass/_index-skills.scss */
+  /* line 81, ../sass/_index-skills.scss */
   #about-section {
     font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 37.5em) {
-  /* line 70, ../sass/_index-skills.scss */
+  /* line 81, ../sass/_index-skills.scss */
   #about-section {
     font-size: 1.1rem;
     line-height: 1.65;
   }
 }
-/* line 87, ../sass/_index-skills.scss */
+/* line 98, ../sass/_index-skills.scss */
 #about-section .icon {
   display: block;
   margin-top: 30px;
@@ -9937,7 +9969,7 @@ colors:
   width: 70px;
   background-image: url(../images/beard.png);
 }
-/* line 94, ../sass/_index-skills.scss */
+/* line 105, ../sass/_index-skills.scss */
 #about-section .line {
   width: 300px;
   height: 1px;
@@ -9946,7 +9978,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 102, ../sass/_index-skills.scss */
+/* line 113, ../sass/_index-skills.scss */
 #about-section .title {
   display: block;
   color: #32323a;
@@ -9958,99 +9990,99 @@ colors:
   text-transform: uppercase;
 }
 @media screen and (min-width: 64.375em) {
-  /* line 102, ../sass/_index-skills.scss */
+  /* line 113, ../sass/_index-skills.scss */
   #about-section .title {
     font-size: 2.18182rem;
   }
 }
-/* line 115, ../sass/_index-skills.scss */
+/* line 126, ../sass/_index-skills.scss */
 #about-section .display {
   display: block;
   position: relative;
   margin-top: 2.5rem;
 }
 @media screen and (min-width: 37.5em) {
-  /* line 115, ../sass/_index-skills.scss */
+  /* line 126, ../sass/_index-skills.scss */
   #about-section .display {
     margin-top: 2.77778rem;
   }
 }
 @media screen and (min-width: 50em) {
-  /* line 115, ../sass/_index-skills.scss */
+  /* line 126, ../sass/_index-skills.scss */
   #about-section .display {
     margin-top: 4.4166rem;
   }
 }
-/* line 126, ../sass/_index-skills.scss */
+/* line 137, ../sass/_index-skills.scss */
 #about-section .myself {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-/* line 130, ../sass/_index-skills.scss */
+/* line 141, ../sass/_index-skills.scss */
 #about-section p {
   font-size: inherit;
   line-height: inherit;
 }
-/* line 135, ../sass/_index-skills.scss */
+/* line 146, ../sass/_index-skills.scss */
 #about-section .display .icon {
   margin-left: auto;
   margin-right: auto;
   height: 75px;
   width: 100px;
 }
-/* line 141, ../sass/_index-skills.scss */
+/* line 152, ../sass/_index-skills.scss */
 #about-section .display .line {
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 64em) {
-  /* line 146, ../sass/_index-skills.scss */
+  /* line 157, ../sass/_index-skills.scss */
   #about-section #edu {
     padding-right: 1.41667rem;
     padding-left: 10px;
   }
 }
 @media screen and (min-width: 75em) {
-  /* line 146, ../sass/_index-skills.scss */
+  /* line 157, ../sass/_index-skills.scss */
   #about-section #edu {
     padding-left: 0px;
   }
 }
-/* line 155, ../sass/_index-skills.scss */
+/* line 166, ../sass/_index-skills.scss */
 #about-section #edu .icon {
   background-image: url(../images/board.png);
 }
 @media screen and (min-width: 64em) {
-  /* line 159, ../sass/_index-skills.scss */
+  /* line 170, ../sass/_index-skills.scss */
   #about-section #work {
     padding-left: 1.41667rem;
     padding-right: 10px;
   }
 }
 @media screen and (min-width: 75em) {
-  /* line 159, ../sass/_index-skills.scss */
+  /* line 170, ../sass/_index-skills.scss */
   #about-section #work {
     padding-right: 0px;
   }
 }
-/* line 168, ../sass/_index-skills.scss */
+/* line 179, ../sass/_index-skills.scss */
 #about-section #work .icon {
   background-image: url(../images/work.png);
 }
-/* line 172, ../sass/_index-skills.scss */
+/* line 183, ../sass/_index-skills.scss */
 #about-section .about-content {
   margin-top: 30px;
   margin-bottom: 24px;
   text-align: center;
 }
 @media screen and (min-width: 64em) {
-  /* line 172, ../sass/_index-skills.scss */
+  /* line 183, ../sass/_index-skills.scss */
   #about-section .about-content {
     font-size: 1rem;
   }
 }
 
-/* line 183, ../sass/_index-skills.scss */
+/* line 194, ../sass/_index-skills.scss */
 #colophon-section {
   position: relative;
   width: 100%;
@@ -10064,19 +10096,19 @@ colors:
   text-align: center;
 }
 @media screen and (min-width: 25em) {
-  /* line 183, ../sass/_index-skills.scss */
+  /* line 194, ../sass/_index-skills.scss */
   #colophon-section {
     font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 37.5em) {
-  /* line 183, ../sass/_index-skills.scss */
+  /* line 194, ../sass/_index-skills.scss */
   #colophon-section {
     font-size: 1.1rem;
     line-height: 1.65;
   }
 }
-/* line 201, ../sass/_index-skills.scss */
+/* line 212, ../sass/_index-skills.scss */
 #colophon-section .icon {
   display: block;
   margin-top: 30px;
@@ -10084,7 +10116,7 @@ colors:
   width: 100px;
   background-image: url(../images/const.png);
 }
-/* line 208, ../sass/_index-skills.scss */
+/* line 219, ../sass/_index-skills.scss */
 #colophon-section .line {
   width: 300px;
   height: 1px;
@@ -10093,7 +10125,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 216, ../sass/_index-skills.scss */
+/* line 227, ../sass/_index-skills.scss */
 #colophon-section .title {
   display: block;
   color: #32323a;
@@ -10105,30 +10137,30 @@ colors:
   text-transform: uppercase;
 }
 @media screen and (min-width: 64.375em) {
-  /* line 216, ../sass/_index-skills.scss */
+  /* line 227, ../sass/_index-skills.scss */
   #colophon-section .title {
     font-size: 2.18182rem;
   }
 }
-/* line 229, ../sass/_index-skills.scss */
+/* line 240, ../sass/_index-skills.scss */
 #colophon-section .display {
   display: block;
   position: relative;
   margin-top: 2.5rem;
 }
 @media screen and (min-width: 37.5em) {
-  /* line 229, ../sass/_index-skills.scss */
+  /* line 240, ../sass/_index-skills.scss */
   #colophon-section .display {
     margin-top: 2.77778rem;
   }
 }
 @media screen and (min-width: 50em) {
-  /* line 229, ../sass/_index-skills.scss */
+  /* line 240, ../sass/_index-skills.scss */
   #colophon-section .display {
     margin-top: 4.4166rem;
   }
 }
-/* line 244, ../sass/_index-skills.scss */
+/* line 255, ../sass/_index-skills.scss */
 #colophon-section p {
   font-size: inherit;
   line-height: inherit;
