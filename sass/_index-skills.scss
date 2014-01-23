@@ -74,12 +74,16 @@
     overflow: hidden;
     background-color: #33B294;
     padding-bottom: 50px;
-
-    .columns {
-        padding-left: 0px;
-        padding-right: 0px;
+    font-family: "Merriweather";
+    font-size: 1rem;
+    line-height: 1.45;
+    @include respond-to(min400) {
+        font-size: rem-calc(18);
     }
-
+    @include respond-to(min600) {
+        font-size: 1.1rem;
+        line-height: 1.65;
+    }
     .icon {
         display: block;
         margin-top: 30px;
@@ -87,7 +91,6 @@
         width: 70px;
         background-image: url(../images/beard.png);
     }
-
     .line {
         width: 300px;
         height: 1px;
@@ -96,108 +99,83 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-
     .title {
-        font-family: 'Terminal Dosis';
-        line-height: 70px;
-        text-align: center;
-        font-size: 50px;
-        color: #32323a;
         display: block;
-        margin-top: 0px;
+        color: #32323a;
+        font-family: 'Terminal Dosis';
+        font-size: rem-calc(36px);
+        @include respond-to(min1030) {
+            font-size: rem-calc(48, $font-base-1030);
+        }
+        line-height: 1.4;
+        text-align: center;
+        margin-top: 4px;
         text-transform: uppercase;
     }
-
     .display {
         display: block;
         position: relative;
-        margin-top: 120px;
+        margin-top: rem-calc(40);
+        @include respond-to(min600) {
+            margin-top: rem-calc(50, $font-base-600);
+        }
+        @include respond-to(min800) {
+            margin-top: 4.4166rem;
+        }
     }
-
     .myself {
-        font-size: 26px;
-        line-height: 1.5;
+        margin-bottom: rem-calc(24px);
         text-align: center;
-        font-family: "Merriweather";
-        margin-bottom: 24px;
     }
-
-    .edu-icon {
-        display: block;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        height: 75px;
-        width: 100px;
-        background-image: url(../images/board.png);
+    p {
+        font-size: inherit;
+        line-height: inherit;
     }
-
-    .edu-line {
-        width: 300px;
-        height: 1px;
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../images/darkline.png);
-        background-position: center;
-        background-repeat: no-repeat;
+    .display {
+        .icon {
+            margin-left: auto;
+            margin-right: auto;
+            height: 75px;
+            width: 100px;
+        }
+        .line {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
-
-    .edu-title {
-        font-family: 'Terminal Dosis';
-        line-height: 70px;
-        text-align: center;
-        font-size: 50px;
-        color: #32323a;
-        display: block;
-        margin-top: 0px;
-        text-transform: uppercase;
+    #edu {
+        @include respond-to(min1024) {
+            padding-right: rem-calc(34px,$font-base-1200);
+            padding-left: 10px;
+        }
+        @include respond-to(min1200)
+        {
+            padding-left: 0px;
+        }
+        .icon {
+            background-image: url(../images/board.png);
+        }
     }
-
-    .work-icon {
-        display: block;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        height: 75px;
-        width: 100px;
-        background-image: url(../images/work.png);
-    }
-
-    .work-line {
-        width: 300px;
-        height: 1px;
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../images/darkline.png);
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .work-title {
-        font-family: 'Terminal Dosis';
-        line-height: 70px;
-        text-align: center;
-        font-size: 50px;
-        color: #32323a;
-        display: block;
-        margin-top: 0px;
-        text-transform: uppercase;
-    }
-    .edu {
-        padding-right: 38px;
-    }
-    .work {
-        padding-left: 38px;
+    #work {
+        @include respond-to(min1024) {
+            padding-left: rem-calc(34px,$font-base-1200);
+            padding-right: 10px;
+        }
+        @include respond-to(min1200)
+        {
+            padding-right: 0px;
+        }
+        .icon {
+            background-image: url(../images/work.png);
+        }
     }
     .about-content {
-        margin-top: 24px;
+        margin-top: 30px;
         margin-bottom: 24px;
-        font-size: 22px;
-        line-height: 1.5;
         text-align: center;
-        font-family: "Merriweather Sans", "Merriweather";
+        @include respond-to(min1024) {
+                font-size: 1rem;
+        }
     }
 }
 
@@ -211,6 +189,7 @@
     padding-bottom: 50px;
     font-family: "Merriweather";
     font-size: 1rem;
+    line-height: 1.45;
     @include respond-to(min400) {
         font-size: rem-calc(18);
     }
@@ -218,7 +197,6 @@
         font-size: 1.1rem;
         line-height: 1.65;
     }
-    line-height: 1.45;
     text-align: center;
     .icon {
         display: block;
@@ -260,8 +238,8 @@
         }
     }
     .columns {
-        padding-left: 0px;
-        padding-right: 0px;
+        //padding-left: 0px;
+        //padding-right: 0px;
     }
     p {
         font-size: inherit;

@@ -9912,13 +9912,24 @@ colors:
   overflow: hidden;
   background-color: #33B294;
   padding-bottom: 50px;
+  font-family: "Merriweather";
+  font-size: 1rem;
+  line-height: 1.45;
 }
-/* line 78, ../sass/_index-skills.scss */
-#about-section .columns {
-  padding-left: 0px;
-  padding-right: 0px;
+@media screen and (min-width: 25em) {
+  /* line 70, ../sass/_index-skills.scss */
+  #about-section {
+    font-size: 1.125rem;
+  }
 }
-/* line 83, ../sass/_index-skills.scss */
+@media screen and (min-width: 37.5em) {
+  /* line 70, ../sass/_index-skills.scss */
+  #about-section {
+    font-size: 1.1rem;
+    line-height: 1.65;
+  }
+}
+/* line 87, ../sass/_index-skills.scss */
 #about-section .icon {
   display: block;
   margin-top: 30px;
@@ -9926,7 +9937,7 @@ colors:
   width: 70px;
   background-image: url(../images/beard.png);
 }
-/* line 91, ../sass/_index-skills.scss */
+/* line 94, ../sass/_index-skills.scss */
 #about-section .line {
   width: 300px;
   height: 1px;
@@ -9935,114 +9946,111 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 100, ../sass/_index-skills.scss */
+/* line 102, ../sass/_index-skills.scss */
 #about-section .title {
-  font-family: 'Terminal Dosis';
-  line-height: 70px;
-  text-align: center;
-  font-size: 50px;
-  color: #32323a;
   display: block;
-  margin-top: 0px;
+  color: #32323a;
+  font-family: 'Terminal Dosis';
+  font-size: 2.25rem;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 4px;
   text-transform: uppercase;
 }
-/* line 111, ../sass/_index-skills.scss */
+@media screen and (min-width: 64.375em) {
+  /* line 102, ../sass/_index-skills.scss */
+  #about-section .title {
+    font-size: 2.18182rem;
+  }
+}
+/* line 115, ../sass/_index-skills.scss */
 #about-section .display {
   display: block;
   position: relative;
-  margin-top: 120px;
+  margin-top: 2.5rem;
 }
-/* line 117, ../sass/_index-skills.scss */
+@media screen and (min-width: 37.5em) {
+  /* line 115, ../sass/_index-skills.scss */
+  #about-section .display {
+    margin-top: 2.77778rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 115, ../sass/_index-skills.scss */
+  #about-section .display {
+    margin-top: 4.4166rem;
+  }
+}
+/* line 126, ../sass/_index-skills.scss */
 #about-section .myself {
-  font-size: 26px;
-  line-height: 1.5;
+  margin-bottom: 1.5rem;
   text-align: center;
-  font-family: "Merriweather";
-  margin-bottom: 24px;
 }
-/* line 125, ../sass/_index-skills.scss */
-#about-section .edu-icon {
-  display: block;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 75px;
-  width: 100px;
-  background-image: url(../images/board.png);
+/* line 130, ../sass/_index-skills.scss */
+#about-section p {
+  font-size: inherit;
+  line-height: inherit;
 }
 /* line 135, ../sass/_index-skills.scss */
-#about-section .edu-line {
-  width: 300px;
-  height: 1px;
-  margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/darkline.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-/* line 146, ../sass/_index-skills.scss */
-#about-section .edu-title {
-  font-family: 'Terminal Dosis';
-  line-height: 70px;
-  text-align: center;
-  font-size: 50px;
-  color: #32323a;
-  display: block;
-  margin-top: 0px;
-  text-transform: uppercase;
-}
-/* line 157, ../sass/_index-skills.scss */
-#about-section .work-icon {
-  display: block;
-  margin-top: 30px;
+#about-section .display .icon {
   margin-left: auto;
   margin-right: auto;
   height: 75px;
   width: 100px;
-  background-image: url(../images/work.png);
 }
-/* line 167, ../sass/_index-skills.scss */
-#about-section .work-line {
-  width: 300px;
-  height: 1px;
-  margin-top: 15px;
+/* line 141, ../sass/_index-skills.scss */
+#about-section .display .line {
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../images/darkline.png);
-  background-position: center;
-  background-repeat: no-repeat;
 }
-/* line 178, ../sass/_index-skills.scss */
-#about-section .work-title {
-  font-family: 'Terminal Dosis';
-  line-height: 70px;
-  text-align: center;
-  font-size: 50px;
-  color: #32323a;
-  display: block;
-  margin-top: 0px;
-  text-transform: uppercase;
+@media screen and (min-width: 64em) {
+  /* line 146, ../sass/_index-skills.scss */
+  #about-section #edu {
+    padding-right: 1.41667rem;
+    padding-left: 10px;
+  }
 }
-/* line 188, ../sass/_index-skills.scss */
-#about-section .edu {
-  padding-right: 38px;
+@media screen and (min-width: 75em) {
+  /* line 146, ../sass/_index-skills.scss */
+  #about-section #edu {
+    padding-left: 0px;
+  }
 }
-/* line 191, ../sass/_index-skills.scss */
-#about-section .work {
-  padding-left: 38px;
+/* line 155, ../sass/_index-skills.scss */
+#about-section #edu .icon {
+  background-image: url(../images/board.png);
 }
-/* line 194, ../sass/_index-skills.scss */
+@media screen and (min-width: 64em) {
+  /* line 159, ../sass/_index-skills.scss */
+  #about-section #work {
+    padding-left: 1.41667rem;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 159, ../sass/_index-skills.scss */
+  #about-section #work {
+    padding-right: 0px;
+  }
+}
+/* line 168, ../sass/_index-skills.scss */
+#about-section #work .icon {
+  background-image: url(../images/work.png);
+}
+/* line 172, ../sass/_index-skills.scss */
 #about-section .about-content {
-  margin-top: 24px;
+  margin-top: 30px;
   margin-bottom: 24px;
-  font-size: 22px;
-  line-height: 1.5;
   text-align: center;
-  font-family: "Merriweather Sans", "Merriweather";
+}
+@media screen and (min-width: 64em) {
+  /* line 172, ../sass/_index-skills.scss */
+  #about-section .about-content {
+    font-size: 1rem;
+  }
 }
 
-/* line 205, ../sass/_index-skills.scss */
+/* line 183, ../sass/_index-skills.scss */
 #colophon-section {
   position: relative;
   width: 100%;
@@ -10056,19 +10064,19 @@ colors:
   text-align: center;
 }
 @media screen and (min-width: 25em) {
-  /* line 205, ../sass/_index-skills.scss */
+  /* line 183, ../sass/_index-skills.scss */
   #colophon-section {
     font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 37.5em) {
-  /* line 205, ../sass/_index-skills.scss */
+  /* line 183, ../sass/_index-skills.scss */
   #colophon-section {
     font-size: 1.1rem;
     line-height: 1.65;
   }
 }
-/* line 223, ../sass/_index-skills.scss */
+/* line 201, ../sass/_index-skills.scss */
 #colophon-section .icon {
   display: block;
   margin-top: 30px;
@@ -10076,7 +10084,7 @@ colors:
   width: 100px;
   background-image: url(../images/const.png);
 }
-/* line 230, ../sass/_index-skills.scss */
+/* line 208, ../sass/_index-skills.scss */
 #colophon-section .line {
   width: 300px;
   height: 1px;
@@ -10085,7 +10093,7 @@ colors:
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 238, ../sass/_index-skills.scss */
+/* line 216, ../sass/_index-skills.scss */
 #colophon-section .title {
   display: block;
   color: #32323a;
@@ -10097,35 +10105,30 @@ colors:
   text-transform: uppercase;
 }
 @media screen and (min-width: 64.375em) {
-  /* line 238, ../sass/_index-skills.scss */
+  /* line 216, ../sass/_index-skills.scss */
   #colophon-section .title {
     font-size: 2.18182rem;
   }
 }
-/* line 251, ../sass/_index-skills.scss */
+/* line 229, ../sass/_index-skills.scss */
 #colophon-section .display {
   display: block;
   position: relative;
   margin-top: 2.5rem;
 }
 @media screen and (min-width: 37.5em) {
-  /* line 251, ../sass/_index-skills.scss */
+  /* line 229, ../sass/_index-skills.scss */
   #colophon-section .display {
     margin-top: 2.77778rem;
   }
 }
 @media screen and (min-width: 50em) {
-  /* line 251, ../sass/_index-skills.scss */
+  /* line 229, ../sass/_index-skills.scss */
   #colophon-section .display {
     margin-top: 4.4166rem;
   }
 }
-/* line 262, ../sass/_index-skills.scss */
-#colophon-section .columns {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-/* line 266, ../sass/_index-skills.scss */
+/* line 244, ../sass/_index-skills.scss */
 #colophon-section p {
   font-size: inherit;
   line-height: inherit;
