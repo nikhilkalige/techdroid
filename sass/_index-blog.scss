@@ -2,12 +2,6 @@
                                 Blog Section
 ****************************************************************************************************/
 
-.blogTitle {
-    text-align: center;
-    margin: 0em auto 2em auto;
-    font-family: Merriweather;
-    padding-top: 95px;
-}
 
 .blogTitle > .columns {
     padding: 0px;
@@ -21,23 +15,23 @@
     text-transform: uppercase;
 }
 
-#blogSection .display > article {
+#blogSection .display  article {
     border: medium double #DDDDDD;
     border-radius: 2px;
     margin-bottom: 20px;
     padding: 20px 20px 30px;
     transition: all 0.4s ease 0s;
 }
-
+/**/
 .blogArticle {
     text-align: center;
 }
 
-.blogArticle > .articleImage {
+.blogArticle  .articleImage {
     max-width: 100%;
 }
 
-.blogArticle > h3 {
+.blogArticle  h3 {
     margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -46,27 +40,27 @@
     color: #333333;
 }
 
-.blogArticle > h3 > a {
+.blogArticle  h3 a {
     color: #333333;
 }
 
-.blogArticle > .meta {
+.blogArticle  .meta {
     border-bottom: medium double #DDDDDD;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.blogArticle > .meta > p {
+.blogArticle  .meta  p {
     font-family: "Merriweather Sans";
     font-style: italic;
 }
 
-.blogArticle > .meta > p > span {
+.blogArticle  .meta  p  span {
     display: block;
     margin-top: 10px;
 }
 
-.blogArticle > .meta > p > span > i:before {
+.blogArticle  .meta  p  span  i:before {
     background: url(../images/comment_fill.svg) no-repeat;
     background-size: 1em;
     content: "";
@@ -84,7 +78,7 @@
     margin-bottom: 45px;
 }
 
-.blogArticle > .articleButton {
+.blogArticle  .articleButton {
     font-family: "Merriweather";
     background-color: #e47c14;
     text-align: center;
@@ -94,7 +88,7 @@
 }
 
 @media #{$small} {
-    #blogSection .display > .large-4 {
+    #blogSection .display  .large-4 {
         width: 32%;
     }
 
@@ -105,13 +99,15 @@
 
 #blogSection {
     position: relative;
-    background: url("../images/bg-body.png") repeat scroll left top #A73031;
+    //background: url("../images/bg-body.png") repeat scroll left top #A73031;
     width: 100%;
     min-height: 720px;
     overflow: hidden;
-    background-color: #33B294;
+    //background-color: #33B294;
+    background-color: #eee;
     padding-bottom: 50px;
     font-family: "Merriweather";
+    text-align: center;
     font-size: 1rem;
     line-height: 1.45;
     @include respond-to(min400) {
@@ -152,6 +148,7 @@
     }
     .display {
         display: block;
+        max-width: 100%;
         position: relative;
         margin-top: rem-calc(40);
         @include respond-to(min600) {
@@ -162,4 +159,68 @@
         }
         padding-bottom: 70px;
     }
+    img {
+        max-width: 100%;
+    }
+    h3 {
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: Merriweather;
+        font-size: 1.4em;
+        color: #333333;
+        a {
+            color: #333333;
+        }
+    }
+    .meta {
+        border-bottom: medium double #DDDDDD;
+        margin-bottom: 15px;
+        text-align: center;
+
+        p {
+            font-family: "Merriweather Sans";
+            font-style: italic;
+            span {
+                display: block;
+                margin-top: 10px;
+                i:before {
+                    background: url(../images/comment_fill.svg) no-repeat;
+                    background-size: 1em;
+                    content: "";
+                    display: inline-block;
+                    width: 1em;
+                    height: 1em;
+                    -webkit-font-smoothing: antialiased;
+                    vertical-align: middle;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+    .articleButton {
+        font-family: "Merriweather";
+        background-color: #e47c14;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 10px;
+    }
+}
+
+#blogSection .b2 {
+    background-color: #eee;
+}
+.nn {
+    max-width: 1140px !important;
+}
+
+.new {
+    border: solid 3px #222;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 60px 0 !important;
+    padding:20px;
 }
