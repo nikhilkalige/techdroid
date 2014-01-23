@@ -8573,7 +8573,7 @@ h2 {
 .portfolio_filter {
   list-style-type: none;
 }
-/* line 5, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+/* line 5, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
 .portfolio_filter, .portfolio_filter li {
   margin: 0px;
   padding: 0px;
@@ -9638,86 +9638,14 @@ colors:
   padding-right: 0px;
 }
 /* line 77, ../sass/_index-products.scss */
-#productsSection .product-intro p {
-  font-family: "Merriweather";
-  text-align: right;
-}
-/* line 81, ../sass/_index-products.scss */
-#productsSection .product-intro h2 {
-  text-align: center;
-  font-family: "Terminal Dosis";
-  font-size: 20px;
-}
-/* line 86, ../sass/_index-products.scss */
-#productsSection .product-left {
-  border: 2px solid #4c3d6d;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  display: block;
-}
-/* line 95, ../sass/_index-products.scss */
-#productsSection .product-left img {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-/* line 107, ../sass/_index-products.scss */
-#productsSection .product-right {
-  padding-left: 1.5% !important;
-  margin-right: 0;
-  text-align: right;
-  line-height: 1.333;
-}
-/* line 114, ../sass/_index-products.scss */
-#productsSection .product-right h2:before {
-  background: #4c3d6d;
-  content: "";
-  height: 8px;
-  right: 0;
-  position: absolute;
-  top: 0;
-  width: 64px;
-}
-/* line 123, ../sass/_index-products.scss */
-#productsSection .product-right h2 {
-  color: #4c3d6d;
-  font-family: "Terminal Dosis";
-  font-size: 36px;
-  line-height: 1;
-  padding-top: 32px;
-  position: relative;
-  text-transform: uppercase;
-  font-weight: bolder;
-  margin: .83em 0;
-}
-/* line 136, ../sass/_index-products.scss */
-#productsSection .product-right p {
-  font-family: "Merriweather Sans";
-  margin: 24px 0;
-  font-size: 20px;
-}
-/* line 143, ../sass/_index-products.scss */
-#productsSection h3 {
-  font-size: 2.7em;
-  font-family: "Terminal Dosis",sans-serif !important;
-}
-/* line 147, ../sass/_index-products.scss */
 #productsSection .product-desc {
   float: none;
   margin: 0;
   width: 100%;
   text-align: center;
 }
-@media screen and (min-width: 64.375em) {
-  /* line 147, ../sass/_index-products.scss */
+@media screen and (min-width: 75em) {
+  /* line 77, ../sass/_index-products.scss */
   #productsSection .product-desc {
     float: right;
     margin-left: 2.857142857%;
@@ -9727,23 +9655,12 @@ colors:
     width: 31.428571429%;
   }
 }
-@media screen and (min-width: 64.375em) {
-  /* line 160, ../sass/_index-products.scss */
-  #productsSection .product-desc h2:before {
-    background: #4c3d6d;
-    content: "";
-    height: 8px;
-    right: 0;
-    position: absolute;
-    top: 0;
-    width: 64px;
-  }
-}
-/* line 171, ../sass/_index-products.scss */
+/* line 90, ../sass/_index-products.scss */
 #productsSection .product-desc h2 {
   color: #4c3d6d;
+  color: #222;
   font-family: "Terminal Dosis";
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 1;
   padding-top: 0;
   position: relative;
@@ -9751,19 +9668,67 @@ colors:
   font-weight: bolder;
   margin: .83em 0;
 }
-/* line 185, ../sass/_index-products.scss */
+@media screen and (min-width: 75em) {
+  /* line 90, ../sass/_index-products.scss */
+  #productsSection .product-desc h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 104, ../sass/_index-products.scss */
+  #productsSection .product-desc h2:before {
+    background: #4c3d6d;
+    background: #222;
+    content: "";
+    height: 8px;
+    right: 0;
+    position: absolute;
+    top: -1.33333rem;
+    width: 2.66667rem;
+  }
+}
+/* line 118, ../sass/_index-products.scss */
 #productsSection .product-img {
   float: none;
   margin: 0;
   width: 100%;
+  border: 2px solid #4c3d6d;
+  border: 2px solid #222;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
 }
-@media screen and (min-width: 64.375em) {
-  /* line 185, ../sass/_index-products.scss */
+@media screen and (min-width: 75em) {
+  /* line 118, ../sass/_index-products.scss */
   #productsSection .product-img {
     float: left;
     width: 65.714285714%;
     position: relative;
     vertical-align: top;
+  }
+}
+/* line 137, ../sass/_index-products.scss */
+#productsSection .product-img img {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+/* line 148, ../sass/_index-products.scss */
+#productsSection p {
+  line-height: inherit;
+}
+@media screen and (min-width: 75em) {
+  /* line 148, ../sass/_index-products.scss */
+  #productsSection p {
+    font-size: 1rem;
   }
 }
 
