@@ -68,3 +68,41 @@ nav {
         width: 50%;
     }
 }
+
+header {
+    margin: 0 auto;
+    #logo {
+        text-align: center;
+        padding-top: 20px;
+        img {
+            height: 213px;
+        }
+    }
+    nav {
+        ul {
+            margin: 0;
+            text-align: center;
+            position: relative;
+            height: 183px;
+            li {
+                width: 25%;
+                list-style-type: none;
+                position: absolute;
+                bottom: 0;
+            }
+            #l1 {
+                left: 0;
+            }
+            #l2 {
+                left: 25%;
+            }
+            #l3 {
+                left: 50%;
+            }
+            #l4 {
+                left: 75%;
+            }
+
+        }
+    }
+}

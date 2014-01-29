@@ -8271,6 +8271,50 @@ nav .navigation li:nth-child(3) {
   width: 50%;
 }
 
+/* line 72, ../sass/_blog-post-header.scss */
+header {
+  margin: 0 auto;
+}
+/* line 74, ../sass/_blog-post-header.scss */
+header #logo {
+  text-align: center;
+  padding-top: 20px;
+}
+/* line 77, ../sass/_blog-post-header.scss */
+header #logo img {
+  height: 213px;
+}
+/* line 82, ../sass/_blog-post-header.scss */
+header nav ul {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  height: 183px;
+}
+/* line 87, ../sass/_blog-post-header.scss */
+header nav ul li {
+  width: 25%;
+  list-style-type: none;
+  position: absolute;
+  bottom: 0;
+}
+/* line 93, ../sass/_blog-post-header.scss */
+header nav ul #l1 {
+  left: 0;
+}
+/* line 96, ../sass/_blog-post-header.scss */
+header nav ul #l2 {
+  left: 25%;
+}
+/* line 99, ../sass/_blog-post-header.scss */
+header nav ul #l3 {
+  left: 50%;
+}
+/* line 102, ../sass/_blog-post-header.scss */
+header nav ul #l4 {
+  left: 75%;
+}
+
 /* line 1, ../sass/_post-article.scss */
 .post {
   color: black;
