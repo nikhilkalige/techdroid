@@ -8126,7 +8126,7 @@ th.hide-for-touch {
 }
 
 /* Background colors */
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 5, ../sass/_blog-post-common.scss */
   html {
     font-size: 112.5%;
@@ -8182,7 +8182,7 @@ th.hide-for-touch {
     font-size: 0.875rem;
   }
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 37, ../sass/_blog-post-common.scss */
   .timestamp {
     font-size: 0.88889rem;
@@ -8253,7 +8253,6 @@ nav .navigation li:nth-child(3) {
 /* line 52, ../sass/_blog-post-header.scss */
 #navig a {
   color: black;
-  opacity: .7;
   font-size: 34px;
 }
 /* line 58, ../sass/_blog-post-header.scss */
@@ -8301,7 +8300,7 @@ nav .navigation li:nth-child(3) {
     margin: 1.875rem 0 3.75rem 0;
   }
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 4, ../sass/_post-article.scss */
   .post h1 {
     font-size: 2rem;
@@ -8358,7 +8357,7 @@ nav .navigation li:nth-child(3) {
   font-size: 1.667rem;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 58, ../sass/_post-article.scss */
   .post h3 {
     font-size: 1.875rem;
@@ -8379,7 +8378,7 @@ nav .navigation li:nth-child(3) {
     font-size: 1.125rem;
   }
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 69, ../sass/_post-article.scss */
   .post p {
     font-size: 1rem;
@@ -8396,7 +8395,7 @@ nav .navigation li:nth-child(3) {
   margin-bottom: 25px;
   color: black;
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 85, ../sass/_post-article.scss */
   .post h5 {
     line-height: 1.225;
@@ -8426,7 +8425,7 @@ nav .navigation li:nth-child(3) {
     font-size: 1.125rem;
   }
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 104, ../sass/_post-article.scss */
   .post ul li {
     font-size: 1rem;
@@ -8462,7 +8461,7 @@ footer h3 {
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 13, ../sass/_blog-post-footer.scss */
   footer h3 {
     height: 1.25rem;

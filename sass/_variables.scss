@@ -13,9 +13,10 @@ $grey_dark: #1D1A1A;
 
 $max1200: emcalc(1200px);
 $min1200: emcalc(1200px);
+$min1024: emcalc(1024px);
 $min1030: emcalc(1030px);
 $min800: emcalc(800px);
-$min600: emcalc(600px);
+$min600: emcalc(640px);
 $min400: emcalc(400px);
 
 @mixin respond-to($media) {
@@ -24,6 +25,9 @@ $min400: emcalc(400px);
     }
     @else if $media == min1200 {
         @media screen and (min-width: $min1200) { @content; }
+    }
+    @else if $media == min1024 {
+        @media screen and (min-width: $min1024) { @content; }
     }
     @else if $media == min1030 {
         @media screen and (min-width: $min1030) { @content; }
