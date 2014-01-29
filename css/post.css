@@ -8285,34 +8285,89 @@ header #logo img {
   height: 213px;
 }
 /* line 82, ../sass/_blog-post-header.scss */
-header nav ul {
+header nav ul, header .color-bar ul {
   margin: 0;
   text-align: center;
   position: relative;
-  height: 183px;
+  text-transform: uppercase;
+  font-weight: 800;
 }
-/* line 87, ../sass/_blog-post-header.scss */
-header nav ul li {
+/* line 88, ../sass/_blog-post-header.scss */
+header nav ul li, header .color-bar ul li {
   width: 25%;
   list-style-type: none;
   position: absolute;
-  bottom: 0;
-}
-/* line 93, ../sass/_blog-post-header.scss */
-header nav ul #l1 {
-  left: 0;
+  transition: all 0.2s linear;
 }
 /* line 96, ../sass/_blog-post-header.scss */
-header nav ul #l2 {
+header .color-bar {
+  opacity: 0.6;
+}
+/* line 98, ../sass/_blog-post-header.scss */
+header .color-bar ul {
+  margin-top: -6px;
+}
+/* line 101, ../sass/_blog-post-header.scss */
+header .color-bar li {
+  height: 20px;
+}
+/* line 105, ../sass/_blog-post-header.scss */
+header nav ul li {
+  height: 183px;
+}
+/* line 107, ../sass/_blog-post-header.scss */
+header nav ul li:hover {
+  height: 220px;
+  border-radius: 0 0 0 8px;
+}
+/* line 110, ../sass/_blog-post-header.scss */
+header nav ul li:hover a {
+  color: #0079a1;
+}
+/* line 114, ../sass/_blog-post-header.scss */
+header nav ul li a {
+  display: block;
+  color: white;
+  position: relative;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  top: 32%;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 40em) {
+  /* line 114, ../sass/_blog-post-header.scss */
+  header nav ul li a {
+    top: 45%;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 114, ../sass/_blog-post-header.scss */
+  header nav ul li a {
+    font-size: 0.95rem;
+    top: 80%;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+}
+/* line 135, ../sass/_blog-post-header.scss */
+header .l1 {
+  left: 0;
+  background-color: #E97E34;
+}
+/* line 139, ../sass/_blog-post-header.scss */
+header .l2 {
   left: 25%;
+  background-color: #FFBD33;
 }
-/* line 99, ../sass/_blog-post-header.scss */
-header nav ul #l3 {
+/* line 143, ../sass/_blog-post-header.scss */
+header .l3 {
   left: 50%;
+  background-color: #83D0C6;
 }
-/* line 102, ../sass/_blog-post-header.scss */
-header nav ul #l4 {
+/* line 147, ../sass/_blog-post-header.scss */
+header .l4 {
   left: 75%;
+  background-color: #FFA633;
 }
 
 /* line 1, ../sass/_post-article.scss */
