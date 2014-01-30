@@ -2,117 +2,26 @@
                                 Blog Section
 ****************************************************************************************************/
 
-.blogTitle {
-    text-align: center;
-    margin: 0em auto 2em auto;
-    font-family: Merriweather;
-    padding-top: 95px;
-}
-
-.blogTitle > .columns {
-    padding: 0px;
-}
-
-.blogTitle > .columns > h2 {
-    font-size: 3em;
-    font-family: inherit;
-    border-bottom: medium double #DDDDDD;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-}
-
-#blogSection .display > article {
-    border: medium double #DDDDDD;
-    border-radius: 2px;
-    margin-bottom: 20px;
-    padding: 20px 20px 30px;
-    transition: all 0.4s ease 0s;
-}
-
-.blogArticle {
-    text-align: center;
-}
-
-.blogArticle > .articleImage {
-    max-width: 100%;
-}
-
-.blogArticle > h3 {
-    margin-top: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Merriweather;
-    font-size: 1.4em;
-    color: #333333;
-}
-
-.blogArticle > h3 > a {
-    color: #333333;
-}
-
-.blogArticle > .meta {
-    border-bottom: medium double #DDDDDD;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.blogArticle > .meta > p {
-    font-family: "Merriweather Sans";
-    font-style: italic;
-}
-
-.blogArticle > .meta > p > span {
-    display: block;
-    margin-top: 10px;
-}
-
-.blogArticle > .meta > p > span > i:before {
-    background: url(../images/comment_fill.svg) no-repeat;
-    background-size: 1em;
-    content: "";
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    -webkit-font-smoothing: antialiased;
-    vertical-align: middle;
-    margin-right: 0.5em;
-}
-
-.blogArticle > p {
-    font-family: "Merriweather Sans";
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.blogArticle > .articleButton {
-    font-family: "Merriweather";
-    background-color: #e47c14;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px 10px;
-}
-
-@media #{$small} {
-    #blogSection .display > .large-4 {
-        width: 32%;
-    }
-
-    #c2 {
-        margin: 0 2%;
-    }
-}
-
 #blogSection {
     position: relative;
-    background: url("../images/bg-body.png") repeat scroll left top #A73031;
+    //background: url("../images/bg-body.png") repeat scroll left top #A73031;
     width: 100%;
     min-height: 720px;
     overflow: hidden;
-    background-color: #33B294;
+    //background-color: #33B294;
+    background-color: #ddd;
     padding-bottom: 50px;
-    //margin-bottom: 110px;
-
+    font-family: "Merriweather";
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.45;
+    @include respond-to(min400) {
+        font-size: rem-calc(18);
+    }
+    @include respond-to(min600) {
+        font-size: 1.1rem;
+        line-height: 1.65;
+    }
     .icon {
         display: block;
         margin-top: 30px;
@@ -120,8 +29,7 @@
         width: 100px;
         background-image: url(../images/quill.png);
     }
-
-    .line4 {
+    .line {
         width: 300px;
         height: 1px;
         margin-top: 15px;
@@ -131,20 +39,132 @@
     }
 
     .title {
-        font-family: 'Terminal Dosis';
-        line-height: 70px;
-        text-align: center;
-        font-size: 50px;
-        color: #32323a;
         display: block;
+        color: #32323a;
+        font-family: 'Terminal Dosis';
+        font-size: rem-calc(36px);
+        @include respond-to(min1030) {
+            font-size: rem-calc(48, $font-base-1030);
+        }
+        line-height: 1.4;
+        text-align: center;
         margin-top: 4px;
         text-transform: uppercase;
     }
-
     .display {
         display: block;
         position: relative;
-        margin-top: 106px;
+        margin-top: rem-calc(40);
+        @include respond-to(min600) {
+            padding: 0 15px;
+        }
+        @include respond-to(min1200) {
+            padding: 0;
+        }
+        @include respond-to(min600) {
+            margin-top: rem-calc(50, $font-base-600);
+        }
+        @include respond-to(min800) {
+            margin-top: 4.4166rem;
+        }
         padding-bottom: 70px;
+    }
+    article {
+        border-bottom: 3px dotted #222;
+        &:last-child {
+            border-bottom: none;
+        }
+        @include respond-to(min600) {
+            border: solid 3px #222;
+            &:last-child {
+                border-bottom: solid 3px #222;
+            }
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+        }
+        @include respond-to(min600) {
+            margin: 60px 0 !important;
+        }
+        padding: 20px 20px 40px;
+        transition: all 0.4s ease 0s;
+    }
+    .articleImage {
+        max-width: 100%;
+    }
+    img {
+        max-width: 100%;
+        border-radius: 6px;
+    }
+    h3 {
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: Merriweather;
+        font-size: 1.4em;
+        color: #333333;
+        a {
+            color: #333333;
+        }
+    }
+    .meta {
+        text-align: center;
+        padding-top: 1rem;
+        font-style: italic;
+        border-bottom: medium double #fff;
+        @include respond-to(min600)
+        {
+            border-bottom: none;
+        }
+        span {
+            display: block;
+            margin-top: 10px;
+            padding-bottom: rem-calc(20px);
+            @include respond-to(min600)
+            {
+                padding-bottom: 0;
+            }
+            i:before {
+                background: url(../images/comment_fill.svg) no-repeat;
+                background-size: 1em;
+                content: "";
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                -webkit-font-smoothing: antialiased;
+                vertical-align: middle;
+                margin-right: 0.5em;
+            }
+        }
+    }
+    .articleButton {
+        display: block;
+        font-family: "Merriweather";
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: -.09em;
+        color: white;
+        background-color: #e47c14;
+        @include respond-to(min600) {
+            background-color: transparent;
+        }
+        padding: 10px 10px;
+        @include respond-to(min600) {
+            padding: 2px 0;
+        }
+        a {
+            padding: 0 5px;
+            color: white;
+            @include respond-to(min600) {
+                color: #116595;
+                border-bottom: 1px dotted #116595;
+            }
+            &:hover {
+                border-bottom: 1px solid #000;
+                color: #000;
+            }
+        }
     }
 }

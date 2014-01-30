@@ -8126,7 +8126,7 @@ th.hide-for-touch {
 }
 
 /* Background colors */
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 5, ../sass/_blog-post-common.scss */
   html {
     font-size: 112.5%;
@@ -8182,7 +8182,7 @@ th.hide-for-touch {
     font-size: 0.875rem;
   }
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 37, ../sass/_blog-post-common.scss */
   .timestamp {
     font-size: 0.88889rem;
@@ -8201,20 +8201,21 @@ th.hide-for-touch {
   }
 }
 
-/* line 3, ../sass/_blog-post-header.scss */
+/* Menu colors sets */
+/* line 15, ../sass/_blog-post-header.scss */
 body {
   background-color: white;
   color: black;
   border-top: 6px solid #CF0A2C;
 }
 
-/* line 13, ../sass/_blog-post-header.scss */
+/* line 25, ../sass/_blog-post-header.scss */
 nav .navigation {
   padding-left: 0;
   text-align: center;
   margin-left: 0;
 }
-/* line 18, ../sass/_blog-post-header.scss */
+/* line 30, ../sass/_blog-post-header.scss */
 nav .navigation li {
   display: inline-block;
   font-size: 1.5rem;
@@ -8223,53 +8224,151 @@ nav .navigation li {
   text-align: center;
   margin: 0 3rem;
 }
-/* line 27, ../sass/_blog-post-header.scss */
+/* line 39, ../sass/_blog-post-header.scss */
 nav .navigation li > a {
   font-family: Merriweather;
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 32, ../sass/_blog-post-header.scss */
+/* line 44, ../sass/_blog-post-header.scss */
 nav .navigation li:nth-child(2) {
   padding-right: 300px;
 }
-/* line 35, ../sass/_blog-post-header.scss */
+/* line 47, ../sass/_blog-post-header.scss */
 nav .navigation li:nth-child(3) {
   padding-left: 0px;
 }
 
-/* line 41, ../sass/_blog-post-header.scss */
+/* line 53, ../sass/_blog-post-header.scss */
 #navig {
   padding: 0 0 20px 0;
   position: relative;
   z-index: 1;
 }
-/* line 46, ../sass/_blog-post-header.scss */
+/* line 58, ../sass/_blog-post-header.scss */
 #navig li {
   font-weight: normal;
   text-transform: capitalize;
   list-style-type: none;
 }
-/* line 52, ../sass/_blog-post-header.scss */
+/* line 64, ../sass/_blog-post-header.scss */
 #navig a {
   color: black;
-  opacity: .7;
   font-size: 34px;
 }
-/* line 58, ../sass/_blog-post-header.scss */
+/* line 70, ../sass/_blog-post-header.scss */
 #navig ul {
   margin-bottom: 0;
   padding: 43px 0;
   margin-left: 0px;
 }
-/* line 63, ../sass/_blog-post-header.scss */
+/* line 75, ../sass/_blog-post-header.scss */
 #navig .logo1 {
   width: 145px;
 }
-/* line 66, ../sass/_blog-post-header.scss */
+/* line 78, ../sass/_blog-post-header.scss */
 #navig .left {
   text-align: center;
   width: 50%;
+}
+
+/* line 84, ../sass/_blog-post-header.scss */
+header {
+  margin: 0 auto;
+}
+/* line 86, ../sass/_blog-post-header.scss */
+header #logo {
+  text-align: center;
+  padding-top: 20px;
+}
+/* line 89, ../sass/_blog-post-header.scss */
+header #logo img {
+  height: 213px;
+}
+/* line 94, ../sass/_blog-post-header.scss */
+header nav ul, header .color-bar ul {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+/* line 100, ../sass/_blog-post-header.scss */
+header nav ul li, header .color-bar ul li {
+  width: 25%;
+  list-style-type: none;
+  position: absolute;
+  transition: all 0.2s linear;
+}
+/* line 108, ../sass/_blog-post-header.scss */
+header .color-bar {
+  opacity: 0.6;
+}
+/* line 110, ../sass/_blog-post-header.scss */
+header .color-bar ul {
+  margin-top: -6px;
+}
+/* line 113, ../sass/_blog-post-header.scss */
+header .color-bar li {
+  height: 20px;
+}
+/* line 117, ../sass/_blog-post-header.scss */
+header nav ul li {
+  height: 183px;
+}
+/* line 119, ../sass/_blog-post-header.scss */
+header nav ul li:hover {
+  height: 220px;
+  border-radius: 0 0 0 8px;
+}
+/* line 122, ../sass/_blog-post-header.scss */
+header nav ul li:hover a {
+  color: #0079a1;
+}
+/* line 126, ../sass/_blog-post-header.scss */
+header nav ul li a {
+  display: block;
+  color: white;
+  position: relative;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  top: 32%;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 40em) {
+  /* line 126, ../sass/_blog-post-header.scss */
+  header nav ul li a {
+    top: 45%;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 126, ../sass/_blog-post-header.scss */
+  header nav ul li a {
+    font-size: 0.95rem;
+    top: 80%;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+}
+/* line 147, ../sass/_blog-post-header.scss */
+header .l1 {
+  left: 0;
+  background-color: #185083;
+}
+/* line 151, ../sass/_blog-post-header.scss */
+header .l2 {
+  left: 25%;
+  background-color: #b4aa8b;
+}
+/* line 155, ../sass/_blog-post-header.scss */
+header .l3 {
+  left: 50%;
+  background-color: #ff6952;
+}
+/* line 159, ../sass/_blog-post-header.scss */
+header .l4 {
+  left: 75%;
+  background-color: #83bac5;
 }
 
 /* line 1, ../sass/_blog-posts.scss */
@@ -8289,7 +8388,7 @@ nav .navigation li:nth-child(3) {
   font-weight: bold;
   color: black;
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 3, ../sass/_blog-posts.scss */
   #blog-posts h1 {
     height: 1.25rem;
@@ -8330,7 +8429,7 @@ nav .navigation li:nth-child(3) {
   line-height: 1.65;
   color: black;
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 43, ../sass/_blog-posts.scss */
   .post h2 {
     font-size: 1.33333rem;
@@ -8366,7 +8465,7 @@ nav .navigation li:nth-child(3) {
     font-size: 1.125rem;
   }
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 64, ../sass/_blog-posts.scss */
   .post p {
     font-size: 1rem;
@@ -8403,7 +8502,7 @@ footer h3 {
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 13, ../sass/_blog-post-footer.scss */
   footer h3 {
     height: 1.25rem;
@@ -8483,7 +8582,7 @@ footer li:first-child {
     font-size: 1.25rem;
   }
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 9, ../sass/_blog-footer.scss */
   #paginate div {
     font-size: 1.16667rem;
@@ -8530,7 +8629,7 @@ footer li:first-child {
 .hide {
   display: inherit !important;
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 52, ../sass/_blog-footer.scss */
   .hide {
     display: none !important;
@@ -8541,7 +8640,7 @@ footer li:first-child {
 .show {
   display: none !important;
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40em) {
   /* line 59, ../sass/_blog-footer.scss */
   .show {
     display: inherit !important;
