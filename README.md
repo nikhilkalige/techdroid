@@ -1,4 +1,4 @@
 Techdroid
 ====
 
-Building the frontend for my site using foundation 4.0
+Frontend for my site using Zurb Foundation 5.* and Compass
