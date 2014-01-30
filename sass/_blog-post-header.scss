@@ -1,5 +1,17 @@
 $logo-width: 145px;
 
+/* Menu colors sets */
+// Set 1
+$menu-color-1: #E97E34;
+$menu-color-2: #FFBD33;
+$menu-color-3: #83D0C6;
+$menu-color-4: #FFA633;
+// Set 2
+$menu-color-1: #185083;
+$menu-color-2: #B4AA8B;
+$menu-color-3: #FF6952;
+$menu-color-4: #83BAC5;
+
 body {
     //background-image: url("../images/pattern6.png");
     //background-color: #cd595a;
@@ -134,18 +146,18 @@ header {
     }
     .l1 {
         left: 0;
-        background-color: #E97E34;
+        background-color: $menu-color-1;
     }
     .l2 {
         left: 25%;
-        background-color:#FFBD33;
+        background-color: $menu-color-2;
     }
     .l3 {
         left: 50%;
-        background-color:#83D0C6;
+        background-color: $menu-color-3;
     }
     .l4 {
         left: 75%;
-        background-color:#FFA633;
+        background-color: $menu-color-4;
     }
 }
