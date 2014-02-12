@@ -8453,7 +8453,11 @@ header .l4 {
     margin-bottom: 4rem;
   }
 }
-/* line 58, ../sass/_post-article.scss */
+/* line 57, ../sass/_post-article.scss */
+.post .timestamp a {
+  text-transform: capitalize;
+}
+/* line 61, ../sass/_post-article.scss */
 .post h3 {
   color: black;
   font-family: Merriweather;
@@ -8463,12 +8467,12 @@ header .l4 {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 40em) {
-  /* line 58, ../sass/_post-article.scss */
+  /* line 61, ../sass/_post-article.scss */
   .post h3 {
     font-size: 1.875rem;
   }
 }
-/* line 69, ../sass/_post-article.scss */
+/* line 72, ../sass/_post-article.scss */
 .post p {
   font-family: Merriweather;
   color: black;
@@ -8478,19 +8482,19 @@ header .l4 {
   line-height: 1.45;
 }
 @media screen and (min-width: 25em) {
-  /* line 69, ../sass/_post-article.scss */
+  /* line 72, ../sass/_post-article.scss */
   .post p {
     font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 69, ../sass/_post-article.scss */
+  /* line 72, ../sass/_post-article.scss */
   .post p {
     font-size: 1rem;
     line-height: 1.65;
   }
 }
-/* line 85, ../sass/_post-article.scss */
+/* line 88, ../sass/_post-article.scss */
 .post h5 {
   font-size: 32px;
   font-size: 1.375rem;
@@ -8501,12 +8505,12 @@ header .l4 {
   color: black;
 }
 @media screen and (min-width: 40em) {
-  /* line 85, ../sass/_post-article.scss */
+  /* line 88, ../sass/_post-article.scss */
   .post h5 {
     line-height: 1.225;
   }
 }
-/* line 97, ../sass/_post-article.scss */
+/* line 100, ../sass/_post-article.scss */
 .post ul {
   color: black;
   font-family: Merriweather;
@@ -8515,7 +8519,7 @@ header .l4 {
   list-style-type: disc;
   list-style-position: inside;
 }
-/* line 104, ../sass/_post-article.scss */
+/* line 107, ../sass/_post-article.scss */
 .post ul li {
   margin-left: 23px;
   font-family: Merriweather;
@@ -8525,13 +8529,13 @@ header .l4 {
   line-height: 1.45;
 }
 @media screen and (min-width: 25em) {
-  /* line 104, ../sass/_post-article.scss */
+  /* line 107, ../sass/_post-article.scss */
   .post ul li {
     font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 104, ../sass/_post-article.scss */
+  /* line 107, ../sass/_post-article.scss */
   .post ul li {
     font-size: 1rem;
     line-height: 1.8;
