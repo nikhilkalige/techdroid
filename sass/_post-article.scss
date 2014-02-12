@@ -54,6 +54,9 @@
         @include respond-to(min800) {
             margin-bottom: rem-calc(80px, $font-base-800);
         }
+        a {
+            text-transform: capitalize;
+        }
     }
     h3 {
         color: $font-color;
