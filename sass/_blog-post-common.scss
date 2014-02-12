@@ -2,27 +2,6 @@ $background-color: white;
 $font-color: black;
 $font-family: Merriweather;
 
-html {
-    @include respond-to(min600) {
-        font-size: 112.5%;
-    }
-    @include respond-to(min800) {
-        font-size: 125%;
-    }
-    @include respond-to(min1030) {
-        font-size: 137.5%;
-    }
-    @include respond-to(min1200) {
-        font-size: 150%;
-    }
-}
-
-$font-base-1200: 16px * 150/100;
-$font-base-1030: 16px * 137.5/100;
-$font-base-800: 16px * 125/100;
-$font-base-600: 16px * 112.5/100;
-
-
 .row {
     max-width: 1140px;
 }
