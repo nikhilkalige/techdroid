@@ -287,24 +287,14 @@
     </div> <!-- Content wrapper -->
 
     <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-
-    <!-- Custom Javascript files -->
-    <script src="js/jquery.fittext.js"></script>
     <script src="js/custom/main.js"></script>
-    <script src="js/custom/offcanvas.js"></script>
     <script>
-        $(document).foundation();
+        $(document).ready();
     </script>
     <script>
-        $('.scrollTo').on('click', function(e) {
-            e.preventDefault();
-            Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
-        });
         $('#menu-div').on('click', function() {
             $('.flyout li > a').toggleClass("click");
         })
-        $(".my_text").fitText(1, { minFontSize: '0px', maxFontSize: '63px' });
     </script>
 </body>
 </html>
