@@ -8201,6 +8201,11 @@ th.hide-for-touch {
   }
 }
 
+/* line 61, ../sass/_blog-post-common.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+}
+
 /* Menu colors sets */
 /* line 15, ../sass/_blog-post-header.scss */
 body {
@@ -8605,8 +8610,9 @@ footer li {
   line-height: 1.8;
   font-style: inherit;
   font-weight: inherit;
+  text-transform: capitalize;
 }
-/* line 62, ../sass/_blog-post-footer.scss */
+/* line 63, ../sass/_blog-post-footer.scss */
 footer li:first-child {
   margin-left: 0px;
 }
