@@ -68,9 +68,9 @@
         </section>
         <section id="productsSection" class="height_ninty">
             <div class="row">
-                <div class="large-1 columns small-centered large-centered icon"></div>
-                <div class="large-1 columns small-centered large-centered line"></div>
-                <div class="large-6 columns small-centered large-centered title">products</div>
+                <div class="columns small-centered large-centered icon"></div>
+                <div class="columns small-centered large-centered line"></div>
+                <div class="columns small-centered large-centered title">products</div>
             </div>
             <div class="row display">
                 <div class="product-desc">
@@ -91,9 +91,9 @@
 
         <section id="blogSection">
             <div class="row">
-                <div class="large-1 columns small-centered large-centered icon"></div>
-                <div class="large-1 columns small-centered large-centered line"></div>
-                <div class="large-6 columns small-centered large-centered title">recent articles</div>
+                <div class="columns small-centered large-centered icon"></div>
+                <div class="columns small-centered large-centered line"></div>
+                <div class="columns small-centered large-centered title">recent articles</div>
             </div>
             <div class="row display">
                 <article class="row">
@@ -194,9 +194,9 @@
 
         <section id="skill-section">
             <div class="row">
-                <div class="large-1 columns small-centered large-centered icon"></div>
-                <div class="large-1 columns small-centered large-centered line"></div>
-                <div class="large-6 columns small-centered large-centered title">skills</div>
+                <div class="columns small-centered large-centered icon"></div>
+                <div class="columns small-centered large-centered line"></div>
+                <div class="columns small-centered large-centered title">skills</div>
             </div>
             <div class="row display">
                 <div class="large-12 columns skill">
@@ -213,9 +213,9 @@
 
         <section id="about-section">
             <div class="row">
-                <div class="large-1 columns small-centered large-centered icon"></div>
-                <div class="large-1 columns small-centered large-centered line"></div>
-                <div class="large-3 columns small-centered large-centered title">about</div>
+                <div class="columns small-centered large-centered icon"></div>
+                <div class="columns small-centered large-centered line"></div>
+                <div class="columns small-centered large-centered title">about</div>
             </div>
             <div class="row display">
                 <div class="large-12 columns large-centered myself">
@@ -227,7 +227,7 @@
                     <div class="icon"></div>
                     <div class="line"></div>
                     <div class="title">education</div>
-                    <p class="about-content">
+                    <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, expedita veritatis eveniet ea dolorem quos nemo odit minima ipsum est cumque excepturi blanditiis eligendi repellat ducimus doloremque cum consequatur quia!
                     </p>
                 </div>
@@ -235,7 +235,7 @@
                     <div class="icon"></div>
                     <div class="line"></div>
                     <div class="title">experience</div>
-                    <p class="about-content">
+                    <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cupiditate commodi vitae alias ullam et itaque nobis doloremque facere laborum ipsum error. Est, molestias atque iure ut molestiae ipsa odio?
                     </p>
                 </div>
@@ -244,9 +244,9 @@
 
         <section id="colophon-section">
             <div class="row">
-                <div class="large-1 columns small-centered large-centered icon"></div>
-                <div class="large-1 columns small-centered large-centered line"></div>
-                <div class="large-6 columns small-centered large-centered title">colophon</div>
+                <div class="columns small-centered large-centered icon"></div>
+                <div class="columns small-centered large-centered line"></div>
+                <div class="columns small-centered large-centered title">colophon</div>
             </div>
             <div class="row display">
                 <div class="large-12 columns">
@@ -258,9 +258,9 @@
 
         <footer id="footer">
             <div class="row">
-                <div class="large-1 columns small-centered large-centered icon"></div>
-                <div class="large-1 columns small-centered large-centered line"></div>
-                <div class="large-6 columns small-centered large-centered title">contact</div>
+                <div class="columns small-centered large-centered icon"></div>
+                <div class="columns small-centered large-centered line"></div>
+                <div class="columns small-centered large-centered title">contact</div>
             </div>
             <div class="row display">
                 <div class="large-12 columns myself">
@@ -273,7 +273,7 @@
                     <div class="large-6 columns">
                         <a href="http://facebook.com/nikhilkalige" class="fb" title="Facebook" target="_blank">
                             <span class="logo"></span>
-                            <span class="text">facebook.com/nikhilkalige</span>
+                            <span class="text">facebook/nikhilkalige</span>
                         </a>
                         <a href="http://twitter.com/nikhilkalige" class="tw" title="Twitter" target="_blank">
                             <span class="logo"></span>
@@ -296,24 +296,14 @@
     </div> <!-- Content wrapper -->
 
     <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-
-    <!-- Custom Javascript files -->
-    <script src="js/jquery.fittext.js"></script>
     <script src="js/custom/main.js"></script>
-    <script src="js/custom/offcanvas.js"></script>
     <script>
-        $(document).foundation();
+        $(document).ready();
     </script>
     <script>
-        $('.scrollTo').on('click', function(e) {
-            e.preventDefault();
-            Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
-        });
         $('#menu-div').on('click', function() {
             $('.flyout li > a').toggleClass("click");
         })
-        $(".my_text").fitText(1, { minFontSize: '0px', maxFontSize: '63px' });
     </script>
     <script>
         $( document ).ready(function() {
